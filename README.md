@@ -120,8 +120,13 @@ canciones importadas (recursoscatolicos por `q-id`, Athenas por título). No toc
 python3 tools/clasificar_tags.py
 ```
 
-Las que no tienen tags en el sitio (~85, sobre todo Athenas) conservan su
-categoría por palabras clave y quedan sin momento.
+Las que no tienen tags en el sitio (sobre todo Athenas) se clasifican por
+contenido en `tools/athenas_clasificacion_manual.json` (categoría + momento
+leídos de la letra) y se aplican con:
+
+```bash
+python3 tools/aplicar_clasificacion_manual.py
+```
 
 ## Deploy en Vercel
 
