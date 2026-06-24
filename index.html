@@ -645,7 +645,50 @@
       font-weight: 700;
       font-size: 0.85rem;
     }
-  </style>
+
+    /* ─── Botones de sugerencia (mailto) ─────────────────── */
+    .detail-footer {
+      padding: 1rem 1.75rem 1.5rem;
+      border-top: 1px solid var(--borde-soft);
+      background: var(--blanco);
+      flex-shrink: 0;
+    }
+    .btn-sugerir {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: none;
+      border: 1.5px solid var(--borde);
+      border-radius: 7px;
+      padding: 0.5rem 1rem;
+      font-family: var(--font);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--azul-dk);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn-sugerir:hover { background: var(--azul-dim); border-color: var(--azul); }
+
+    .btn-sugerir-nueva {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      border: 1.5px solid var(--azul);
+      color: var(--azul-dk);
+      background: var(--blanco);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: 7px;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-sugerir-nueva:hover { background: var(--azul-dim); transform: translateY(-1px); }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+    .footer-sugerir { margin-left: 0.75rem; }
+</style>
 </head>
 <body>
 
@@ -676,13 +719,16 @@
 <section class="hero">
   <div class="hero-inner">
     <h1>Cancionero <em>comunitario</em></h1>
-    <p>Cantos para la liturgia y los encuentros de la comunidad. Buscá por título, autor, momento o por la letra de cada canto.</p>
-    <a class="yt-link" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
-      </svg>
-      Playlist Colaborativa
-    </a>
+    <p>Cantos para la liturgia y los encuentros comunitarios. Buscá por título, autor, momento o por la letra de cada canto.</p>
+    <div class="hero-cta">
+      <a class="yt-link" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
+        </svg>
+        Playlist Colaborativa
+      </a>
+      <a class="btn-sugerir-nueva" id="btnSugerirNuevaHero" href="#">✎ Sugerir una canción</a>
+    </div>
   </div>
 </section>
 
@@ -710,7 +756,7 @@
     <img src="./assets/logo-mopal.png" alt="" />
     <div class="footer-text">
       <strong>Movimiento de la Palabra de Dios</strong>
-      Cancionero litúrgico comunitario · “El Evangelio es el poder de Dios para la salvación de todos los que creen.” (Rm 1,16)
+      Cantemos en Espíritu y en Verdad · “El Evangelio es el poder de Dios para la salvación de todos los que creen.” (Rm 1,16)
     </div>
     <a class="footer-yt" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -718,6 +764,7 @@
       </svg>
       Playlist Colaborativa
     </a>
+    <a class="footer-yt footer-sugerir" id="btnSugerirNuevaFooter" href="#">✎ Sugerir una canción</a>
   </div>
 </footer>
 
@@ -745,6 +792,11 @@
       </div>
     </div>
     <div class="detail-body" id="detailBody"></div>
+    <div class="detail-footer">
+      <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">
+        ✎ Sugerir un cambio
+      </a>
+    </div>
   </div>
 </div>
 
@@ -797,6 +849,58 @@
     final: 'Final', instrumental: 'Instrumental'
   };
 
+  // ─── Sugerencias por mail ────────────────────────────────
+  const MAIL_DESTINO = 'procesoconfirmacion@gmail.com';
+
+  function buildMailtoHref(asunto, cuerpo) {
+    return 'mailto:' + MAIL_DESTINO +
+      '?subject=' + encodeURIComponent(asunto) +
+      '&body=' + encodeURIComponent(cuerpo);
+  }
+
+  function cuerpoEstrofas(cancion) {
+    return (cancion.estrofas || []).map(e => {
+      let label = '';
+      if (e.tipo === 'coro') label = '(Coro)\n';
+      else if (e.tipo && e.tipo !== 'estrofa') label = '(' + (SECTION_LABELS[e.tipo] || e.tipo) + ')\n';
+      return label + e.letra;
+    }).join('\n\n');
+  }
+
+  function hrefCambio(cancion) {
+    const cuerpo =
+`¡Hola! Gracias por ayudar a mejorar el cancionero.
+Editá abajo lo que quieras corregir (letra, acordes, tono…) y enviá.
+No borres la línea "ID" así la encontramos rápido.
+
+ID: ${cancion.id}
+Título: ${cancion.titulo}
+Autor: ${cancion.autor}
+Categoría: ${cancion.categoria}
+Tono: ${cancion.tono || '—'}
+
+Letra (acordes entre corchetes, ej. [DO]):
+${cuerpoEstrofas(cancion)}`;
+    return buildMailtoHref('[Cancionero] Cambio: ' + cancion.titulo, cuerpo);
+  }
+
+  function hrefNueva() {
+    const cuerpo =
+`¡Hola! Gracias por sumar un canto.
+Completá los campos. Si sabés los acordes, ponelos entre corchetes antes
+de la sílaba, ej.: [DO]Tú has ve[RE]nido a la orilla.
+
+Título:
+Autor:
+Categoría:
+Momento (opcional):
+Tono:
+
+Letra:
+`;
+    return buildMailtoHref('[Cancionero] Nueva canción', cuerpo);
+  }
+
   async function init() {
     const cargar = url => fetch(url).then(r => r.json()).catch(() => []);
     const [base, athenas, recursos] = await Promise.all([
@@ -807,6 +911,8 @@
     CANCIONES = base.concat(athenas, recursos);
     renderFiltros();
     renderLista();
+    document.querySelectorAll('#btnSugerirNuevaHero, #btnSugerirNuevaFooter')
+      .forEach(a => a.href = hrefNueva());
   }
 
   function getCategorias() {
@@ -908,6 +1014,8 @@
     btnTono.disabled = !tieneAcordes;
     btnTono.classList.toggle('active', tieneAcordes);
     body.classList.toggle('hide-chords', !tieneAcordes);
+
+    document.getElementById('btnSugerirCambio').href = hrefCambio(cancion);
 
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
