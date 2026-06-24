@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pescador de Hombres",
+    "autor": "Cesáreo Gabaráin",
+    "categoria": "Vocación",
+    "momento": ["Comunión", "Envío"],
+    "tono": "G",
+    "estrofas": [
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "Tú has venido a la orilla,\nno has buscado ni a sabios ni a ricos,\ntan solo quieres que yo te siga."
+      },
+      {
+        "tipo": "coro",
+        "letra": "Señor, me has mirado a los ojos,\nsonriendo has dicho mi nombre.\nEn la arena he dejado mi barca,\njunto a ti buscaré otro mar."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Tú sabes bien lo que tengo:\nen mi barca no hay oro ni espadas,\ntan solo redes y mi trabajo."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 3,
+        "letra": "Tú necesitas mis manos,\nmi cansancio que a otros descanse,\namor que quiera seguir amando."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 4,
+        "letra": "Tú, Pescador de otros mares,\nansia eterna de almas que esperan.\nAmigo bueno, que así me llamas."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Juntos Como Hermanos",
+    "autor": "Kiko Argüello",
+    "categoria": "Fraternidad",
+    "momento": ["Ofertorio", "Comunión"],
+    "tono": "D",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "Juntos como hermanos,\nmiembros de una iglesia,\nvamos caminando\nal encuentro del Señor."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "Tiempo de alegría,\ntiempo de esperanza,\ntiempo de vivir\nla fraternidad."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Somos una iglesia,\nsomos una historia,\npueblo que camina\nhacia la verdad."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "El Señor Es Mi Pastor",
+    "autor": "Tradicional",
+    "categoria": "Salmos",
+    "momento": ["Salmo Responsorial", "Meditación"],
+    "tono": "Am",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "El Señor es mi pastor,\nnada me puede faltar.\nEl Señor es mi pastor,\nnada me puede faltar."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "En verdes praderas me hace reposar,\nhacia las aguas tranquilas me conduce.\nMe da nuevas fuerzas y me lleva\npor el camino recto."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Aunque camine por cañadas oscuras,\nnada temo porque tú vas conmigo.\nTu vara y tu cayado me dan seguridad."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 3,
+        "letra": "Me preparas una mesa\nfrente a mis adversarios.\nMe unges la cabeza con perfume,\nmi copa rebosa."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Gloria a Dios",
+    "autor": "Misa Popular Nicaragüense",
+    "categoria": "Gloria",
+    "momento": ["Gloria"],
+    "tono": "C",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "Gloria a Dios en el cielo,\ny en la tierra paz a los hombres\nque ama el Señor."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "Por tu inmensa gloria te alabamos,\nte bendecimos y te adoramos.\nTe glorificamos, te damos gracias,\nSeñor Dios, Rey celestial."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Señor Hijo único, Jesucristo,\nSeñor Dios, Cordero de Dios,\nHijo del Padre, que quitas el pecado\ndel mundo, ten piedad."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Ven Espíritu Santo",
+    "autor": "Tradicional",
+    "categoria": "Espíritu Santo",
+    "momento": ["Entrada", "Pentecostés"],
+    "tono": "E",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "Ven Espíritu Santo,\nllena los corazones de tus fieles\ny enciende en ellos\nel fuego de tu amor."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "Envía tu Espíritu, Señor,\ny se renovará la faz de la tierra.\nEnvía tu Espíritu, Señor,\ny se renovará la faz de la tierra."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Luz beatísima, llena\nlo íntimo del corazón\nde tus fieles. Ven, padre de los pobres,\nven, dador de dones."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Cordero de Dios",
+    "autor": "Misa Latinoamericana",
+    "categoria": "Cordero",
+    "momento": ["Fracción del Pan"],
+    "tono": "F",
+    "estrofas": [
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "Cordero de Dios,\nque quitas el pecado del mundo,\nten piedad de nosotros."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "Cordero de Dios,\nque quitas el pecado del mundo,\nten piedad de nosotros."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 3,
+        "letra": "Cordero de Dios,\nque quitas el pecado del mundo,\ndanos la paz."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Resucitó",
+    "autor": "Cesáreo Gabaráin",
+    "categoria": "Pascua",
+    "momento": ["Entrada", "Comunión", "Envío"],
+    "tono": "G",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "Resucitó, resucitó,\nresucitó, aleluya."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 1,
+        "letra": "La muerte ¿dónde está la muerte?\n¿Dónde está, sepulcro, tu victoria?\nCristo resucitó glorioso,\ny su triunfo es nuestra gloria."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 2,
+        "letra": "El que vivía entre nosotros,\nel que era nuestro Dios y hermano,\nel que murió en la cruz por todos,\nvive entre nosotros."
+      },
+      {
+        "tipo": "estrofa",
+        "numero": 3,
+        "letra": "El que lloraba ante el sepulcro\nde Lázaro, su amigo querido,\nel que sufrió la muerte humana,\nhoy ha resucitado."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Aleluya",
+    "autor": "Tradicional Gregoriano",
+    "categoria": "Aclamación",
+    "momento": ["Aclamación al Evangelio"],
+    "tono": "D",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "Aleluya, aleluya, aleluya."
+      }
+    ]
+  }
+]

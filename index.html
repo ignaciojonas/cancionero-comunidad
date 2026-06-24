@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancionero · Comunidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Tokens ─────────────────────────────────────────── */
+    :root {
+      --bg:          #1A1714;
+      --bg-card:     #221E1A;
+      --bg-hover:    #2A2420;
+      --border:      #3A312A;
+      --border-soft: #2E2824;
+      --granate:     #8B1A2E;
+      --granate-lt:  #A8213A;
+      --granate-dim: rgba(139,26,46,0.15);
+      --cream:       #EDE5D4;
+      --cream-dim:   #A09080;
+      --cream-faint: #6B5E52;
+      --gold:        #C8A96A;
+      --gold-dim:    rgba(200,169,106,0.12);
+
+      --font-serif: 'EB Garamond', Georgia, serif;
+      --font-sans:  'Inter', system-ui, sans-serif;
+    }
+
+    /* ─── Reset / Base ───────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--cream);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ─── Header ─────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 clamp(1rem, 5vw, 3rem);
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      height: 64px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+
+    .logo-cross {
+      width: 28px;
+      height: 28px;
+      color: var(--granate);
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--cream);
+      letter-spacing: 0.01em;
+    }
+
+    .logo-text span {
+      color: var(--cream-dim);
+      font-style: italic;
+      font-size: 0.85em;
+    }
+
+    /* ─── Search ─────────────────────────────────────────── */
+    .search-wrap {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--cream-faint);
+      pointer-events: none;
+      width: 16px;
+      height: 16px;
+    }
+
+    #search {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.5rem 1rem 0.5rem 2.5rem;
+      color: var(--cream);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #search::placeholder { color: var(--cream-faint); }
+    #search:focus { border-color: var(--granate); }
+
+    /* ─── Layout ─────────────────────────────────────────── */
+    .shell {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem clamp(1rem, 5vw, 3rem);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 640px) {
+      .shell { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .mobile-filter-bar { display: flex; }
+    }
+
+    /* ─── Sidebar / Filters ──────────────────────────────── */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+    }
+
+    .sidebar-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream-faint);
+      margin-bottom: 0.75rem;
+    }
+
+    .filter-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .filter-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.45rem 0.75rem;
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.825rem;
+      color: var(--cream-dim);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .filter-btn:hover { background: var(--bg-hover); color: var(--cream); }
+    .filter-btn.active { background: var(--granate-dim); color: var(--cream); }
+    .filter-btn.active::before {
+      content: '·';
+      color: var(--granate);
+      margin-right: 0.4rem;
+      font-weight: 700;
+    }
+
+    /* Mobile filter bar */
+    .mobile-filter-bar {
+      display: none;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1.5rem;
+      scrollbar-width: none;
+    }
+    .mobile-filter-bar::-webkit-scrollbar { display: none; }
+    .mobile-filter-bar .filter-btn {
+      white-space: nowrap;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      flex-shrink: 0;
+    }
+    .mobile-filter-bar .filter-btn.active {
+      border-color: var(--granate);
+    }
+
+    /* ─── Song List ──────────────────────────────────────── */
+    .song-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .song-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .song-card:hover {
+      border-color: var(--border);
+      background: var(--bg-hover);
+    }
+
+    .song-card-left {}
+    .song-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--cream);
+      margin-bottom: 0.2rem;
+    }
+
+    .song-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: var(--gold-dim);
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .tag.momento {
+      background: var(--granate-dim);
+      color: var(--granate-lt);
+    }
+
+    .song-autor {
+      font-size: 0.78rem;
+      color: var(--cream-faint);
+    }
+
+    .song-arrow {
+      color: var(--cream-faint);
+      flex-shrink: 0;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .song-card:hover .song-arrow {
+      color: var(--cream-dim);
+      transform: translateX(3px);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--cream-faint);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    /* ─── Song Detail (overlay) ──────────────────────────── */
+    .detail-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: none;
+      background: rgba(10,8,7,0.7);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .detail-overlay.open { display: flex; }
+
+    .detail-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 620px;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      animation: slideUp 0.25s ease;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .detail-header {
+      padding: 1.5rem 1.75rem 1.25rem;
+      border-bottom: 1px solid var(--border-soft);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .detail-header-text { flex: 1; }
+
+    .detail-titulo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+      color: var(--cream);
+    }
+
+    .detail-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--cream-faint);
+    }
+
+    .detail-meta .sep { color: var(--border); }
+
+    .detail-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .btn-icon {
+      background: var(--bg-hover);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream-dim);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .btn-icon:hover { background: var(--bg); color: var(--cream); }
+    .btn-icon.active { background: var(--granate-dim); color: var(--granate-lt); border-color: var(--granate); }
+    .btn-icon svg { width: 16px; height: 16px; }
+
+    /* ─── Song Body ─ misal layout ──────────────────────── */
+    .detail-body {
+      overflow-y: auto;
+      padding: 1.75rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .estrofa {
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 0 1rem;
+    }
+
+    .estrofa-num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--granate);
+      font-family: var(--font-sans);
+      letter-spacing: 0.04em;
+      padding-top: 0.15rem;
+      text-align: right;
+    }
+
+    .estrofa-letra {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: var(--cream);
+      white-space: pre-line;
+    }
+
+    .coro-block {
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 0 1rem;
+    }
+
+    .coro-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: var(--font-sans);
+      padding-top: 0.25rem;
+      text-align: right;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      height: fit-content;
+      align-self: start;
+      margin-top: 0.15rem;
+    }
+
+    .coro-letra {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: var(--cream);
+      white-space: pre-line;
+      border-left: 2px solid var(--gold-dim);
+      padding-left: 1rem;
+      font-style: italic;
+    }
+
+    /* ─── Count ──────────────────────────────────────────── */
+    .count {
+      font-size: 0.78rem;
+      color: var(--cream-faint);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Tono badge ─────────────────────────────────────── */
+    .tono-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.75rem;
+      color: var(--cream-dim);
+    }
+
+    .tono-badge strong {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── Header ─────────────────────────────────────────── -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo" onclick="cerrarDetalle(); return false;">
+      <svg class="logo-cross" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="14" y1="3" x2="14" y2="25"/>
+        <line x1="5"  y1="10" x2="23" y2="10"/>
+      </svg>
+      <span class="logo-text">Cancionero <span>· comunidad</span></span>
+    </a>
+    <div class="search-wrap">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+        <circle cx="6.5" cy="6.5" r="5"/>
+        <line x1="10.5" y1="10.5" x2="15" y2="15"/>
+      </svg>
+      <input type="search" id="search" placeholder="Buscar canción o autor…" autocomplete="off" />
+    </div>
+  </div>
+</header>
+
+<!-- ─── Main ───────────────────────────────────────────── -->
+<main>
+  <div class="shell">
+    <!-- Sidebar filtros -->
+    <aside class="sidebar">
+      <p class="sidebar-label">Categoría</p>
+      <ul class="filter-list" id="filterList"></ul>
+    </aside>
+
+    <!-- Content -->
+    <section>
+      <!-- Mobile filters -->
+      <div class="mobile-filter-bar" id="mobileFilterBar"></div>
+
+      <p class="count" id="count"></p>
+      <div class="song-list" id="songList"></div>
+    </section>
+  </div>
+</main>
+
+<!-- ─── Detail overlay ────────────────────────────────── -->
+<div class="detail-overlay" id="detailOverlay" onclick="handleOverlayClick(event)">
+  <div class="detail-panel" id="detailPanel">
+    <div class="detail-header">
+      <div class="detail-header-text">
+        <h2 class="detail-titulo" id="detailTitulo"></h2>
+        <div class="detail-meta" id="detailMeta"></div>
+      </div>
+      <div class="detail-actions">
+        <button class="btn-icon" id="btnTono" title="Tono" onclick="toggleTono()">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+            <text x="1" y="13" font-size="12" fill="currentColor" stroke="none" font-family="serif" font-style="italic">G</text>
+          </svg>
+        </button>
+        <button class="btn-icon" title="Cerrar" onclick="cerrarDetalle()">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="3" x2="13" y2="13"/>
+            <line x1="13" y1="3" x2="3" y2="13"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="detail-body" id="detailBody"></div>
+  </div>
+</div>
+
+<script>
+  let CANCIONES = [];
+  let filtroActivo = 'Todas';
+  let cancionActual = null;
+  let mostrandoTono = false;
+
+  // ─── Cargar datos ────────────────────────────────────────
+  async function init() {
+    const res = await fetch('./canciones.json');
+    CANCIONES = await res.json();
+    renderFiltros();
+    renderLista();
+  }
+
+  // ─── Filtros ─────────────────────────────────────────────
+  function getCategorias() {
+    const cats = ['Todas', ...new Set(CANCIONES.map(c => c.categoria))];
+    return cats;
+  }
+
+  function renderFiltros() {
+    const cats = getCategorias();
+    const makeBtn = (cat, isMobile = false) => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (isMobile ? '' : '');
+      btn.textContent = cat;
+      if (cat === filtroActivo) btn.classList.add('active');
+      btn.onclick = () => { filtroActivo = cat; renderFiltros(); renderLista(); };
+      return btn;
+    };
+
+    const list = document.getElementById('filterList');
+    list.innerHTML = '';
+    cats.forEach(c => {
+      const li = document.createElement('li');
+      li.appendChild(makeBtn(c));
+      list.appendChild(li);
+    });
+
+    const mobileBar = document.getElementById('mobileFilterBar');
+    mobileBar.innerHTML = '';
+    cats.forEach(c => mobileBar.appendChild(makeBtn(c, true)));
+  }
+
+  // ─── Lista de canciones ──────────────────────────────────
+  function renderLista() {
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    const container = document.getElementById('songList');
+    const countEl = document.getElementById('count');
+
+    let lista = CANCIONES;
+    if (filtroActivo !== 'Todas') lista = lista.filter(c => c.categoria === filtroActivo);
+    if (q) lista = lista.filter(c =>
+      c.titulo.toLowerCase().includes(q) ||
+      c.autor.toLowerCase().includes(q) ||
+      (c.momento || []).some(m => m.toLowerCase().includes(q))
+    );
+
+    countEl.textContent = lista.length === 1
+      ? '1 canción'
+      : `${lista.length} canciones`;
+
+    container.innerHTML = '';
+
+    if (lista.length === 0) {
+      container.innerHTML = '<p class="empty-state">No se encontraron canciones.</p>';
+      return;
+    }
+
+    lista.forEach(cancion => {
+      const card = document.createElement('div');
+      card.className = 'song-card';
+      card.onclick = () => abrirDetalle(cancion);
+
+      const momentoTags = (cancion.momento || [])
+        .map(m => `<span class="tag momento">${m}</span>`).join('');
+
+      card.innerHTML = `
+        <div class="song-card-left">
+          <div class="song-title">${cancion.titulo}</div>
+          <div class="song-meta">
+            <span class="tag">${cancion.categoria}</span>
+            ${momentoTags}
+            <span class="song-autor">${cancion.autor}</span>
+          </div>
+        </div>
+        <svg class="song-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <polyline points="7,4 13,9 7,14"/>
+        </svg>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // ─── Detalle ─────────────────────────────────────────────
+  function abrirDetalle(cancion) {
+    cancionActual = cancion;
+    mostrandoTono = false;
+
+    document.getElementById('detailTitulo').textContent = cancion.titulo;
+
+    const momentoTags = (cancion.momento || [])
+      .map(m => `<span class="tag momento">${m}</span>`).join('');
+
+    document.getElementById('detailMeta').innerHTML = `
+      <span>${cancion.autor}</span>
+      <span class="sep">·</span>
+      <span class="tag">${cancion.categoria}</span>
+      ${momentoTags}
+      ${cancion.tono ? `<span class="sep">·</span><span class="tono-badge">Tono <strong>${cancion.tono}</strong></span>` : ''}
+    `;
+
+    renderLetra(cancion);
+    document.getElementById('detailOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function renderLetra(cancion) {
+    const body = document.getElementById('detailBody');
+    body.innerHTML = '';
+
+    let estrofaNum = 0;
+    cancion.estrofas.forEach(e => {
+      const block = document.createElement('div');
+
+      if (e.tipo === 'coro') {
+        block.className = 'coro-block';
+        block.innerHTML = `
+          <span class="coro-label">Coro</span>
+          <span class="coro-letra">${e.letra}</span>
+        `;
+      } else {
+        estrofaNum++;
+        block.className = 'estrofa';
+        block.innerHTML = `
+          <span class="estrofa-num">${estrofaNum}</span>
+          <span class="estrofa-letra">${e.letra}</span>
+        `;
+      }
+      body.appendChild(block);
+    });
+  }
+
+  function toggleTono() {
+    // Reservado para mostrar acordes si los tuviese la canción
+    const btn = document.getElementById('btnTono');
+    btn.classList.toggle('active');
+  }
+
+  function cerrarDetalle() {
+    document.getElementById('detailOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+    cancionActual = null;
+  }
+
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('detailOverlay')) cerrarDetalle();
+  }
+
+  // Esc para cerrar
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') cerrarDetalle();
+  });
+
+  // Búsqueda en tiempo real
+  document.getElementById('search').addEventListener('input', renderLista);
+
+  // ─── Arrancar ────────────────────────────────────────────
+  init();
+</script>
+
+</body>
+</html>
