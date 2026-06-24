@@ -798,11 +798,13 @@
   };
 
   async function init() {
-    const [base, athenas] = await Promise.all([
+    const cargar = url => fetch(url).then(r => r.json()).catch(() => []);
+    const [base, athenas, recursos] = await Promise.all([
       fetch('./canciones.json').then(r => r.json()),
-      fetch('./canciones-athenas.json').then(r => r.json()).catch(() => [])
+      cargar('./canciones-athenas.json'),
+      cargar('./canciones-recursoscatolicos.json')
     ]);
-    CANCIONES = base.concat(athenas);
+    CANCIONES = base.concat(athenas, recursos);
     renderFiltros();
     renderLista();
   }
