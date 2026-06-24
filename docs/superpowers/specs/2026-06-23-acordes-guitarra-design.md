@@ -1,7 +1,7 @@
 # Acordes de guitarra en el Cancionero · Diseño
 
 **Fecha:** 2026-06-23
-**Alcance:** Agregar acordes de guitarra a las canciones, alineados a la sílaba, mostrados por defecto y ocultables. Sin otras mejoras en este ciclo.
+**Alcance:** Agregar acordes de guitarra a las canciones, alineados a la sílaba, mostrados por defecto y ocultables. Cargar 1 canción real de prueba (desde los PDFs de Athenas) como plantilla, manteniendo las 8 canciones demo. Sin otras mejoras en este ciclo.
 
 ## Objetivo
 
@@ -72,11 +72,26 @@ no has buscado ni a sabios ni a ricos...
 - El estado es **por canción** y se resetea al cerrar el detalle (comportamiento ya existente vía `mostrandoTono`).
 - Si la canción **no tiene acordes** (ningún `[...]` en sus estrofas), el botón aparece **atenuado/desactivado** y no hace nada.
 
-## Contenido: acordes de las 8 canciones existentes
+## Contenido
 
-Se cargan acordes de base para las 8 canciones ya presentes, en el tono que cada una ya declara (`tono`). Son piezas litúrgicas conocidas (Pescador de Hombres, El Señor es mi Pastor, etc.).
+### Las 8 canciones demo
 
-> **Advertencia:** los acordes son una propuesta de base generada sin una fuente autorizada. **Conviene verificarlos con la guitarra antes de usarlos en comunidad.** El usuario revisa/corrige lo que no le cierre.
+Se **mantienen tal cual están**, sin acordes. Al abrir cualquiera de ellas, el botón "Tono" queda atenuado/desactivado (no tienen `[...]` en sus estrofas). Sirven para demostrar el estado "sin acordes".
+
+### 1 canción de prueba (plantilla real)
+
+Se agrega **una** canción nueva tomada de los PDFs de Athenas, con sus acordes en notación ChordPro, como ejemplo funcional y plantilla para futuras cargas.
+
+- **Canción elegida:** "Ven, Espíritu Santo" (tono D). Es corta y limpia, y mapea directo al modelo `estrofa`/`coro` actual sin necesidad de tipos de sección nuevos.
+- Fuente: `Ven, Espíritu Santo (D).pdf` (acordes sobre la letra). Se traduce la posición de cada acorde a la sílaba correspondiente en notación ChordPro inline.
+- Se le asignan `categoria`, `momento` y `tono` coherentes con el resto del catálogo.
+
+> **Advertencia:** la conversión de la posición de acordes desde el PDF es una transcripción de base. **Conviene verificarla con la guitarra antes de usarla en comunidad.**
+
+### Fuera de alcance de este ciclo
+
+- Importar los otros ~71 PDFs de la carpeta.
+- Modelar secciones más ricas presentes en muchas hojas de Athenas (`INTRO`, `PRE CORO`, `PUENTE`, líneas instrumentales como `| F#m | C#m B |`). Eso requeriría ampliar el modelo de datos y se decidirá si/ cuando se importe el resto del repertorio.
 
 ## Implementación
 
@@ -92,5 +107,6 @@ Se cargan acordes de base para las 8 canciones ya presentes, en el tono que cada
 - Una canción con acordes los muestra alineados a la sílaba al abrir el detalle.
 - El botón "Tono" oculta y vuelve a mostrar los acordes.
 - Una canción sin acordes se ve igual que hoy y su botón "Tono" queda desactivado.
-- Las 8 canciones existentes tienen acordes de base cargados.
+- Las 8 canciones demo se mantienen sin cambios (sin acordes, botón "Tono" desactivado).
+- Se agrega "Ven, Espíritu Santo" con acordes en ChordPro, que se muestran alineados al abrirla.
 - No se agregan dependencias ni backend.
