@@ -201,5 +201,19 @@
         "letra": "Aleluya, aleluya, aleluya."
       }
     ]
+  },
+  {
+    "id": 9,
+    "titulo": "Ven, Espíritu Santo",
+    "autor": "Athenas",
+    "categoria": "Espíritu Santo",
+    "momento": ["Entrada", "Pentecostés"],
+    "tono": "D",
+    "estrofas": [
+      {
+        "tipo": "coro",
+        "letra": "[G]Ven, Espíritu [D]Santo\n[G]Ven, Espíritu [D]Santo\n[G]Úngeme, [D]lléname\nY [G]enciende el fuego de [A]tu amor"
+      }
+    ]
   }
 ]
