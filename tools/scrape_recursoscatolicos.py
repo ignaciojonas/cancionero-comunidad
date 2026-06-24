@@ -138,9 +138,16 @@ def clean(s):
     s = s.replace('­', '')  # soft hyphen
     return re.sub(r'\s+', ' ', s).strip()
 
-def fetch(qid):
+def fetch(qid, retries=4):
     req = urllib.request.Request(BASE + str(qid), headers={'User-Agent': 'Mozilla/5.0'})
-    return urllib.request.urlopen(req, context=SSL, timeout=30).read().decode('utf-8', 'replace')
+    last = None
+    for attempt in range(retries):
+        try:
+            return urllib.request.urlopen(req, context=SSL, timeout=30).read().decode('utf-8', 'replace')
+        except Exception as e:
+            last = e
+            time.sleep(1.5 * (attempt + 1))  # backoff
+    raise last
 
 def parse_song(html, qid, song_id):
     mt = TITLE_RE.search(html)
@@ -188,6 +195,37 @@ def existing_titles(files):
 
 def main():
     args = sys.argv[1:]
+    if args and args[0] == '--retry':
+        # reintenta ids de un archivo y APPENDEA al --out existente
+        out = args[args.index('--out') + 1]
+        ids_file = args[args.index('--ids-file') + 1]
+        delay = float(args[args.index('--delay') + 1]) if '--delay' in args else 1.0
+        excl = args[args.index('--exclude-titles') + 1].split(',') if '--exclude-titles' in args else []
+        existentes = json.load(open(out, encoding='utf-8'))
+        ya = existing_titles(excl)
+        for s in existentes:
+            ya.add(strip_accents(s['titulo']).strip())
+        sid = max((s['id'] for s in existentes), default=199) + 1
+        ids = [l.strip() for l in open(ids_file) if l.strip()]
+        nuevas, warnings = [], []
+        for n, qid in enumerate(ids):
+            try:
+                song = parse_song(fetch(qid), qid, sid)
+                key = strip_accents(song['titulo']).strip()
+                if key in ya or not song['estrofas']:
+                    continue
+                ya.add(key); nuevas.append(song); sid += 1
+            except Exception as e:
+                warnings.append(f'ERROR q={qid}: {e}')
+            time.sleep(delay)
+            if (n + 1) % 25 == 0:
+                print(f'... {n + 1}/{len(ids)} reintentadas, {len(nuevas)} nuevas', flush=True)
+        todas = existentes + nuevas
+        json.dump(todas, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+        print(f'OK retry: +{len(nuevas)} nuevas | total {len(todas)} | {len(warnings)} fallaron')
+        for w in warnings:
+            print('WARN', w)
+        return
     if args and args[0] == '--all':
         out = args[args.index('--out') + 1]
         start = int(args[args.index('--start-id') + 1])
