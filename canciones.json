@@ -215,5 +215,57 @@
         "letra": "[G]Ven, Espíritu [D]Santo\n[G]Ven, Espíritu [D]Santo\n[G]Úngeme, [D]lléname\nY [G]enciende el fuego de [A]tu amor"
       }
     ]
+  },
+  {
+    "id": 82,
+    "titulo": "Alfa y Omega",
+    "autor": "Eugenio Jorge / T: Daniel Poli",
+    "categoria": "Adoración",
+    "momento": [],
+    "tono": "C",
+    "estrofas": [
+      {
+        "tipo": "estrofa",
+        "letra": "[DO]Alfa, [Mim]Omega, [FA]principio y fin,\nsólo [LAm]Él, sólo [FA]Él. [SOL](bis)"
+      },
+      {
+        "tipo": "estrofa",
+        "letra": "[DO]Lirio del [LAm]valle, estrella del [FA]alba\npara siempre [SOL]tu alabanza [DO]cantaré.\nLirio del [LAm]valle, estrella del [FA]alba\npara [SOL]siempre...."
+      },
+      {
+        "tipo": "estrofa",
+        "letra": "A Él sea la [DO]gloria, a Él el [LAm]honor,\na Él [FA]el [REm]dominio, porque el es el [SIb]Se[SOL]ñor.\nA Él sea la [DO]gloria, a Él el [LAm]honor,\na Él [FA]el dominio, [SOL]sólo a Él...\n[LAm]un pacto de amor [RE]eterno."
+      },
+      {
+        "tipo": "estrofa",
+        "letra": "¡Oh! ¿Por [Mim]qué, entonces, [DO]te rebelaste,\nfueron [RE]sordos a mi [SI7]voz tus [Mim]oídos\ny ahora [DO]estás\ntan sin [LAm]luz, [DO]estás [RE]perdido?"
+      },
+      {
+        "tipo": "coro",
+        "letra": "¿Por qué no vuelves, hijo [DO]mí[RE]o?\nSi está en mis brazos tu [DO]lu[SOL]gar.\nSi [MI]tú conoces el [LAm]camino,\n¿Por [DO]qué? ¿por qué [RE]esperar?\n¿Por qué no vuelves, pueblo [DO]mí[RE]o?\nTe abro las fuentes del [DO]per[SOL]dón.\n[Mim]Que resplandezca nuestra [LAm]alianza.\n[DO]Será un [RE]lazo de [SOL]amor."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "titulo": "Alianza",
+    "autor": "Eduardo Meana",
+    "categoria": "Adoración",
+    "momento": [],
+    "tono": "G",
+    "estrofas": [
+      {
+        "tipo": "estrofa",
+        "letra": "[SOL]Te amé con todo mi [RE]amor\nte rescaté [DO]del dolor\ny te [LAm]curé en el [RE]desierto.\n[SOL]Calmé tu hambre y tu [RE]sed\nun juramento [DO]sellé,"
+      },
+      {
+        "tipo": "estrofa",
+        "letra": "Mi rayo resplandeció,\ntu corazón aprendió\nque son amor y justicia.\nProbaste mi intimidad\nmi ley que es miel de bondad\npara curar tu malicia.\n¡Oh! ¿Por qué, entonces, te separaste?\nTe apoyaste en lo que es nada y vacío\ny ahora estás desolado, estás herido."
+      },
+      {
+        "tipo": "coro",
+        "letra": "¿Por qué no vuelves, hijo mío..."
+      }
+    ]
   }
 ]

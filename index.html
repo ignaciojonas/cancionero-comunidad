@@ -526,7 +526,7 @@
         <circle cx="6.5" cy="6.5" r="5"/>
         <line x1="10.5" y1="10.5" x2="15" y2="15"/>
       </svg>
-      <input type="search" id="search" placeholder="Buscar canción o autor…" autocomplete="off" />
+      <input type="search" id="search" placeholder="Buscar por título, autor o letra…" autocomplete="off" />
     </div>
   </div>
 </header>
@@ -614,6 +614,22 @@
     return cancion.estrofas.some(e => lineaTieneAcordes(e.letra));
   }
 
+  // ─── Búsqueda (título, autor, momento, categoría y letra) ─
+  function normalizar(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  }
+
+  function textoBuscable(c) {
+    if (c._buscable) return c._buscable;
+    const letras = (c.estrofas || [])
+      .map(e => e.letra.replace(/\[[^\]]*\]/g, ''))  // quitar acordes
+      .join(' ');
+    c._buscable = normalizar(
+      [c.titulo, c.autor, c.categoria, (c.momento || []).join(' '), letras].join(' ')
+    );
+    return c._buscable;
+  }
+
   // Etiquetas de secciones (acordes)
   const SECTION_LABELS = {
     intro: 'Intro', precoro: 'Pre-coro', puente: 'Puente',
@@ -669,11 +685,10 @@
 
     let lista = CANCIONES;
     if (filtroActivo !== 'Todas') lista = lista.filter(c => c.categoria === filtroActivo);
-    if (q) lista = lista.filter(c =>
-      c.titulo.toLowerCase().includes(q) ||
-      c.autor.toLowerCase().includes(q) ||
-      (c.momento || []).some(m => m.toLowerCase().includes(q))
-    );
+    if (q) {
+      const qn = normalizar(q);
+      lista = lista.filter(c => textoBuscable(c).includes(qn));
+    }
 
     countEl.textContent = lista.length === 1
       ? '1 canción'
