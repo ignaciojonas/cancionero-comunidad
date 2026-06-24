@@ -6,11 +6,17 @@ Cancionero litúrgico estático. Costo de hosting: **$0**.
 
 ```
 cancionero/
-├── index.html        ← App completa (HTML + CSS + JS)
-├── canciones.json    ← Base de datos de canciones
-├── vercel.json       ← Config de deploy
+├── index.html              ← App completa (HTML + CSS + JS)
+├── canciones.json          ← Canciones curadas a mano
+├── canciones-athenas.json  ← Canciones importadas de los PDFs (generado)
+├── tools/convert_athenas.py← Conversor de PDFs de acordes → JSON
+├── vercel.json             ← Config de deploy
 └── README.md
 ```
+
+La app carga **ambos** archivos de canciones (`canciones.json` +
+`canciones-athenas.json`) y los junta. El primero es para canciones cargadas a
+mano; el segundo se **genera** desde PDFs de acordes (ver más abajo).
 
 ## Agregar una canción
 
@@ -54,6 +60,28 @@ acorde entre corchetes, pegado a la sílaba donde entra.
 **Categorías sugeridas:** Vocación, Fraternidad, Salmos, Gloria, Espíritu Santo, Cordero, Pascua, Aclamación, Adviento, Navidad, Cuaresma, Marianas, Envío
 
 **Momentos litúrgicos:** Entrada, Gloria, Salmo Responsorial, Aclamación al Evangelio, Ofertorio, Santo, Cordero, Comunión, Fracción del Pan, Envío, Meditación
+
+**Tipos de sección** (campo `tipo` de cada estrofa): `estrofa` (numerada),
+`coro`, `intro`, `precoro`, `puente`, `final`, `instrumental`.
+
+## Importar PDFs de acordes (Athenas)
+
+Las canciones de `canciones-athenas.json` se generan desde hojas de acordes en
+PDF (acordes sobre la letra) con el conversor:
+
+```bash
+pip install pdfplumber
+python3 tools/convert_athenas.py --all "/ruta/a/los/PDFs" \
+  --out canciones-athenas.json --start-id 10
+```
+
+El conversor detecta columnas, alinea los acordes a la sílaba por posición,
+reconoce las secciones y saca la tonalidad del nombre del archivo (ej. `(D)`).
+
+> **Importante:** la alineación de acordes es una **transcripción de base**
+> (puede estar corrida ~1 carácter) y las categorías se asignan por palabras
+> clave del título. **Conviene revisar/corregir con la guitarra** y reasignar
+> categorías/momentos donde haga falta.
 
 ## Deploy en Vercel
 

@@ -438,6 +438,28 @@
       font-style: italic;
     }
 
+    /* ─── Secciones (intro, pre-coro, puente, final…) ────── */
+    .seccion-block { margin-bottom: 2rem; }
+    .seccion-label {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: var(--font-sans);
+      margin-bottom: 0.45rem;
+    }
+    .seccion-letra {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: var(--cream);
+      border-left: 2px solid var(--border-soft);
+      padding-left: 1rem;
+    }
+
     /* ─── Acordes (ChordPro) ─────────────────────────────── */
     .linea { display: block; }
     .cseg {
@@ -592,10 +614,19 @@
     return cancion.estrofas.some(e => lineaTieneAcordes(e.letra));
   }
 
+  // Etiquetas de secciones (acordes)
+  const SECTION_LABELS = {
+    intro: 'Intro', precoro: 'Pre-coro', puente: 'Puente',
+    final: 'Final', instrumental: 'Instrumental'
+  };
+
   // ─── Cargar datos ────────────────────────────────────────
   async function init() {
-    const res = await fetch('./canciones.json');
-    CANCIONES = await res.json();
+    const [base, athenas] = await Promise.all([
+      fetch('./canciones.json').then(r => r.json()),
+      fetch('./canciones-athenas.json').then(r => r.json()).catch(() => [])
+    ]);
+    CANCIONES = base.concat(athenas);
     renderFiltros();
     renderLista();
   }
@@ -740,12 +771,18 @@
           <span class="coro-label">Coro</span>
           <span class="coro-letra">${renderLineas(e.letra)}</span>
         `;
-      } else {
+      } else if (!e.tipo || e.tipo === 'estrofa') {
         estrofaNum++;
         block.className = 'estrofa';
         block.innerHTML = `
           <span class="estrofa-num">${estrofaNum}</span>
           <span class="estrofa-letra">${renderLineas(e.letra)}</span>
+        `;
+      } else {
+        block.className = 'seccion-block';
+        block.innerHTML = `
+          <span class="seccion-label">${SECTION_LABELS[e.tipo] || e.tipo}</span>
+          <span class="seccion-letra">${renderLineas(e.letra)}</span>
         `;
       }
       body.appendChild(block);
