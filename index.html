@@ -185,6 +185,40 @@
       margin-top: 1rem;
     }
 
+    /* Botón Playlist Colaborativa (YouTube) */
+    .yt-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      background: var(--naranja);
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: 7px;
+      box-shadow: 0 2px 8px var(--sombra);
+      transition: background 0.15s, transform 0.1s;
+    }
+    .yt-link:hover { background: var(--naranja-dk); transform: translateY(-1px); }
+    .yt-link svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    /* Link de la playlist en el footer */
+    .footer-yt {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-left: auto;
+      color: var(--naranja-dk);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .footer-yt:hover { color: var(--naranja); }
+    .footer-yt svg { width: 18px; height: 18px; flex-shrink: 0; }
+
     /* ─── Layout ─────────────────────────────────────────── */
     .shell {
       max-width: 1000px;
@@ -199,7 +233,6 @@
     @media (max-width: 720px) {
       .shell { grid-template-columns: 1fr; }
       .sidebar { display: none; }
-      .mobile-filter-bar { display: flex; }
     }
 
     /* ─── Sidebar ────────────────────────────────────────── */
@@ -265,6 +298,7 @@
     }
     .mobile-filter-bar::-webkit-scrollbar { display: none; }
     .mobile-filter-bar .filter-btn {
+      width: auto;
       white-space: nowrap;
       border: 1.5px solid var(--borde);
       background: var(--blanco);
@@ -277,6 +311,11 @@
       background: var(--azul);
       border-color: var(--azul);
       color: var(--blanco);
+    }
+    /* Mostrar la barra de filtros en mobile (debe ir DESPUÉS de la regla base
+       display:none para ganar el cascade con igual especificidad) */
+    @media (max-width: 720px) {
+      .mobile-filter-bar { display: flex; }
     }
 
     /* ─── Section header ─────────────────────────────────── */
@@ -638,7 +677,12 @@
   <div class="hero-inner">
     <h1>Cancionero <em>comunitario</em></h1>
     <p>Cantos para la liturgia y los encuentros de la comunidad. Buscá por título, autor, momento o por la letra de cada canto.</p>
-    <div class="accent-rule"></div>
+    <a class="yt-link" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
+      </svg>
+      Playlist Colaborativa
+    </a>
   </div>
 </section>
 
@@ -668,6 +712,12 @@
       <strong>Movimiento de la Palabra de Dios</strong>
       Cancionero litúrgico comunitario · “El Evangelio es el poder de Dios para la salvación de todos los que creen.” (Rm 1,16)
     </div>
+    <a class="footer-yt" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
+      </svg>
+      Playlist Colaborativa
+    </a>
   </div>
 </footer>
 
