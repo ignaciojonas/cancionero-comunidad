@@ -6,17 +6,19 @@ Cancionero litúrgico estático. Costo de hosting: **$0**.
 
 ```
 cancionero/
-├── index.html              ← App completa (HTML + CSS + JS)
-├── canciones.json          ← Canciones curadas a mano
-├── canciones-athenas.json  ← Canciones importadas de los PDFs (generado)
-├── tools/convert_athenas.py← Conversor de PDFs de acordes → JSON
-├── vercel.json             ← Config de deploy
+├── index.html                       ← App completa (HTML + CSS + JS)
+├── canciones.json                   ← Canciones curadas a mano
+├── canciones-athenas.json           ← Importadas de PDFs de acordes (generado)
+├── canciones-recursoscatolicos.json ← Importadas de recursoscatolicos.com.ar (generado)
+├── tools/convert_athenas.py         ← Conversor de PDFs de acordes → JSON
+├── tools/scrape_recursoscatolicos.py← Scraper del cancionero web → JSON
+├── vercel.json                      ← Config de deploy
 └── README.md
 ```
 
-La app carga **ambos** archivos de canciones (`canciones.json` +
-`canciones-athenas.json`) y los junta. El primero es para canciones cargadas a
-mano; el segundo se **genera** desde PDFs de acordes (ver más abajo).
+La app carga y junta **los tres** archivos de canciones (`canciones.json` +
+`canciones-athenas.json` + `canciones-recursoscatolicos.json`). El primero es
+para canciones cargadas a mano; los otros dos se **generan** (ver más abajo).
 
 ## Agregar una canción
 
@@ -82,6 +84,30 @@ reconoce las secciones y saca la tonalidad del nombre del archivo (ej. `(D)`).
 > (puede estar corrida ~1 carácter) y las categorías se asignan por palabras
 > clave del título. **Conviene revisar/corregir con la guitarra** y reasignar
 > categorías/momentos donde haga falta.
+
+## Importar del cancionero web (recursoscatolicos.com.ar)
+
+`canciones-recursoscatolicos.json` se genera scrapeando el cancionero de
+[recursoscatolicos.com.ar](https://recursoscatolicos.com.ar/cancionero/). Cada
+canción vive en `index.php?q=<id>` con la letra y acordes (notación latina:
+DO, RE, MI…) en un `<pre>` monoespaciado, así que la alineación es exacta.
+
+```bash
+# 1) bajar el índice a /tmp/rc_index.html y extraer /tmp/rc_list.json (id+título)
+# 2) correr el scraper (saltea las que ya existen por título):
+python3 tools/scrape_recursoscatolicos.py --all \
+  --out canciones-recursoscatolicos.json --start-id 200 --delay 0.3 \
+  --exclude-titles canciones.json,canciones-athenas.json
+```
+
+Saca título/autor (separa por `" - "`), tono (primer acorde), categoría por
+palabras clave, y agrupa estrofas por líneas en blanco. Cada canción guarda su
+`fuente` (URL original).
+
+> **Importante:** mismo criterio que arriba — es una **transcripción de base**;
+> conviene revisar acordes y reclasificar categorías. El contenido pertenece a
+> sus autores / a recursoscatolicos.com.ar; se usa para el cancionero de la
+> comunidad.
 
 ## Deploy en Vercel
 
