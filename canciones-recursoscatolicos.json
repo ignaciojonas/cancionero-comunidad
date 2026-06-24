@@ -1656,7 +1656,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nLAm  REm  LA  SIb  FA  SOLm"
+        "letra": "Intro:\nLAm REm LA SIb FA SOLm"
       },
       {
         "tipo": "estrofa",
@@ -1672,7 +1672,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "RE  SOLm  RE"
+        "letra": "RE SOLm RE"
       },
       {
         "tipo": "estrofa",
@@ -1781,7 +1781,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "RE  RE7"
+        "letra": "RE RE7"
       },
       {
         "tipo": "estrofa",
@@ -2466,7 +2466,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "SOL RE LA7 RE  SOL RE LA7 RE"
+        "letra": "SOL RE LA7 RE SOL RE LA7 RE"
       },
       {
         "tipo": "estrofa",
@@ -2740,7 +2740,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "FA# LA MI  FA# LA MI"
+        "letra": "FA# LA MI FA# LA MI"
       },
       {
         "tipo": "estrofa",
@@ -3017,7 +3017,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nFA DO MI7 LAm  FA DO MI7 LAm  MI7 LAm MI7 LAm"
+        "letra": "Intro:\nFA DO MI7 LAm FA DO MI7 LAm MI7 LAm MI7 LAm"
       },
       {
         "tipo": "estrofa",
@@ -3074,7 +3074,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "[G[DO#]racias por tanto a[MIb]mor y por [SOL#]toda la creac[DOm]ión.\n[MIb]Gracias [DO#]por la [MIb]vida [SOL#]misma."
+        "letra": "[SOL[DO#]racias por tanto a[MIb]mor y por [SOL#]toda la creac[DOm]ión.\n[MIb]Gracias [DO#]por la [MIb]vida [SOL#]misma."
       }
     ]
   },
@@ -4617,7 +4617,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "DO  FA  DO  FA\nDO  FA  DO  FA"
+        "letra": "DO FA DO FA\nDO FA DO FA"
       },
       {
         "tipo": "estrofa",
@@ -4935,7 +4935,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nSOL   RE   LAm   DO   SOL"
+        "letra": "Intro:\nSOL RE LAm DO SOL"
       },
       {
         "tipo": "estrofa",
@@ -4951,7 +4951,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "SOL   RE   LAm   DO   SOL"
+        "letra": "SOL RE LAm DO SOL"
       },
       {
         "tipo": "estrofa",
@@ -5294,7 +5294,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nRE  MI7  LA     RE  MI7  LA      DO  MI  LA"
+        "letra": "Intro:\nRE MI7 LA RE MI7 LA DO MI LA"
       },
       {
         "tipo": "estrofa",
@@ -6793,7 +6793,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "Venimos a tu m[MIm]esa,\nsellaremos tu P[RE]acto,\ncomeremos tu c[DO]arne,\ntu sangre nos limpia[B7]rá.\nReinaremos contigo,\nen tu morada santa,\nbeberemos tu sangre,\ntu fe nos salvará."
+        "letra": "Venimos a tu m[MIm]esa,\nsellaremos tu P[RE]acto,\ncomeremos tu c[DO]arne,\ntu sangre nos limpia[SI7]rá.\nReinaremos contigo,\nen tu morada santa,\nbeberemos tu sangre,\ntu fe nos salvará."
       },
       {
         "tipo": "estrofa",
@@ -7731,7 +7731,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "MIm  DO SOL SI7"
+        "letra": "MIm DO SOL SI7"
       },
       {
         "tipo": "estrofa",
@@ -8005,7 +8005,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "[MIm]quiero deci[DO]rte que hoy tambié[SOL]n saboreé[RE]\n[MIm]el gusto d[DO]e tu compañí[SOL]a,[RE]\n[MIm]mate coci[DO]do y pan calie[SOL]nte,\nen esa so[RE]nrisa sin die[Em]ntes\nque fue un manja[DO]r para mis dí[SOL]as.[RE]"
+        "letra": "[MIm]quiero deci[DO]rte que hoy tambié[SOL]n saboreé[RE]\n[MIm]el gusto d[DO]e tu compañí[SOL]a,[RE]\n[MIm]mate coci[DO]do y pan calie[SOL]nte,\nen esa so[RE]nrisa sin die[MIm]ntes\nque fue un manja[DO]r para mis dí[SOL]as.[RE]"
       },
       {
         "tipo": "estrofa",
@@ -8687,7 +8687,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "[SOL] Si te sentís enfermo,\n[RE] no te preocupes,\n[DO] Jesús te quiere san[SOL]ar.[DO]\n[SOL] Si te sentís pecador,\n[RE] no te preocupes,\n[DO] Jesús te viene a llam[SOL]ar.\nRE  DO  SOL\n[MIm] Porque no son los sanos\n[DO] quienes necesitan del médic[SOL]o,\n[DO] son los enf[SOL]ermos.\n[MIm] Porque Él no vino a llamar\n[DO] a los justos sino a los pecad[SOL]ores,\n[DO] para que se convi[SOL]ertan."
+        "letra": "[SOL] Si te sentís enfermo,\n[RE] no te preocupes,\n[DO] Jesús te quiere san[SOL]ar.[DO]\n[SOL] Si te sentís pecador,\n[RE] no te preocupes,\n[DO] Jesús te viene a llam[SOL]ar.\nRE DO SOL\n[MIm] Porque no son los sanos\n[DO] quienes necesitan del médic[SOL]o,\n[DO] son los enf[SOL]ermos.\n[MIm] Porque Él no vino a llamar\n[DO] a los justos sino a los pecad[SOL]ores,\n[DO] para que se convi[SOL]ertan."
       },
       {
         "tipo": "estrofa",
@@ -8795,7 +8795,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nDO  FA  LAm  FA  SOL"
+        "letra": "Intro:\nDO FA LAm FA SOL"
       },
       {
         "tipo": "estrofa",
@@ -10788,7 +10788,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "LA  SIm  MI  RE  LA  SIm  MI"
+        "letra": "LA SIm MI RE LA SIm MI"
       },
       {
         "tipo": "estrofa",
@@ -10804,7 +10804,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "LA  SIm  MI  RE  LA  SIm  MI"
+        "letra": "LA SIm MI RE LA SIm MI"
       },
       {
         "tipo": "estrofa",
@@ -11287,7 +11287,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "SIm   LA   SIm   LA   SIm"
+        "letra": "SIm LA SIm LA SIm"
       },
       {
         "tipo": "estrofa",
@@ -13539,11 +13539,11 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "[INTRO]\nLA  FA#m  MI  RE  FA#m  MI"
+        "letra": "[INTRO]\nLA FA#m MI RE FA#m MI"
       },
       {
         "tipo": "estrofa",
-        "letra": "[ESTROFA]\nLuz que bri[RE]lla sobre nuestras vi[FA#m]das[MI]\nToda glo[RE]ria pertenece a [FA#m]Ti[MI]\nTu prese[RE]ncia nos cubre de gra[FA#m]cia[MI]\nLlena est[SIm]e lugar, llena este[RE] lugar[MI]"
+        "letra": "[MISTROFA]\nLuz que bri[RE]lla sobre nuestras vi[FA#m]das[MI]\nToda glo[RE]ria pertenece a [FA#m]Ti[MI]\nTu prese[RE]ncia nos cubre de gra[FA#m]cia[MI]\nLlena est[SIm]e lugar, llena este[RE] lugar[MI]"
       },
       {
         "tipo": "estrofa",
@@ -13551,15 +13551,15 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "[ESTRIBILLO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[RE]"
+        "letra": "[MISTRIBILLO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[RE]"
       },
       {
         "tipo": "estrofa",
-        "letra": "[ESTROFA]\nEn la tierr[RE]a así como en el cie[FA#m]lo[MI]\nToda cre[RE]ación se rinde a ti S[FA#m]eñor[MI]\nHoy tus h[RE]ijos cantan a una so[FA#m]la voz[MI]\nLlena est[SIm]e lugar, Señor, llena este [RE]lugar[MI]"
+        "letra": "[MISTROFA]\nEn la tierr[RE]a así como en el cie[FA#m]lo[MI]\nToda cre[RE]ación se rinde a ti S[FA#m]eñor[MI]\nHoy tus h[RE]ijos cantan a una so[FA#m]la voz[MI]\nLlena est[SIm]e lugar, Señor, llena este [RE]lugar[MI]"
       },
       {
         "tipo": "estrofa",
-        "letra": "[ESTRIBILLO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[RE]\nSólo t[FA#m]ú[E]"
+        "letra": "[MISTRIBILLO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[RE]\nSólo t[FA#m]ú[MI]"
       },
       {
         "tipo": "estrofa",
@@ -13567,7 +13567,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "[CORO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[MI][LA][LA][FA#m]"
+        "letra": "[DOORO]\nEn el tro[LA]no estás, Rey de Ma[RE]jestad[LA]\nLlena este[FA#m] lugar, llena este[RE] lugar[MI]\nNuestro S[LA]alvador que resucit[RE]ó[FA#m]\nLlena est[SIm]e lugar Señor,\nLlena este[RE] lugar, [MI]Jesús[MI][LA][LA][FA#m]"
       }
     ]
   },
@@ -13837,7 +13837,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "[SOL]¿Como explicarte [DO]mis soledades,\n[MIm]si el mundo t[RE]e abandonó[DO]?\n[SOL]¿Cómo mostrarte [DO]mis pies cansados,\n[MIm]si fuiste V[RE]os quien cargó[DO]\n[Em]un madero[RE] de amor[DO]?"
+        "letra": "[SOL]¿Como explicarte [DO]mis soledades,\n[MIm]si el mundo t[RE]e abandonó[DO]?\n[SOL]¿Cómo mostrarte [DO]mis pies cansados,\n[MIm]si fuiste V[RE]os quien cargó[DO]\n[MIm]un madero[RE] de amor[DO]?"
       },
       {
         "tipo": "estrofa",
@@ -14013,7 +14013,7 @@
     "estrofas": [
       {
         "tipo": "estrofa",
-        "letra": "Intro:\nDO    LAm    FA    SOL"
+        "letra": "Intro:\nDO LAm FA SOL"
       },
       {
         "tipo": "estrofa",
@@ -14787,7 +14787,7 @@
       },
       {
         "tipo": "estrofa",
-        "letra": "LA    SIm    DO#m  SOL"
+        "letra": "LA SIm DO#m SOL"
       },
       {
         "tipo": "estrofa",
