@@ -438,6 +438,32 @@
       font-style: italic;
     }
 
+    /* ─── Acordes (ChordPro) ─────────────────────────────── */
+    .linea { display: block; }
+    .cseg {
+      display: inline-flex;
+      flex-direction: column;
+      vertical-align: bottom;
+      white-space: pre-wrap;
+    }
+    .cseg-chord {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--gold);
+      white-space: pre;
+      min-height: 1.1em;
+    }
+    .cseg-text { white-space: pre-wrap; }
+
+    /* Modo "ocultar acordes": colapsa la fila del acorde */
+    .detail-body.hide-chords .cseg-chord { display: none; }
+
+    /* Botón Tono desactivado (canción sin acordes) */
+    .btn-icon:disabled { opacity: 0.35; cursor: default; }
+    .btn-icon:disabled:hover { background: var(--bg-hover); color: var(--cream-dim); }
+
     /* ─── Count ──────────────────────────────────────────── */
     .count {
       font-size: 0.78rem;
@@ -534,6 +560,37 @@
   let filtroActivo = 'Todas';
   let cancionActual = null;
   let mostrandoTono = false;
+
+  // ─── Parser ChordPro ─────────────────────────────────────
+  // "[G]Ven, Espíritu [D]Santo" -> [{chord:'G',text:'Ven, Espíritu '},{chord:'D',text:'Santo'}]
+  function parseChordPro(linea) {
+    const segmentos = [];
+    const re = /\[([^\]]+)\]/g;
+    let lastIndex = 0;
+    let pendingChord = null;
+    let m;
+    while ((m = re.exec(linea)) !== null) {
+      const texto = linea.slice(lastIndex, m.index);
+      if (texto.length > 0 || segmentos.length === 0) {
+        segmentos.push({ chord: pendingChord, text: texto });
+      } else if (pendingChord !== null) {
+        // acordes consecutivos sin texto entre medio
+        segmentos.push({ chord: pendingChord, text: '' });
+      }
+      pendingChord = m[1];
+      lastIndex = re.lastIndex;
+    }
+    segmentos.push({ chord: pendingChord, text: linea.slice(lastIndex) });
+    return segmentos;
+  }
+
+  function lineaTieneAcordes(linea) {
+    return /\[[^\]]+\]/.test(linea);
+  }
+
+  function cancionTieneAcordes(cancion) {
+    return cancion.estrofas.some(e => lineaTieneAcordes(e.letra));
+  }
 
   // ─── Cargar datos ────────────────────────────────────────
   async function init() {
@@ -642,8 +699,31 @@
     `;
 
     renderLetra(cancion);
+
+    const btnTono = document.getElementById('btnTono');
+    const body = document.getElementById('detailBody');
+    const tieneAcordes = cancionTieneAcordes(cancion);
+    mostrandoTono = tieneAcordes;            // visibles por defecto si los hay
+    btnTono.disabled = !tieneAcordes;
+    btnTono.classList.toggle('active', tieneAcordes);
+    body.classList.toggle('hide-chords', !tieneAcordes);
+
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  }
+
+  function renderLineas(letra) {
+    return letra.split('\n').map(linea => {
+      const segs = parseChordPro(linea).map(seg => {
+        const chord = seg.chord ? `<span class="cseg-chord">${escapeHtml(seg.chord)}</span>` : '';
+        return `<span class="cseg">${chord}<span class="cseg-text">${escapeHtml(seg.text)}</span></span>`;
+      }).join('');
+      return `<span class="linea">${segs}</span>`;
+    }).join('');
   }
 
   function renderLetra(cancion) {
@@ -658,14 +738,14 @@
         block.className = 'coro-block';
         block.innerHTML = `
           <span class="coro-label">Coro</span>
-          <span class="coro-letra">${e.letra}</span>
+          <span class="coro-letra">${renderLineas(e.letra)}</span>
         `;
       } else {
         estrofaNum++;
         block.className = 'estrofa';
         block.innerHTML = `
           <span class="estrofa-num">${estrofaNum}</span>
-          <span class="estrofa-letra">${e.letra}</span>
+          <span class="estrofa-letra">${renderLineas(e.letra)}</span>
         `;
       }
       body.appendChild(block);
@@ -673,9 +753,12 @@
   }
 
   function toggleTono() {
-    // Reservado para mostrar acordes si los tuviese la canción
+    if (!cancionActual || !cancionTieneAcordes(cancionActual)) return;
+    mostrandoTono = !mostrandoTono;
     const btn = document.getElementById('btnTono');
-    btn.classList.toggle('active');
+    const body = document.getElementById('detailBody');
+    btn.classList.toggle('active', mostrandoTono);
+    body.classList.toggle('hide-chords', !mostrandoTono);
   }
 
   function cerrarDetalle() {
