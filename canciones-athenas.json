@@ -121,7 +121,9 @@
     "titulo": "Al Contemplarte en la Cruz",
     "autor": "Athenas",
     "categoria": "Cuaresma",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "tono": "F",
     "estrofas": [
       {
@@ -464,7 +466,7 @@
     "id": 25,
     "titulo": "Cristo Reina",
     "autor": "Athenas",
-    "categoria": "Marianas",
+    "categoria": "Adoración",
     "momento": [],
     "tono": "B",
     "estrofas": [
@@ -1298,8 +1300,10 @@
     "id": 52,
     "titulo": "Marta y María (Quiero Estar a Tus Pies)",
     "autor": "Athenas",
-    "categoria": "Marianas",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "estrofas": [
       {
         "tipo": "estrofa",
@@ -1311,8 +1315,10 @@
     "id": 53,
     "titulo": "Me Basta Tu Gracia",
     "autor": "Athenas",
-    "categoria": "Confianza",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "E",
     "estrofas": [
       {
@@ -1431,8 +1437,10 @@
     "id": 57,
     "titulo": "Nada Puede Separarte",
     "autor": "Athenas",
-    "categoria": "Confianza",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "C",
     "estrofas": [
       {
@@ -1667,8 +1675,10 @@
     "id": 65,
     "titulo": "Qué Bien Se Está Aquí",
     "autor": "Athenas",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "Bb",
     "estrofas": [
       {
@@ -1979,8 +1989,10 @@
     "id": 73,
     "titulo": "Siempre te amaré",
     "autor": "Athenas",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "C",
     "estrofas": [
       {
@@ -2193,8 +2205,10 @@
     "id": 78,
     "titulo": "Todo es Tuyo",
     "autor": "Athenas",
-    "categoria": "Confianza",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "C",
     "estrofas": [
       {
@@ -2323,8 +2337,10 @@
     "id": 81,
     "titulo": "Vida en ti",
     "autor": "Athenas",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "tono": "E",
     "estrofas": [
       {
