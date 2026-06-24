@@ -109,6 +109,20 @@ palabras clave, y agrupa estrofas por líneas en blanco. Cada canción guarda su
 > sus autores / a recursoscatolicos.com.ar; se usa para el cancionero de la
 > comunidad.
 
+### Re-clasificar categorías y momentos
+
+`tools/clasificar_tags.py` usa los **tags reales** del sitio (vía
+`buscar_ajax.php?s=&tags=<id>`) para reescribir `categoria` y `momento` de las
+canciones importadas (recursoscatolicos por `q-id`, Athenas por título). No toca
+`canciones.json` (curadas).
+
+```bash
+python3 tools/clasificar_tags.py
+```
+
+Las que no tienen tags en el sitio (~85, sobre todo Athenas) conservan su
+categoría por palabras clave y quedan sin momento.
+
 ## Deploy en Vercel
 
 ### Opción A — Desde GitHub (recomendado)

@@ -3,7 +3,7 @@
     "id": 200,
     "titulo": "A casa de Zacarías",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=43",
     "tono": "RE",
@@ -104,8 +104,10 @@
     "id": 203,
     "titulo": "A tanto amor",
     "autor": "Metanoia",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Marianas",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=144",
     "tono": "SOL",
     "estrofas": [
@@ -136,7 +138,9 @@
     "titulo": "A veces (Siempre nuestro amigo)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=14",
     "tono": "RE",
     "estrofas": [
@@ -214,7 +218,9 @@
     "titulo": "Abre los ojos de mi alma",
     "autor": "Paul Baloche",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=189",
     "tono": "RE",
     "estrofas": [
@@ -388,7 +394,7 @@
     "id": 211,
     "titulo": "Adoración",
     "autor": "Emanuel Etchegaray",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=436",
     "tono": "LA",
@@ -427,7 +433,7 @@
     "id": 212,
     "titulo": "Adorador",
     "autor": "Daniel Poli",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=23",
     "tono": "RE",
@@ -446,7 +452,7 @@
     "id": 213,
     "titulo": "Ahora estoy de pie",
     "autor": "Manuel Asenzo",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=418",
     "tono": "MIm",
@@ -528,8 +534,10 @@
     "id": 215,
     "titulo": "Al altar del Señor",
     "autor": "P. Osvaldo Catena",
-    "categoria": "Comunión",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=48",
     "tono": "RE7",
     "estrofas": [
@@ -556,7 +564,9 @@
     "titulo": "Al despertar",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=49",
     "tono": "MI",
     "estrofas": [
@@ -578,8 +588,10 @@
     "id": 217,
     "titulo": "Al Santísimo Sacramento",
     "autor": "Mechi Ruiz Luque",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=260",
     "tono": "RE",
     "estrofas": [
@@ -694,7 +706,7 @@
     "id": 221,
     "titulo": "Alábenlo (Esta es la luz)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=127",
     "tono": "DO",
@@ -741,7 +753,9 @@
     "titulo": "Alégrense",
     "autor": "Andrea Perez",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=190",
     "tono": "SOL",
     "estrofas": [
@@ -759,7 +773,7 @@
     "id": 224,
     "titulo": "Alegría sincera",
     "autor": "La otra orilla",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=579",
     "tono": "RE",
@@ -786,8 +800,10 @@
     "id": 225,
     "titulo": "Aleluya I",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=338",
     "tono": "MI",
     "estrofas": [
@@ -805,8 +821,10 @@
     "id": 226,
     "titulo": "Aleluya II (Busca primero el Reino de Dios)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=19",
     "tono": "DO",
     "estrofas": [
@@ -832,8 +850,10 @@
     "id": 227,
     "titulo": "Aleluya III (Yo soy el Maestro)",
     "autor": "P. Néstor Gallego",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=86",
     "tono": "DO",
     "estrofas": [
@@ -851,8 +871,10 @@
     "id": 228,
     "titulo": "Aleluya IV (Emaús)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=84",
     "tono": "MIm",
     "estrofas": [
@@ -871,7 +893,9 @@
     "titulo": "Aleluya IX (El Señor resucitó)",
     "autor": "Tradicional",
     "categoria": "Pascua",
-    "momento": [],
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=367",
     "tono": "DO",
     "estrofas": [
@@ -897,8 +921,10 @@
     "id": 230,
     "titulo": "Aleluya V (Gloria aleluya)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=85",
     "tono": "DO",
     "estrofas": [
@@ -920,8 +946,10 @@
     "id": 231,
     "titulo": "Aleluya VI (Gloria al Señor)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=254",
     "tono": "MI",
     "estrofas": [
@@ -939,8 +967,10 @@
     "id": 232,
     "titulo": "Aleluya VII (Hay gozo en el cielo)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=229",
     "tono": "DO",
     "estrofas": [
@@ -958,8 +988,10 @@
     "id": 233,
     "titulo": "Aleluya VIII",
     "autor": "P. Cristóbal Fones",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=354",
     "tono": "MI",
     "estrofas": [
@@ -973,8 +1005,10 @@
     "id": 234,
     "titulo": "Aleluya X (JMJ 2013)",
     "autor": "Tradicional",
-    "categoria": "Pascua",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=381",
     "tono": "RE",
     "estrofas": [
@@ -988,7 +1022,7 @@
     "id": 235,
     "titulo": "Algo de paz",
     "autor": "Raúl Porchetto",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=191",
     "tono": "RE",
@@ -1011,7 +1045,7 @@
     "id": 236,
     "titulo": "Aliento de vida",
     "autor": "Mechi Ruiz Luque",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=527",
     "tono": "LAm",
@@ -1058,8 +1092,10 @@
     "id": 237,
     "titulo": "Alimento que da vida",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=507",
     "tono": "FA",
     "estrofas": [
@@ -1097,8 +1133,10 @@
     "id": 238,
     "titulo": "Alma de Cristo",
     "autor": "Fernando Moser",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=28",
     "tono": "DO",
     "estrofas": [
@@ -1129,7 +1167,10 @@
     "titulo": "Alma misionera",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión",
+      "Envío"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=9",
     "tono": "SOL",
     "estrofas": [
@@ -1156,7 +1197,9 @@
     "titulo": "Ama totalmente",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=192",
     "tono": "DO",
     "estrofas": [
@@ -1170,7 +1213,7 @@
     "id": 241,
     "titulo": "Ámense",
     "autor": "Jóvenes Franciscanos",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=551",
     "tono": "RE",
@@ -1185,7 +1228,7 @@
     "id": 242,
     "titulo": "Angeles de Dios",
     "autor": "P. Marcelo Rossi",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=250",
     "tono": "MI",
@@ -1208,7 +1251,7 @@
     "id": 243,
     "titulo": "Angelus (El ángel vino de los cielos...)",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=218",
     "tono": "RE",
@@ -1263,7 +1306,9 @@
     "titulo": "Aquí estoy, Señor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=476",
     "tono": "DO",
     "estrofas": [
@@ -1459,7 +1504,9 @@
     "titulo": "Baja / Renace (remix)",
     "autor": "Coro de Jóvenes Inmaculada",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=594",
     "tono": "MIm",
     "estrofas": [
@@ -1490,7 +1537,9 @@
     "titulo": "Baja hasta lo más hondo",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=193",
     "tono": "MIm",
     "estrofas": [
@@ -1508,7 +1557,7 @@
     "id": 251,
     "titulo": "Bajo tu mirada",
     "autor": "Alfo Urrutia",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=543",
     "tono": "SOL",
@@ -1568,7 +1617,9 @@
     "titulo": "Bendigamos al Señor",
     "autor": "P. Osvaldo Catena",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=109",
     "tono": "RE",
     "estrofas": [
@@ -1637,7 +1688,7 @@
     "id": 254,
     "titulo": "Bendita sea tu pureza",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=34",
     "tono": "DO",
@@ -1656,7 +1707,7 @@
     "id": 255,
     "titulo": "Bendita sea tu pureza (Km 11)",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=146",
     "tono": "MI",
@@ -1679,7 +1730,7 @@
     "id": 256,
     "titulo": "Bendito",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=465",
     "tono": "DO",
@@ -1702,7 +1753,7 @@
     "id": 257,
     "titulo": "Bendito el que viene",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=360",
     "tono": "RE",
@@ -1721,8 +1772,10 @@
     "id": 258,
     "titulo": "Bendito seas, Señor (Niños)",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=230",
     "tono": "SOL",
     "estrofas": [
@@ -1757,7 +1810,9 @@
     "titulo": "Bendito seas, Señor",
     "autor": "Mirta Suárez",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=88",
     "tono": "DO",
     "estrofas": [
@@ -1771,7 +1826,7 @@
     "id": 260,
     "titulo": "Brazos abiertos",
     "autor": "Pascua joven",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=416",
     "tono": "DO#m",
@@ -1826,7 +1881,7 @@
     "id": 261,
     "titulo": "Brisa leve",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=475",
     "tono": "DO",
@@ -1881,7 +1936,9 @@
     "titulo": "Callemos hermanos",
     "autor": "Julio César Labaké",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=6",
     "tono": "LA",
     "estrofas": [
@@ -1903,8 +1960,10 @@
     "id": 264,
     "titulo": "Caminar mi Cruz",
     "autor": "Lily Escu",
-    "categoria": "Cuaresma",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=458",
     "tono": "FA#m",
     "estrofas": [
@@ -2041,7 +2100,9 @@
     "titulo": "Canción de la Alianza",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=20",
     "tono": "DO",
     "estrofas": [
@@ -2099,7 +2160,9 @@
     "titulo": "Canción del grano de trigo",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=4",
     "tono": "LA",
     "estrofas": [
@@ -2130,7 +2193,9 @@
     "titulo": "Canción del Sí",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=21",
     "tono": "LA",
     "estrofas": [
@@ -2234,7 +2299,7 @@
     "id": 273,
     "titulo": "Cantemos al amor de los amores",
     "autor": "Busca de Sagastizábal",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=22",
     "tono": "DO",
@@ -2262,7 +2327,9 @@
     "titulo": "Canten todos",
     "autor": "Julio César Labaké",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=44",
     "tono": "SOL",
     "estrofas": [
@@ -2335,8 +2402,10 @@
     "id": 276,
     "titulo": "Cara a cara",
     "autor": "Marcos Vidal",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=199",
     "tono": "LA",
     "estrofas": [
@@ -2468,7 +2537,7 @@
     "id": 279,
     "titulo": "Chamamé de Barrabás",
     "autor": "Alejandro Mayol",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=363",
     "tono": "LAm",
@@ -2504,7 +2573,9 @@
     "titulo": "Cinco panes y dos peces",
     "autor": "Fer Gril",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=89",
     "tono": "SOL",
     "estrofas": [
@@ -2527,7 +2598,9 @@
     "titulo": "Como busca la cierva (Salmo 41)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=262",
     "tono": "LA",
     "estrofas": [
@@ -2542,7 +2615,9 @@
     "titulo": "Como Cristo nos amó",
     "autor": "P. Néstor Gallego",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=24",
     "tono": "RE",
     "estrofas": [
@@ -2623,7 +2698,7 @@
     "id": 284,
     "titulo": "Con Jesús yo voy (Tomado de la mano...)",
     "autor": "Insieme",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=243",
     "tono": "SOL",
@@ -2731,8 +2806,10 @@
     "id": 288,
     "titulo": "Conozco tu corazón (Estoy a la puerta)",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=460",
     "tono": "SOL",
     "estrofas": [
@@ -2766,8 +2843,11 @@
     "id": 289,
     "titulo": "Consolad",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Entrada",
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=56",
     "tono": "RE",
     "estrofas": [
@@ -2892,7 +2972,9 @@
     "titulo": "Conversión",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=489",
     "tono": "DO",
     "estrofas": [
@@ -2927,7 +3009,9 @@
     "titulo": "Coplas de Yaraví",
     "autor": "P. Osvaldo Catena",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=12",
     "tono": "LAm",
     "estrofas": [
@@ -2958,7 +3042,9 @@
     "titulo": "Corazón agradecido",
     "autor": "Mechi Ruiz Luque",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=562",
     "tono": "SOL#",
     "estrofas": [
@@ -3032,7 +3118,9 @@
     "titulo": "Cordero I",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=349",
     "tono": "DO",
     "estrofas": [
@@ -3051,7 +3139,9 @@
     "titulo": "Cordero II",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=350",
     "tono": "MIm",
     "estrofas": [
@@ -3070,7 +3160,9 @@
     "titulo": "Cordero III",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=351",
     "tono": "RE",
     "estrofas": [
@@ -3089,7 +3181,9 @@
     "titulo": "Cordero IV (Este es el Cordero)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=352",
     "tono": "REm",
     "estrofas": [
@@ -3108,7 +3202,9 @@
     "titulo": "Cordero V",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=353",
     "tono": "RE",
     "estrofas": [
@@ -3127,7 +3223,9 @@
     "titulo": "Cordero VI",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=101",
     "tono": "RE",
     "estrofas": [
@@ -3146,7 +3244,9 @@
     "titulo": "Cordero VII",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=355",
     "tono": "DO",
     "estrofas": [
@@ -3165,7 +3265,9 @@
     "titulo": "Cordero VIII",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Cordero"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=390",
     "tono": "DO",
     "estrofas": [
@@ -3226,8 +3328,11 @@
     "id": 305,
     "titulo": "Cristianos vayamos",
     "autor": "P. Osvaldo Catena / Wade",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Navidad",
+    "momento": [
+      "Entrada",
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=54",
     "tono": "RE",
     "estrofas": [
@@ -3249,7 +3354,7 @@
     "id": 306,
     "titulo": "Cristo calla",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=342",
     "tono": "LA",
@@ -3281,7 +3386,9 @@
     "titulo": "Cristo Jesús",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=159",
     "tono": "LAm",
     "estrofas": [
@@ -3296,7 +3403,9 @@
     "titulo": "Cristo joven (Ven hermano)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=55",
     "tono": "DO",
     "estrofas": [
@@ -3318,7 +3427,7 @@
     "id": 309,
     "titulo": "Cristo reina (remix)",
     "autor": "Coro de Jóvenes Inmaculada",
-    "categoria": "Marianas",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=593",
     "tono": "LA",
@@ -3495,8 +3604,10 @@
     "id": 315,
     "titulo": "Cuanto amor",
     "autor": "Efatá",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=200",
     "tono": "DO",
     "estrofas": [
@@ -3542,7 +3653,7 @@
     "id": 316,
     "titulo": "Cueca de los ramos",
     "autor": "Alejandro Mayol",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=383",
     "tono": "MI",
@@ -3620,8 +3731,10 @@
     "id": 318,
     "titulo": "Cuerpo y Sangre de Jesús",
     "autor": "P. Alfredo Trusso",
-    "categoria": "Comunión",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=110",
     "tono": "RE",
     "estrofas": [
@@ -3678,7 +3791,7 @@
     "id": 320,
     "titulo": "Dale que somos la sal (Anunciemos a Jesús)",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=201",
     "tono": "DO",
@@ -3705,7 +3818,7 @@
     "id": 321,
     "titulo": "Dame tus ojos",
     "autor": "Marcela Gandara",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=357",
     "tono": "RE",
@@ -3755,8 +3868,10 @@
     "id": 323,
     "titulo": "De gloria en gloria te veo",
     "autor": "Marcos Witt",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=477",
     "tono": "LA",
     "estrofas": [
@@ -3885,7 +4000,9 @@
     "titulo": "Déjame nacer de nuevo",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=202",
     "tono": "DO",
     "estrofas": [
@@ -3908,7 +4025,9 @@
     "titulo": "Déjate",
     "autor": "Misión País",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=488",
     "tono": "DO",
     "estrofas": [
@@ -3950,8 +4069,10 @@
     "id": 328,
     "titulo": "Den gloria a Dios",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=57",
     "tono": "SOL",
     "estrofas": [
@@ -3981,8 +4102,10 @@
     "id": 329,
     "titulo": "Despertemos, llega Cristo",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=58",
     "tono": "RE",
     "estrofas": [
@@ -4048,7 +4171,9 @@
     "titulo": "Diario de María (La esclava)",
     "autor": "Martín Valverde",
     "categoria": "Marianas",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=273",
     "tono": "DO",
     "estrofas": [
@@ -4097,8 +4222,10 @@
     "id": 333,
     "titulo": "Dime rey",
     "autor": "Helena",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=427",
     "tono": "SOL",
     "estrofas": [
@@ -4144,7 +4271,7 @@
     "id": 334,
     "titulo": "Din, don, dan",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=219",
     "tono": "RE",
@@ -4172,7 +4299,9 @@
     "titulo": "Dios amigo",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=203",
     "tono": "RE",
     "estrofas": [
@@ -4194,7 +4323,7 @@
     "id": 336,
     "titulo": "Dios de majestad",
     "autor": "Valeria Boccacci",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=434",
     "tono": "DO",
@@ -4264,8 +4393,10 @@
     "id": 338,
     "titulo": "Dios está aquí",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=220",
     "tono": "DO",
     "estrofas": [
@@ -4284,7 +4415,9 @@
     "titulo": "Dios Familia",
     "autor": "P.Zini / Buscaglia / Rosas / Romero",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=359",
     "tono": "RE",
     "estrofas": [
@@ -4401,7 +4534,9 @@
     "titulo": "Donde hay amor (Ubi caritas)",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=164",
     "tono": "RE",
     "estrofas": [
@@ -4420,7 +4555,9 @@
     "titulo": "Donde vives",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=374",
     "tono": "RE",
     "estrofas": [
@@ -4438,7 +4575,7 @@
     "id": 344,
     "titulo": "Dulce Doncella",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=31",
     "tono": "RE",
@@ -4521,7 +4658,9 @@
     "titulo": "El alfarero",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=204",
     "tono": "DO",
     "estrofas": [
@@ -4535,7 +4674,7 @@
     "id": 347,
     "titulo": "El amor de Dios es maravilloso",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=232",
     "tono": "RE",
@@ -4554,7 +4693,7 @@
     "id": 348,
     "titulo": "El cazador",
     "autor": "P. Eduardo Meana",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=205",
     "tono": "SOL",
@@ -4586,7 +4725,9 @@
     "titulo": "El Dios de la vida",
     "autor": "Daniel Poli",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=10",
     "tono": "RE",
     "estrofas": [
@@ -4608,7 +4749,7 @@
     "id": 350,
     "titulo": "El Espíritu del Señor",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=479",
     "tono": "RE",
@@ -4682,7 +4823,7 @@
     "id": 352,
     "titulo": "El Nacimiento (Noche Anunciada)",
     "autor": "Ariel Ramirez",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=473",
     "tono": "DO",
@@ -4733,7 +4874,9 @@
     "titulo": "El pastor",
     "autor": "Franky Bastitta",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=206",
     "tono": "SOL",
     "estrofas": [
@@ -4756,7 +4899,10 @@
     "titulo": "El profeta",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada",
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=207",
     "tono": "REm",
     "estrofas": [
@@ -4821,8 +4967,10 @@
     "id": 357,
     "titulo": "El Señor de Galilea",
     "autor": "Gene Maclellan",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=208",
     "tono": "DO",
     "estrofas": [
@@ -4853,7 +5001,9 @@
     "titulo": "El Señor es mi fortaleza",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=29",
     "tono": "RE",
     "estrofas": [
@@ -4868,7 +5018,9 @@
     "titulo": "El sermón de la montaña",
     "autor": "P. Osvaldo Catena",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=73",
     "tono": "RE",
     "estrofas": [
@@ -4898,7 +5050,7 @@
     "id": 360,
     "titulo": "Él vive",
     "autor": "Metanoia",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=555",
     "tono": "MI",
@@ -5012,7 +5164,9 @@
     "titulo": "Emaús",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=274",
     "tono": "SOL",
     "estrofas": [
@@ -5042,8 +5196,10 @@
     "id": 364,
     "titulo": "En el nombre de Dios",
     "autor": "P. Néstor Gallego",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=59",
     "tono": "RE",
     "estrofas": [
@@ -5104,8 +5260,10 @@
     "id": 366,
     "titulo": "En la palma de su mano",
     "autor": "Juanjo García Hervas",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=459",
     "tono": "RE",
     "estrofas": [
@@ -5128,7 +5286,9 @@
     "titulo": "En memoria tuya",
     "autor": "M.Menapace / J.C.Maddio",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=111",
     "tono": "LA",
     "estrofas": [
@@ -5171,7 +5331,9 @@
     "titulo": "En mi Getsemaní",
     "autor": "P. Eduardo Meana",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=30",
     "tono": "RE",
     "estrofas": [
@@ -5210,7 +5372,9 @@
     "titulo": "En ti, Señor, reposa",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=160",
     "tono": "MIm",
     "estrofas": [
@@ -5225,7 +5389,9 @@
     "titulo": "Enciende una luz",
     "autor": "Marcos Witt",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=209",
     "tono": "MI",
     "estrofas": [
@@ -5302,7 +5468,9 @@
     "titulo": "Entra a mi hogar",
     "autor": "Peteco Carabajal",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=404",
     "tono": "SOL",
     "estrofas": [
@@ -5329,7 +5497,9 @@
     "titulo": "Entre tus manos",
     "autor": "Ray Repp",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=90",
     "tono": "RE",
     "estrofas": [
@@ -5351,7 +5521,7 @@
     "id": 375,
     "titulo": "Envíanos, Padre",
     "autor": "M.Menapace / J.C.Maddio",
-    "categoria": "Envío",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=136",
     "tono": "DO",
@@ -5387,7 +5557,9 @@
     "titulo": "Es mi Padre",
     "autor": "P. Osvaldo Catena",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=112",
     "tono": "REm",
     "estrofas": [
@@ -5413,8 +5585,10 @@
     "id": 377,
     "titulo": "Escúchame Dios",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=210",
     "tono": "LA",
     "estrofas": [
@@ -5467,8 +5641,10 @@
     "id": 379,
     "titulo": "Espíritu de comunidad",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Espíritu Santo",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=137",
     "tono": "MI",
     "estrofas": [
@@ -5490,7 +5666,7 @@
     "id": 380,
     "titulo": "Espíritu de Dios",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=138",
     "tono": "MIm",
@@ -5509,7 +5685,7 @@
     "id": 381,
     "titulo": "Espíritu de los cuatro vientos",
     "autor": "Pascua Joven",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=378",
     "tono": "MIm",
@@ -5586,7 +5762,7 @@
     "id": 384,
     "titulo": "Espíritu ven a habitar",
     "autor": "Elí",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=443",
     "tono": "RE",
@@ -5629,7 +5805,7 @@
     "id": 385,
     "titulo": "Esta es el agua pura",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=213",
     "tono": "DO",
@@ -5687,7 +5863,7 @@
     "id": 387,
     "titulo": "Esta es la luz de Cristo",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=214",
     "tono": "DO",
@@ -5722,7 +5898,7 @@
     "id": 388,
     "titulo": "Estamos de fiesta con Jesús",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=394",
     "tono": "RE",
@@ -5762,7 +5938,9 @@
     "titulo": "Estate",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=215",
     "tono": "RE",
     "estrofas": [
@@ -5785,7 +5963,9 @@
     "titulo": "Este es el día del Señor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=60",
     "tono": "MI",
     "estrofas": [
@@ -5816,7 +5996,9 @@
     "titulo": "Este es el momento",
     "autor": "Marco López",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=91",
     "tono": "DO#m",
     "estrofas": [
@@ -5847,7 +6029,10 @@
     "titulo": "Esto que soy, eso te doy",
     "autor": "P. Eduardo Meana",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio",
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=114",
     "tono": "SOL",
     "estrofas": [
@@ -5873,7 +6058,7 @@
     "id": 393,
     "titulo": "Eucaristía",
     "autor": "Kairy Marquez",
-    "categoria": "Comunión",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=501",
     "tono": "SOL",
@@ -6019,7 +6204,9 @@
     "titulo": "Felices los que anuncian",
     "autor": "J.C.Maddio",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Envío"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=216",
     "tono": "SOL",
     "estrofas": [
@@ -6085,7 +6272,9 @@
     "titulo": "Fidelidad",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=264",
     "tono": "DO",
     "estrofas": [
@@ -6103,7 +6292,7 @@
     "id": 399,
     "titulo": "Fiesta del Señor",
     "autor": "P. Nestor Gallego",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=221",
     "tono": "RE",
@@ -6138,7 +6327,7 @@
     "id": 400,
     "titulo": "Frente a tu trono",
     "autor": "Maxi Larghi",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=461",
     "tono": "SOL",
@@ -6165,7 +6354,7 @@
     "id": 401,
     "titulo": "Fuego Santo",
     "autor": "Coro San José",
-    "categoria": "Adoración",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=540",
     "tono": "MI",
@@ -6261,8 +6450,10 @@
     "id": 405,
     "titulo": "Gloria I",
     "autor": "P. Osvaldo Catena",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=252",
     "tono": "LA",
     "estrofas": [
@@ -6288,8 +6479,10 @@
     "id": 406,
     "titulo": "Gloria II (Correntino)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=11",
     "tono": "SOL",
     "estrofas": [
@@ -6303,8 +6496,10 @@
     "id": 407,
     "titulo": "Gloria III (En memoria tuya)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=337",
     "tono": "LA",
     "estrofas": [
@@ -6330,8 +6525,10 @@
     "id": 408,
     "titulo": "Gloria IV (Niños)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=225",
     "tono": "DO",
     "estrofas": [
@@ -6357,8 +6554,10 @@
     "id": 409,
     "titulo": "Gloria V (Niños)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=226",
     "tono": "DO",
     "estrofas": [
@@ -6384,8 +6583,10 @@
     "id": 410,
     "titulo": "Gloria VI",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=259",
     "tono": "DO",
     "estrofas": [
@@ -6419,8 +6620,10 @@
     "id": 411,
     "titulo": "Gloria VII (Misa criolla)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Gloria"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=398",
     "tono": "LAm",
     "estrofas": [
@@ -6521,8 +6724,10 @@
     "id": 413,
     "titulo": "Gracias por haberme creado",
     "autor": "Andrea Perez",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=468",
     "tono": "DO",
     "estrofas": [
@@ -6540,7 +6745,7 @@
     "id": 414,
     "titulo": "Ha traído la esperanza . Verónica Sanfilippo",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=525",
     "tono": "REm",
@@ -6576,7 +6781,9 @@
     "titulo": "Hacia ti morada santa",
     "autor": "Kiko Argüello",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=399",
     "tono": "MIm",
     "estrofas": [
@@ -6598,8 +6805,10 @@
     "id": 416,
     "titulo": "Haciéndote pan",
     "autor": "P. Eduardo Meana",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=267",
     "tono": "FA#m",
     "estrofas": [
@@ -6633,7 +6842,7 @@
     "id": 417,
     "titulo": "Hagan lo que Él les diga",
     "autor": "Valeria Boccacci",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=433",
     "estrofas": [
@@ -6648,7 +6857,9 @@
     "titulo": "Hambre de Dios",
     "autor": "J.A.Espinosa",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=8",
     "tono": "RE",
     "estrofas": [
@@ -6674,7 +6885,7 @@
     "id": 419,
     "titulo": "Hasta dar la vida",
     "autor": "P. Eduardo Meana",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=266",
     "tono": "LAm",
@@ -6706,7 +6917,9 @@
     "titulo": "Hasta la locura",
     "autor": "Pablo Martinez",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=452",
     "tono": "SOL",
     "estrofas": [
@@ -6759,7 +6972,7 @@
     "id": 422,
     "titulo": "Hay un río de vida",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=234",
     "tono": "MI",
@@ -6778,7 +6991,7 @@
     "id": 423,
     "titulo": "Hay una fiesta",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=397",
     "tono": "DO",
@@ -6802,7 +7015,9 @@
     "titulo": "Hay una fuente en mi",
     "autor": "J.C.Alvarado",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=268",
     "tono": "MI",
     "estrofas": [
@@ -6820,7 +7035,7 @@
     "id": 425,
     "titulo": "Hay una unción aquí",
     "autor": "Claudio Freidzon",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=139",
     "tono": "MI",
@@ -6835,8 +7050,10 @@
     "id": 426,
     "titulo": "Hazme pan",
     "autor": "Andrea Pérez",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=134",
     "tono": "DO",
     "estrofas": [
@@ -6874,7 +7091,7 @@
     "id": 427,
     "titulo": "Haznos vivir",
     "autor": "La otra orilla",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=194",
     "tono": "MI",
@@ -6940,7 +7157,7 @@
     "id": 429,
     "titulo": "Hey, que haces nuevas todas las cosas",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=265",
     "tono": "MI",
@@ -6968,7 +7185,9 @@
     "titulo": "Salmo 33 (Bendeciré al Señor)",
     "autor": "Daniel Poli",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=35",
     "tono": "RE",
     "estrofas": [
@@ -6991,7 +7210,10 @@
     "titulo": "Salmo 51 (Bajo tu misericordia) Â· Andrea Pérez",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial",
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=470",
     "tono": "DO",
     "estrofas": [
@@ -7125,8 +7347,10 @@
     "id": 436,
     "titulo": "Santo I",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Santo"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=340",
     "tono": "MIm",
     "estrofas": [
@@ -7148,8 +7372,10 @@
     "id": 437,
     "titulo": "Santo II",
     "autor": "Daniel Poli",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Santo"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=1",
     "tono": "LA",
     "estrofas": [
@@ -7163,8 +7389,10 @@
     "id": 438,
     "titulo": "Santo III (Criollo)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Santo"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=339",
     "tono": "LAm",
     "estrofas": [
@@ -7182,8 +7410,10 @@
     "id": 439,
     "titulo": "Santo IV",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Santo"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=347",
     "tono": "MI",
     "estrofas": [
@@ -7205,8 +7435,10 @@
     "id": 440,
     "titulo": "Santo V",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Santo"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=348",
     "tono": "MIm",
     "estrofas": [
@@ -7278,7 +7510,7 @@
     "id": 443,
     "titulo": "Se entregó por mi",
     "autor": "F.Alonso / M.Correa",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=309",
     "tono": "DO",
@@ -7309,7 +7541,7 @@
     "id": 444,
     "titulo": "Sé que estás aquí",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=242",
     "tono": "MI",
@@ -7567,7 +7799,9 @@
     "titulo": "Señor a quien iremos",
     "autor": "P- Cristóbal Fones",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=425",
     "tono": "SOL",
     "estrofas": [
@@ -7601,8 +7835,10 @@
     "id": 452,
     "titulo": "Señor mío",
     "autor": "Daniel Poli",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=47",
     "tono": "DO",
     "estrofas": [
@@ -7616,8 +7852,10 @@
     "id": 453,
     "titulo": "Señor, a Ti clamamos",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=376",
     "tono": "RE",
     "estrofas": [
@@ -7651,8 +7889,10 @@
     "id": 454,
     "titulo": "Señor, aquí estoy",
     "autor": "Daniel Poli",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=310",
     "tono": "LA",
     "estrofas": [
@@ -7667,7 +7907,9 @@
     "titulo": "Señor, tú lo sabes todo",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=118",
     "tono": "DO",
     "estrofas": [
@@ -7701,7 +7943,7 @@
     "id": 456,
     "titulo": "Señora del camino",
     "autor": "P. Cristóbal Fones",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=508",
     "tono": "FA",
@@ -7886,7 +8128,9 @@
     "titulo": "Si conocieras el don de Dios",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=311",
     "tono": "DO",
     "estrofas": [
@@ -7983,7 +8227,9 @@
     "titulo": "Si rasgaras los cielos",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=313",
     "tono": "DO",
     "estrofas": [
@@ -7997,7 +8243,7 @@
     "id": 464,
     "titulo": "Si tú eres cristiano",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=401",
     "tono": "RE",
@@ -8017,7 +8263,9 @@
     "titulo": "Si yo no tengo amor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=119",
     "tono": "RE",
     "estrofas": [
@@ -8051,7 +8299,7 @@
     "id": 466,
     "titulo": "Si, me levantaré",
     "autor": "P. Lucien Deiss",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=346",
     "tono": "LAm",
@@ -8086,8 +8334,10 @@
     "id": 467,
     "titulo": "Siempre me amaste",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=315",
     "tono": "MI",
     "estrofas": [
@@ -8137,7 +8387,9 @@
     "titulo": "Signo de esperanza",
     "autor": "P. J.Zini / A.Alvarez",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=316",
     "tono": "DO",
     "estrofas": [
@@ -8176,7 +8428,9 @@
     "titulo": "Signos de amor (Tienes que encender una luz)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=317",
     "tono": "RE",
     "estrofas": [
@@ -8270,7 +8524,9 @@
     "titulo": "Silencio y serenidad",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=521",
     "tono": "DO",
     "estrofas": [
@@ -8359,7 +8615,9 @@
     "titulo": "Solo por ti, Jesús",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=482",
     "tono": "SOL",
     "estrofas": [
@@ -8381,8 +8639,10 @@
     "id": 476,
     "titulo": "Solo tienen que dar amor",
     "autor": "Tobias Nougues",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=412",
     "tono": "DO",
     "estrofas": [
@@ -8448,7 +8708,9 @@
     "titulo": "Somos la familia de Jesús",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=380",
     "tono": "LA",
     "estrofas": [
@@ -8471,7 +8733,9 @@
     "titulo": "Somos un pueblo que camina",
     "autor": "Emilio Mateu",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=7",
     "tono": "DO",
     "estrofas": [
@@ -8524,7 +8788,7 @@
     "id": 481,
     "titulo": "Sopla (Fruto nuevo de tu cielo)",
     "autor": "Metanoia",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=38",
     "tono": "DO",
@@ -8587,7 +8851,7 @@
     "id": 482,
     "titulo": "Soplo de Dios",
     "autor": "Maxi Larghi",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=516",
     "tono": "RE",
@@ -8631,7 +8895,9 @@
     "titulo": "Sos Camino, Verdad y Vida",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=483",
     "tono": "SOL",
     "estrofas": [
@@ -8731,8 +8997,10 @@
     "id": 486,
     "titulo": "Soy peregrino",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=74",
     "tono": "SIm",
     "estrofas": [
@@ -8762,7 +9030,7 @@
     "id": 487,
     "titulo": "Suenen campanas",
     "autor": "P. Osvaldo Catena",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=341",
     "tono": "MI",
@@ -8864,7 +9132,7 @@
     "id": 489,
     "titulo": "Tal como eres",
     "autor": "Misión País",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=542",
     "tono": "FA",
@@ -8939,7 +9207,9 @@
     "titulo": "Tan cerca de mí",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=319",
     "tono": "DO",
     "estrofas": [
@@ -8966,7 +9236,9 @@
     "titulo": "Tan solo soy lo que soy ante Dios",
     "autor": "P. Alejandro Pavoni",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=386",
     "tono": "RE",
     "estrofas": [
@@ -9056,7 +9328,9 @@
     "titulo": "Tarde te amé",
     "autor": "Pablo Martinez",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=453",
     "tono": "LA",
     "estrofas": [
@@ -9106,7 +9380,7 @@
     "id": 495,
     "titulo": "Te adoramos, Hostia divina",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=132",
     "tono": "RE",
@@ -9200,7 +9474,9 @@
     "titulo": "Te doy gracias",
     "autor": "Uriel Arcodaci",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=464",
     "tono": "SOL",
     "estrofas": [
@@ -9234,8 +9510,10 @@
     "id": 499,
     "titulo": "Te escondes en el pan (Jesús amigo)",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=253",
     "tono": "LAm",
     "estrofas": [
@@ -9301,7 +9579,9 @@
     "titulo": "Te ofrecemos, Padre nuestro",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=100",
     "tono": "RE",
     "estrofas": [
@@ -9332,7 +9612,9 @@
     "titulo": "Te ofrecemos, Señor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=102",
     "tono": "REm",
     "estrofas": [
@@ -9355,7 +9637,9 @@
     "titulo": "Te presentamos",
     "autor": "J.A.Espinosa",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=103",
     "tono": "MI",
     "estrofas": [
@@ -9378,7 +9662,9 @@
     "titulo": "Tengo un ideal",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=320",
     "tono": "LAm",
     "estrofas": [
@@ -9400,7 +9686,7 @@
     "id": 505,
     "titulo": "Tengo una mano y no la puedo mover",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=240",
     "tono": "RE",
@@ -9462,7 +9748,7 @@
     "id": 507,
     "titulo": "Toda Hermosa",
     "autor": "Hermana Inés de Jesús",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=484",
     "tono": "DO",
@@ -9501,7 +9787,7 @@
     "id": 508,
     "titulo": "Toda la tierra espera",
     "autor": "Alberto Taulé",
-    "categoria": "General",
+    "categoria": "Adviento",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=580",
     "tono": "DO",
@@ -9529,7 +9815,10 @@
     "titulo": "Toma",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio",
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=104",
     "tono": "LA",
     "estrofas": [
@@ -9548,7 +9837,10 @@
     "titulo": "Toma Señor y recibe",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio",
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=105",
     "tono": "SOL",
     "estrofas": [
@@ -9563,7 +9855,9 @@
     "titulo": "Torrentes de vida",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=321",
     "tono": "LA",
     "estrofas": [
@@ -9582,7 +9876,9 @@
     "titulo": "Transparencia",
     "autor": "P. Eduardo Meana",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=322",
     "tono": "LA",
     "estrofas": [
@@ -9604,7 +9900,7 @@
     "id": 513,
     "titulo": "Treinta monedas",
     "autor": "Pascua Joven",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=366",
     "tono": "RE",
@@ -9702,7 +9998,9 @@
     "titulo": "Tú eres mi rey",
     "autor": "Uriel Arcodaci",
     "categoria": "Adoración",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=447",
     "tono": "MI",
     "estrofas": [
@@ -9740,8 +10038,10 @@
     "id": 517,
     "titulo": "Tu estás aquí",
     "autor": "Marcela Gandara",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=323",
     "tono": "MI",
     "estrofas": [
@@ -9764,7 +10064,9 @@
     "titulo": "Tu fidelidad",
     "autor": "Marcos Witt",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=324",
     "tono": "DO",
     "estrofas": [
@@ -9778,8 +10080,10 @@
     "id": 519,
     "titulo": "Tu mirada",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=325",
     "tono": "RE",
     "estrofas": [
@@ -9844,7 +10148,7 @@
     "id": 521,
     "titulo": "Tu nombre levantaré",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=485",
     "tono": "RE",
@@ -9859,7 +10163,7 @@
     "id": 522,
     "titulo": "Tu Palabra",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=227",
     "tono": "FA",
@@ -9952,8 +10256,10 @@
     "id": 525,
     "titulo": "Tú tienes Palabras de Vida",
     "autor": "Hna Glenda",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=428",
     "tono": "LA",
     "estrofas": [
@@ -9975,8 +10281,10 @@
     "id": 526,
     "titulo": "Tuyo soy",
     "autor": "Luis Alfredo Díaz",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=326",
     "tono": "DO",
     "estrofas": [
@@ -9998,7 +10306,7 @@
     "id": 527,
     "titulo": "Un lugar chiquito",
     "autor": "Daniel Poli",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=244",
     "tono": "DO",
@@ -10013,7 +10321,7 @@
     "id": 528,
     "titulo": "Un mandamiento nuevo",
     "autor": "Kiko Argüello",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=120",
     "tono": "DO",
@@ -10056,8 +10364,10 @@
     "id": 529,
     "titulo": "Un niño se te acercó",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Niños",
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=106",
     "tono": "LA",
     "estrofas": [
@@ -10149,7 +10459,7 @@
     "id": 532,
     "titulo": "Una entre todas",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=181",
     "tono": "RE",
@@ -10173,7 +10483,9 @@
     "titulo": "Una espiga",
     "autor": "P. Cesáreo Gabaráin",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=107",
     "tono": "LA",
     "estrofas": [
@@ -10227,7 +10539,9 @@
     "titulo": "Vale la pena (Para que sigas aquí)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=328",
     "tono": "DO",
     "estrofas": [
@@ -10351,7 +10665,7 @@
     "id": 538,
     "titulo": "Vamos pastorcitos",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=403",
     "tono": "DO",
@@ -10382,8 +10696,10 @@
     "id": 539,
     "titulo": "Vamos todos a recibir",
     "autor": "Hna G.Etchebarne / J.C.Maddío",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=121",
     "tono": "LA",
     "estrofas": [
@@ -10429,8 +10745,10 @@
     "id": 540,
     "titulo": "Vayan todos por el mundo (Son la semilla)",
     "autor": "P. Cesáreo Gabaráin",
-    "categoria": "Envío",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Envío"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=123",
     "tono": "DO",
     "estrofas": [
@@ -10461,7 +10779,10 @@
     "titulo": "Ven y danos vida",
     "autor": "Efatá",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada",
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=25",
     "tono": "LA",
     "estrofas": [
@@ -10503,8 +10824,10 @@
     "id": 542,
     "titulo": "Ven y sígueme",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=331",
     "tono": "DO",
     "estrofas": [
@@ -10530,7 +10853,7 @@
     "id": 543,
     "titulo": "Ven, Fuego santo",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=186",
     "tono": "LAm",
@@ -10549,7 +10872,7 @@
     "id": 544,
     "titulo": "Ven, oh Santo Espíritu",
     "autor": "Taize",
-    "categoria": "Adoración",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=143",
     "tono": "MIm",
@@ -10565,7 +10888,9 @@
     "titulo": "Ven, Señor Jesús",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=329",
     "tono": "LA",
     "estrofas": [
@@ -10635,8 +10960,10 @@
     "id": 546,
     "titulo": "Ven, Señor, no tardes",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=330",
     "tono": "DO",
     "estrofas": [
@@ -10706,7 +11033,9 @@
     "titulo": "Venga tu reino",
     "autor": "P.Cristóbal Fones",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=53",
     "tono": "RE",
     "estrofas": [
@@ -10767,7 +11096,7 @@
     "id": 550,
     "titulo": "Veni creator",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=142",
     "tono": "SOL",
@@ -10806,7 +11135,7 @@
     "id": 551,
     "titulo": "Vení, vení",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=222",
     "tono": "DO",
@@ -10838,7 +11167,9 @@
     "titulo": "Vida en abundancia",
     "autor": "Mechi Ruiz Luque",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=247",
     "tono": "SOL",
     "estrofas": [
@@ -10877,7 +11208,9 @@
     "titulo": "Vienen con alegría",
     "autor": "P. Cesáreo Gabaráin",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=75",
     "tono": "RE",
     "estrofas": [
@@ -10926,8 +11259,10 @@
     "id": 555,
     "titulo": "Vine a alabar a Dios",
     "autor": "Tradicional",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=76",
     "tono": "LA",
     "estrofas": [
@@ -11158,8 +11493,10 @@
     "id": 562,
     "titulo": "Vive el Señor",
     "autor": "Jorge Rojo",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=51",
     "tono": "MI",
     "estrofas": [
@@ -11181,7 +11518,7 @@
     "id": 563,
     "titulo": "Vive Jesús",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=332",
     "tono": "SOL",
@@ -11251,8 +11588,10 @@
     "id": 565,
     "titulo": "Volved a mí",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=333",
     "tono": "MI",
     "estrofas": [
@@ -11306,7 +11645,9 @@
     "titulo": "Vuelve a darme vida",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=588",
     "tono": "SOL",
     "estrofas": [
@@ -11481,7 +11822,9 @@
     "titulo": "Yo no se caminar sin Ti",
     "autor": "Jaire",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=487",
     "tono": "RE",
     "estrofas": [
@@ -11508,7 +11851,9 @@
     "titulo": "Yo soy el camino",
     "autor": "B.Aguilera / L.González",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=122",
     "tono": "LAm",
     "estrofas": [
@@ -11581,7 +11926,7 @@
     "id": 575,
     "titulo": "Yo soy la Vida",
     "autor": "Semana del Seminario",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=504",
     "tono": "SOLm",
@@ -11616,7 +11961,7 @@
     "id": 576,
     "titulo": "Yo te busco",
     "autor": "Marcos Witt",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=545",
     "tono": "RE",
@@ -11635,7 +11980,7 @@
     "id": 577,
     "titulo": "Yo te miro (Pan del cielo)",
     "autor": "Fruto del Madero",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=567",
     "tono": "SIm",
@@ -11722,7 +12067,9 @@
     "titulo": "Zamba del grano de trigo",
     "autor": "Alejandro Mayol",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=108",
     "tono": "MI",
     "estrofas": [
@@ -11757,7 +12104,9 @@
     "titulo": "Zamba del perdón",
     "autor": "Tradicional",
     "categoria": "Cuaresma",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=335",
     "tono": "MIm",
     "estrofas": [
@@ -11788,7 +12137,10 @@
     "titulo": "Zamba para que te quedes",
     "autor": "J.A.Gattinoni",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada",
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=77",
     "tono": "SOL",
     "estrofas": [
@@ -11845,7 +12197,7 @@
     "id": 583,
     "titulo": "Hijo amado",
     "autor": "Pascua Joven",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=553",
     "tono": "SI",
@@ -11912,7 +12264,7 @@
     "id": 584,
     "titulo": "Hijos míos",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=495",
     "tono": "MI",
@@ -12114,8 +12466,10 @@
     "id": 590,
     "titulo": "Hoy la Iglesia victoriosa",
     "autor": "Fuentes",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=61",
     "tono": "DO",
     "estrofas": [
@@ -12137,7 +12491,7 @@
     "id": 591,
     "titulo": "Hoy me siento feliz",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=396",
     "tono": "DO",
@@ -12161,7 +12515,9 @@
     "titulo": "Hoy perdóname",
     "autor": "Eleazar Rodríguez",
     "categoria": "Cuaresma",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=272",
     "tono": "RE",
     "estrofas": [
@@ -12179,7 +12535,7 @@
     "id": 593,
     "titulo": "Hoy Señor vengo ante Ti",
     "autor": "P- Cristóbal Fones",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=467",
     "tono": "FA",
@@ -12210,7 +12566,7 @@
     "id": 594,
     "titulo": "Hoy te pedimos perdón",
     "autor": "Tradicional",
-    "categoria": "Cuaresma",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=223",
     "tono": "FA",
@@ -12238,7 +12594,9 @@
     "titulo": "Hoy te vuelvo a encontrar",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=270",
     "tono": "DO",
     "estrofas": [
@@ -12268,8 +12626,10 @@
     "id": 596,
     "titulo": "Hoy tu Espíritu, Señor",
     "autor": "P. Néstor Gallego / L.Reigada",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Espíritu Santo",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=62",
     "tono": "SOL",
     "estrofas": [
@@ -12355,7 +12715,9 @@
     "titulo": "Iglesia peregrina",
     "autor": "P. Cesáreo Gabaráin",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=63",
     "tono": "RE",
     "estrofas": [
@@ -12382,7 +12744,9 @@
     "titulo": "Jesucristo, danos de este Pan",
     "autor": "P. Néstor Gallego / L.Reigada",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=26",
     "tono": "RE",
     "estrofas": [
@@ -12412,7 +12776,7 @@
     "id": 600,
     "titulo": "Jesús está pasando por aquí",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=235",
     "tono": "RE",
@@ -12436,7 +12800,9 @@
     "titulo": "Jesús recuérdame (Jesus remember me)",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=161",
     "tono": "DO",
     "estrofas": [
@@ -12450,7 +12816,7 @@
     "id": 602,
     "titulo": "Jesús te quiere",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=336",
     "tono": "LA",
@@ -12486,7 +12852,9 @@
     "titulo": "Jesús te seguiré",
     "autor": "Daniel Poli",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=2",
     "tono": "RE",
     "estrofas": [
@@ -12513,7 +12881,9 @@
     "titulo": "Jesús, estoy aquí",
     "autor": "Rosa María Ferrada",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=271",
     "tono": "RE",
     "estrofas": [
@@ -12547,7 +12917,7 @@
     "id": 605,
     "titulo": "Joven levántate",
     "autor": "Nicolás Mentruyt",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=413",
     "tono": "SOL",
@@ -12570,7 +12940,7 @@
     "id": 606,
     "titulo": "Junto a la cruz",
     "autor": "P. Osvaldo Catena",
-    "categoria": "Cuaresma",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=344",
     "tono": "SIm",
@@ -12637,7 +13007,9 @@
     "titulo": "Junto al Señor",
     "autor": "Mirta Vila / Mario Bazán",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=64",
     "tono": "SOL",
     "estrofas": [
@@ -12667,7 +13039,7 @@
     "id": 609,
     "titulo": "La alfarería de Dios",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=236",
     "tono": "RE",
@@ -12686,7 +13058,7 @@
     "id": 610,
     "titulo": "La cumbia de Cristo",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=237",
     "tono": "LAm",
@@ -12718,7 +13090,9 @@
     "titulo": "La herida",
     "autor": "P. Cristóbal Fones",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=499",
     "tono": "DO",
     "estrofas": [
@@ -12757,7 +13131,9 @@
     "titulo": "La mañana siguiente",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=400",
     "tono": "LA",
     "estrofas": [
@@ -12779,7 +13155,7 @@
     "id": 613,
     "titulo": "La Peregrinación (A la huella)",
     "autor": "Ariel Ramirez",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=471",
     "tono": "SIm",
@@ -12815,7 +13191,9 @@
     "titulo": "La promesa",
     "autor": "Santiago Abella",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=572",
     "tono": "RE",
     "estrofas": [
@@ -12881,7 +13259,9 @@
     "titulo": "La Virgen María nos reúne",
     "autor": "P. J.Zini / F.Cerimelle",
     "categoria": "Marianas",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=66",
     "tono": "SIm",
     "estrofas": [
@@ -12908,7 +13288,9 @@
     "titulo": "Las aguas no podrán apagar el amor",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=275",
     "tono": "DO",
     "estrofas": [
@@ -12930,8 +13312,10 @@
     "id": 618,
     "titulo": "Las siete palabras",
     "autor": "Daniel Poli",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=276",
     "tono": "FA#m",
     "estrofas": [
@@ -12966,7 +13350,9 @@
     "titulo": "Las tinieblas",
     "autor": "Taizé",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=162",
     "tono": "SIm",
     "estrofas": [
@@ -13015,7 +13401,7 @@
     "id": 621,
     "titulo": "Letanías de los santos (folklore)",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "General",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=245",
     "tono": "LAm",
@@ -13079,7 +13465,9 @@
     "titulo": "Llegamos a Ti",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=67",
     "tono": "LA",
     "estrofas": [
@@ -13101,7 +13489,7 @@
     "id": 623,
     "titulo": "Llena de Gracia",
     "autor": "The Vigil Project (Verónica Sanfilippo)",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=490",
     "tono": "DO",
@@ -13144,7 +13532,7 @@
     "id": 624,
     "titulo": "Llena este lugar",
     "autor": "Maxi Larghi",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=407",
     "tono": "INTRO",
@@ -13187,8 +13575,10 @@
     "id": 625,
     "titulo": "Llévame a la cruz",
     "autor": "Majo y Dan",
-    "categoria": "Cuaresma",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=546",
     "tono": "LA",
     "estrofas": [
@@ -13247,7 +13637,9 @@
     "titulo": "Lo que anhela tu corazón",
     "autor": "Mechi Ruiz Luque",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=426",
     "tono": "LA",
     "estrofas": [
@@ -13282,7 +13674,9 @@
     "titulo": "Lo que le agrada a Dios",
     "autor": "Luis Alfredo Diaz",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=391",
     "tono": "DO",
     "estrofas": [
@@ -13301,7 +13695,9 @@
     "titulo": "Los frutos de la tierra",
     "autor": "C.Veneziale / J.C.Maddío",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=92",
     "tono": "REm",
     "estrofas": [
@@ -13319,7 +13715,7 @@
     "id": 629,
     "titulo": "Los hombros traigo cargados",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=277",
     "tono": "REm",
@@ -13354,7 +13750,7 @@
     "id": 630,
     "titulo": "Los reyes magos (Llegaron ya...)",
     "autor": "Ariel Ramirez",
-    "categoria": "Adoración",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=472",
     "tono": "SIm",
@@ -13377,8 +13773,10 @@
     "id": 631,
     "titulo": "Los yuyos de mi tierra",
     "autor": "M.Menapace / A.Blanco",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=438",
     "tono": "LA",
     "estrofas": [
@@ -13416,7 +13814,7 @@
     "id": 632,
     "titulo": "Madero de amor",
     "autor": "Bienaventurados",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=556",
     "tono": "SOL",
@@ -13606,8 +14004,10 @@
     "id": 638,
     "titulo": "Magnificat",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Marianas",
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=16",
     "tono": "DO",
     "estrofas": [
@@ -13637,7 +14037,7 @@
     "id": 639,
     "titulo": "Magnificat (cannon)",
     "autor": "Taizé",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=154",
     "tono": "RE",
@@ -13652,8 +14052,10 @@
     "id": 640,
     "titulo": "Magnificat (Mi alma glorifica al Señor)",
     "autor": "Alejandro Mejía",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Marianas",
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=153",
     "tono": "RE",
     "estrofas": [
@@ -13754,8 +14156,10 @@
     "id": 642,
     "titulo": "Mar adentro",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Envío"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=278",
     "tono": "MI",
     "estrofas": [
@@ -13785,7 +14189,7 @@
     "id": 643,
     "titulo": "Maranathá",
     "autor": "Tradicional",
-    "categoria": "Adviento",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=140",
     "tono": "LA",
@@ -14152,7 +14556,7 @@
     "id": 656,
     "titulo": "Marta le dijo a Jesús",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=238",
     "tono": "LAm",
@@ -14195,7 +14599,7 @@
     "id": 657,
     "titulo": "Más cerca de Jesús",
     "autor": "The Vigil Project (Athenas)",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=491",
     "tono": "FA",
@@ -14219,7 +14623,9 @@
     "titulo": "Más cerca, oh Dios, de ti",
     "autor": "S.Flower Adams / M.L.Mason",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=280",
     "tono": "DO",
     "estrofas": [
@@ -14245,8 +14651,10 @@
     "id": 659,
     "titulo": "Me arrodillo a tus pies (Abrazada a ti)",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=281",
     "tono": "SOL",
     "estrofas": [
@@ -14269,7 +14677,9 @@
     "titulo": "Me enseñaste a amar",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=169",
     "tono": "RE",
     "estrofas": [
@@ -14296,7 +14706,10 @@
     "titulo": "Me pongo en tus manos",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio",
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=93",
     "tono": "DO",
     "estrofas": [
@@ -14327,7 +14740,9 @@
     "titulo": "Me quieres amar (Fernando Grill)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=514",
     "tono": "DO",
     "estrofas": [
@@ -14401,7 +14816,10 @@
     "titulo": "Mensajero de la Paz",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión",
+      "Envío"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=115",
     "tono": "RE",
     "estrofas": [
@@ -14448,7 +14866,9 @@
     "titulo": "Mi 100%",
     "autor": "Maxi Larghi",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=78",
     "tono": "LAm",
     "estrofas": [
@@ -14487,7 +14907,9 @@
     "titulo": "Mi Cuerpo es comida",
     "autor": "P. Cristóbal Fones",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=494",
     "tono": "LAm",
     "estrofas": [
@@ -14565,7 +14987,9 @@
     "titulo": "Mi lámpara encendida",
     "autor": "Daniel Poli",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=282",
     "tono": "RE",
     "estrofas": [
@@ -14579,7 +15003,7 @@
     "id": 669,
     "titulo": "Mi mano está llena de su bendición",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=241",
     "tono": "MI",
@@ -14611,7 +15035,9 @@
     "titulo": "Mi pensamiento eres Tú",
     "autor": "Stanislao Marino",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=283",
     "tono": "MI",
     "estrofas": [
@@ -14634,7 +15060,9 @@
     "titulo": "Mira nuestra ofrenda",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=94",
     "tono": "LAm",
     "estrofas": [
@@ -14719,7 +15147,9 @@
     "titulo": "Mírame Señor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=480",
     "tono": "DO",
     "estrofas": [
@@ -14797,7 +15227,9 @@
     "titulo": "Muéveme, mi Dios",
     "autor": "Ixcís",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=510",
     "tono": "SOL",
     "estrofas": [
@@ -14859,7 +15291,9 @@
     "titulo": "Nada es imposible para ti",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=285",
     "tono": "RE",
     "estrofas": [
@@ -14885,8 +15319,10 @@
     "id": 679,
     "titulo": "Nada te turbe",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=291",
     "tono": "LA",
     "estrofas": [
@@ -14905,7 +15341,9 @@
     "titulo": "Nadie te ama como yo",
     "autor": "Martín Valverde",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=286",
     "tono": "RE",
     "estrofas": [
@@ -14994,8 +15432,10 @@
     "id": 682,
     "titulo": "Necesito de tu amor",
     "autor": "P. Eduardo Meana",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=246",
     "tono": "MIm",
     "estrofas": [
@@ -15046,7 +15486,9 @@
     "titulo": "No a nosotros, Señor (Non nobis, Domine)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=166",
     "tono": "LA",
     "estrofas": [
@@ -15065,7 +15507,9 @@
     "titulo": "No conozco otro medio",
     "autor": "Carmelitas Descalzas (Nuestra Señora de L",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=533",
     "tono": "SOL",
     "estrofas": [
@@ -15163,7 +15607,9 @@
     "titulo": "No hay mayor amor",
     "autor": "Alejandro Mayol",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=116",
     "tono": "DO",
     "estrofas": [
@@ -15194,7 +15640,9 @@
     "titulo": "No pongás los ojos",
     "autor": "Luis Alfredo Díaz",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=287",
     "tono": "DO",
     "estrofas": [
@@ -15212,8 +15660,10 @@
     "id": 688,
     "titulo": "No te puedo perder",
     "autor": "Ezequiel Baistrocchi",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Cuaresma",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=288",
     "tono": "LA",
     "estrofas": [
@@ -15357,7 +15807,9 @@
     "titulo": "Noche hacia la pascua",
     "autor": "P. C.Gramlich / S.Bellomo",
     "categoria": "Pascua",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=289",
     "tono": "RE",
     "estrofas": [
@@ -15388,7 +15840,9 @@
     "titulo": "Nueva creación",
     "autor": "P. Cesáreo Gabaráin",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=68",
     "tono": "MIm",
     "estrofas": [
@@ -15414,8 +15868,10 @@
     "id": 694,
     "titulo": "Nueva mañana",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=506",
     "tono": "LA",
     "estrofas": [
@@ -15470,7 +15926,9 @@
     "titulo": "Ofrenda de amor",
     "autor": "Gregorio Fernández",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=95",
     "tono": "DO",
     "estrofas": [
@@ -15496,8 +15954,10 @@
     "id": 696,
     "titulo": "Oh, Jesús (Canción de madrugada)",
     "autor": "P. Eduardo Meana",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adoración",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=131",
     "tono": "DO",
     "estrofas": [
@@ -15511,7 +15971,7 @@
     "id": 697,
     "titulo": "Oh, Santísima",
     "autor": "Fuentes",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=171",
     "tono": "DO",
@@ -15535,7 +15995,9 @@
     "titulo": "Oh, Señor",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=290",
     "tono": "RE",
     "estrofas": [
@@ -15612,7 +16074,9 @@
     "titulo": "Padre, me pongo en tus manos",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=248",
     "tono": "DO",
     "estrofas": [
@@ -15634,7 +16098,7 @@
     "id": 702,
     "titulo": "Papá del cielo danos tu perdón",
     "autor": "Tradicional",
-    "categoria": "Cuaresma",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=224",
     "tono": "DO",
@@ -15650,7 +16114,9 @@
     "titulo": "Para darlo a los demás",
     "autor": "P. Manuel López Naón",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=293",
     "tono": "MI",
     "estrofas": [
@@ -15716,7 +16182,9 @@
     "titulo": "Para qué me sirve",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=294",
     "tono": "RE",
     "estrofas": [
@@ -15734,7 +16202,7 @@
     "id": 706,
     "titulo": "Pastor de los pastores",
     "autor": "Maxi Larghi",
-    "categoria": "General",
+    "categoria": "Navidad",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=373",
     "tono": "MI",
@@ -15786,7 +16254,9 @@
     "titulo": "Paz en la tormenta",
     "autor": "Renán Carias",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=528",
     "tono": "RE",
     "estrofas": [
@@ -15825,7 +16295,9 @@
     "titulo": "Perdón",
     "autor": "Helena",
     "categoria": "Cuaresma",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=523",
     "tono": "DO",
     "estrofas": [
@@ -15859,8 +16331,10 @@
     "id": 709,
     "titulo": "Perfume a tus pies",
     "autor": "Marcela Gándara (y Pascua Joven)",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=517",
     "tono": "RE",
     "estrofas": [
@@ -15891,7 +16365,9 @@
     "titulo": "Permanecer en Ti",
     "autor": "Manuel Lorca",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=550",
     "tono": "MI",
     "estrofas": [
@@ -15926,7 +16402,9 @@
     "titulo": "Pide y se te dará",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=295",
     "tono": "SOL",
     "estrofas": [
@@ -15940,7 +16418,7 @@
     "id": 712,
     "titulo": "Por tu Palabra",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "Niños",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=228",
     "tono": "SOL",
@@ -16179,7 +16657,7 @@
     "id": 717,
     "titulo": "Preparemos el corazón",
     "autor": "Mechi Ruiz Luque",
-    "categoria": "General",
+    "categoria": "Adviento",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=536",
     "tono": "LA",
@@ -16226,7 +16704,7 @@
     "id": 718,
     "titulo": "Preparen el camino",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Cuaresma",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=345",
     "tono": "LA",
@@ -16242,7 +16720,9 @@
     "titulo": "Pueblo de Dios",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=69",
     "tono": "DO",
     "estrofas": [
@@ -16268,8 +16748,10 @@
     "id": 720,
     "titulo": "Pueblo de Reyes",
     "autor": "P. Lucien Deiss",
-    "categoria": "Adoración",
-    "momento": [],
+    "categoria": "General",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=70",
     "tono": "SOL",
     "estrofas": [
@@ -16315,8 +16797,10 @@
     "id": 721,
     "titulo": "Qué alegría",
     "autor": "Miguel Manzano",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=71",
     "tono": "MI",
     "estrofas": [
@@ -16343,7 +16827,9 @@
     "titulo": "Qué lindo llegar cantando",
     "autor": "P. J.Zini / M.Bofil",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Entrada"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=72",
     "tono": "DO",
     "estrofas": [
@@ -16374,7 +16860,9 @@
     "titulo": "Que mi vida entera",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=296",
     "tono": "DO",
     "estrofas": [
@@ -16389,7 +16877,9 @@
     "titulo": "Qué quiero mi Jesús?",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=297",
     "tono": "SIm",
     "estrofas": [
@@ -16420,7 +16910,9 @@
     "titulo": "Qué te puedo dar",
     "autor": "Luis Alfredo Diaz",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=298",
     "tono": "MI",
     "estrofas": [
@@ -16438,7 +16930,7 @@
     "id": 726,
     "titulo": "Que viva Cristo",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Adoración",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=389",
     "tono": "RE",
@@ -16458,7 +16950,9 @@
     "titulo": "Quedate con nosotros",
     "autor": "C.Veneziale / J.C.Maddío",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=299",
     "tono": "DO",
     "estrofas": [
@@ -16488,7 +16982,7 @@
     "id": 728,
     "titulo": "Quédate en mi",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=187",
     "tono": "RE",
@@ -16508,7 +17002,9 @@
     "titulo": "Queremos ser, Señor",
     "autor": "P. J.Zini / F.Cerimelle",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Comunión"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=117",
     "tono": "SIm",
     "estrofas": [
@@ -16570,7 +17066,9 @@
     "titulo": "Quien pierde su vida por mí",
     "autor": "Hna Glenda",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=301",
     "tono": "RE",
     "estrofas": [
@@ -16604,7 +17102,7 @@
     "id": 732,
     "titulo": "Quien quiera saber vivir",
     "autor": "P. Néstor Gallego",
-    "categoria": "General",
+    "categoria": "Pascua",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=302",
     "tono": "LA",
@@ -16631,8 +17129,10 @@
     "id": 733,
     "titulo": "Quién soy yo",
     "autor": "Pascua Joven",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Pascua",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=303",
     "tono": "MI",
     "estrofas": [
@@ -16677,8 +17177,10 @@
     "id": 735,
     "titulo": "Quiero decir que sí",
     "autor": "Tradicional",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Marianas",
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=304",
     "tono": "DO",
     "estrofas": [
@@ -16723,7 +17225,7 @@
     "id": 737,
     "titulo": "Quiero mirarme en tus ojos",
     "autor": "P. Raúl Canali",
-    "categoria": "General",
+    "categoria": "Marianas",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=172",
     "tono": "DO",
@@ -16781,7 +17283,7 @@
     "id": 739,
     "titulo": "Quiero ser santo",
     "autor": "Tradicional",
-    "categoria": "Adoración",
+    "categoria": "General",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=306",
     "tono": "SOL",
@@ -16809,7 +17311,9 @@
     "titulo": "Recibe la ofrenda",
     "autor": "P. Cesar Scicchitano",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=375",
     "tono": "SOL",
     "estrofas": [
@@ -16840,7 +17344,9 @@
     "titulo": "Recibe lo que se te regala",
     "autor": "Parroquia Espíritu Santo",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=414",
     "tono": "FA#m",
     "estrofas": [
@@ -16879,7 +17385,9 @@
     "titulo": "Recibe, oh Dios",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=97",
     "tono": "DO",
     "estrofas": [
@@ -16902,7 +17410,9 @@
     "titulo": "Recibe, oh Dios eterno",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=98",
     "tono": "DO",
     "estrofas": [
@@ -16956,7 +17466,9 @@
     "titulo": "Renuévame",
     "autor": "Marcos Witt",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=481",
     "tono": "LA",
     "estrofas": [
@@ -16975,7 +17487,9 @@
     "titulo": "Resucitó (Renace la vida y el corazón)",
     "autor": "Tradicional",
     "categoria": "Pascua",
-    "momento": [],
+    "momento": [
+      "Meditación"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=307",
     "tono": "LAm",
     "estrofas": [
@@ -16998,7 +17512,9 @@
     "titulo": "Resurrección",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=96",
     "tono": "MIm",
     "estrofas": [
@@ -17020,7 +17536,7 @@
     "id": 748,
     "titulo": "Rompe esas cadenas (remix)",
     "autor": "Tradicional",
-    "categoria": "General",
+    "categoria": "Espíritu Santo",
     "momento": [],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=591",
     "tono": "MI",
@@ -17063,8 +17579,10 @@
     "id": 749,
     "titulo": "Saber que vendrás (En la patena)",
     "autor": "J.G.Torralba / Bob Dylan",
-    "categoria": "General",
-    "momento": [],
+    "categoria": "Adviento",
+    "momento": [
+      "Ofertorio"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=99",
     "tono": "DO",
     "estrofas": [
@@ -17161,7 +17679,9 @@
     "titulo": "Salmo 114 (Amo al Señor porque El escucha...)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=198",
     "tono": "LA",
     "estrofas": [
@@ -17184,7 +17704,9 @@
     "titulo": "Salmo 115 (Como te pagaremos...)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=408",
     "tono": "DO",
     "estrofas": [
@@ -17211,7 +17733,9 @@
     "titulo": "Salmo 139 (Conmigo siempre estarás)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=251",
     "estrofas": [
       {
@@ -17237,7 +17761,9 @@
     "titulo": "Salmo 17 (Yo te amo...)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=37",
     "tono": "DO",
     "estrofas": [
@@ -17264,7 +17790,9 @@
     "titulo": "Salmo 23 (Aunque marcha por la oscuridad)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=87",
     "tono": "DO",
     "estrofas": [
@@ -17291,7 +17819,9 @@
     "titulo": "Salmo 23 (Zamba)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=197",
     "tono": "FA#m",
     "estrofas": [
@@ -17322,7 +17852,9 @@
     "titulo": "Salmo 28 (Rendid a Yahvé)",
     "autor": "Tradicional",
     "categoria": "General",
-    "momento": [],
+    "momento": [
+      "Salmo Responsorial"
+    ],
     "fuente": "https://recursoscatolicos.com.ar/cancionero/index.php?q=36",
     "tono": "SOL",
     "estrofas": [
