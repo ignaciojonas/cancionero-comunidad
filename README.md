@@ -38,6 +38,19 @@ Editá `canciones.json` y agregá un objeto al array. Cada canción tiene esta f
 }
 ```
 
+### Acordes de guitarra (opcional)
+
+Los acordes se escriben dentro del campo `letra` con notación **ChordPro**: el
+acorde entre corchetes, pegado a la sílaba donde entra.
+
+```json
+"letra": "[G]Ven, Espíritu [D]Santo\n[G]Úngeme, [D]lléname"
+```
+
+- El acorde se muestra arriba de su sílaba.
+- Una letra **sin** corchetes se ve como texto normal (sin acordes).
+- Los acordes se muestran por defecto; el botón **"Tono"** del detalle los oculta/muestra. Si la canción no tiene acordes, ese botón queda desactivado.
+
 **Categorías sugeridas:** Vocación, Fraternidad, Salmos, Gloria, Espíritu Santo, Cordero, Pascua, Aclamación, Adviento, Navidad, Cuaresma, Marianas, Envío
 
 **Momentos litúrgicos:** Entrada, Gloria, Salmo Responsorial, Aclamación al Evangelio, Ofertorio, Santo, Cordero, Comunión, Fracción del Pan, Envío, Meditación
