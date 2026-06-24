@@ -190,13 +190,13 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 1.25rem;
       background: var(--naranja);
       color: var(--blanco);
       text-decoration: none;
       font-weight: 600;
       font-size: 0.88rem;
       padding: 0.55rem 1.1rem;
+      border: 1.5px solid transparent;
       border-radius: 7px;
       box-shadow: 0 2px 8px var(--sombra);
       transition: background 0.15s, transform 0.1s;
@@ -209,7 +209,6 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      margin-left: auto;
       color: var(--naranja-dk);
       text-decoration: none;
       font-size: 0.82rem;
@@ -686,8 +685,15 @@
       transition: background 0.15s, transform 0.1s;
     }
     .btn-sugerir-nueva:hover { background: var(--azul-dim); transform: translateY(-1px); }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
-    .footer-sugerir { margin-left: 0.75rem; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin-top: 1.25rem; }
+    /* Footer: playlist + sugerir apilados a la derecha */
+    .footer-links {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.55rem;
+    }
 </style>
 </head>
 <body>
@@ -758,13 +764,15 @@
       <strong>Movimiento de la Palabra de Dios</strong>
       Cantemos en Espíritu y en Verdad · “El Evangelio es el poder de Dios para la salvación de todos los que creen.” (Rm 1,16)
     </div>
-    <a class="footer-yt" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
-      </svg>
-      Playlist Colaborativa
-    </a>
-    <a class="footer-yt footer-sugerir" id="btnSugerirNuevaFooter" href="#">✎ Sugerir una canción</a>
+    <div class="footer-links">
+      <a class="footer-yt" href="https://www.youtube.com/@cancionesycantosmpd" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19.1 5 12 5 12 5s-7.1 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C4.9 19 12 19 12 19s7.1 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5zM9.8 15.5v-7l6 3.5z"/>
+        </svg>
+        Playlist Colaborativa
+      </a>
+      <a class="footer-yt" id="btnSugerirNuevaFooter" href="#">✎ Sugerir una canción</a>
+    </div>
   </div>
 </footer>
 
