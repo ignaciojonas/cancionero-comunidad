@@ -4,8 +4,11 @@
     "titulo": "Pescador de Hombres",
     "autor": "Cesáreo Gabaráin",
     "categoria": "Vocación",
-    "momento": ["Comunión", "Envío"],
-    "tono": "G",
+    "momento": [
+      "Comunión",
+      "Envío"
+    ],
+    "tono": "SOL",
     "estrofas": [
       {
         "tipo": "estrofa",
@@ -38,8 +41,11 @@
     "titulo": "Juntos Como Hermanos",
     "autor": "Kiko Argüello",
     "categoria": "Fraternidad",
-    "momento": ["Ofertorio", "Comunión"],
-    "tono": "D",
+    "momento": [
+      "Ofertorio",
+      "Comunión"
+    ],
+    "tono": "RE",
     "estrofas": [
       {
         "tipo": "coro",
@@ -62,8 +68,11 @@
     "titulo": "El Señor Es Mi Pastor",
     "autor": "Tradicional",
     "categoria": "Salmos",
-    "momento": ["Salmo Responsorial", "Meditación"],
-    "tono": "Am",
+    "momento": [
+      "Salmo Responsorial",
+      "Meditación"
+    ],
+    "tono": "LAm",
     "estrofas": [
       {
         "tipo": "coro",
@@ -91,8 +100,10 @@
     "titulo": "Gloria a Dios",
     "autor": "Misa Popular Nicaragüense",
     "categoria": "Gloria",
-    "momento": ["Gloria"],
-    "tono": "C",
+    "momento": [
+      "Gloria"
+    ],
+    "tono": "DO",
     "estrofas": [
       {
         "tipo": "coro",
@@ -115,8 +126,11 @@
     "titulo": "Ven Espíritu Santo",
     "autor": "Tradicional",
     "categoria": "Espíritu Santo",
-    "momento": ["Entrada", "Pentecostés"],
-    "tono": "E",
+    "momento": [
+      "Entrada",
+      "Pentecostés"
+    ],
+    "tono": "MI",
     "estrofas": [
       {
         "tipo": "coro",
@@ -139,8 +153,10 @@
     "titulo": "Cordero de Dios",
     "autor": "Misa Latinoamericana",
     "categoria": "Cordero",
-    "momento": ["Fracción del Pan"],
-    "tono": "F",
+    "momento": [
+      "Fracción del Pan"
+    ],
+    "tono": "FA",
     "estrofas": [
       {
         "tipo": "estrofa",
@@ -164,8 +180,12 @@
     "titulo": "Resucitó",
     "autor": "Cesáreo Gabaráin",
     "categoria": "Pascua",
-    "momento": ["Entrada", "Comunión", "Envío"],
-    "tono": "G",
+    "momento": [
+      "Entrada",
+      "Comunión",
+      "Envío"
+    ],
+    "tono": "SOL",
     "estrofas": [
       {
         "tipo": "coro",
@@ -193,8 +213,10 @@
     "titulo": "Aleluya",
     "autor": "Tradicional Gregoriano",
     "categoria": "Aclamación",
-    "momento": ["Aclamación al Evangelio"],
-    "tono": "D",
+    "momento": [
+      "Aclamación al Evangelio"
+    ],
+    "tono": "RE",
     "estrofas": [
       {
         "tipo": "coro",
@@ -207,12 +229,15 @@
     "titulo": "Ven, Espíritu Santo",
     "autor": "Athenas",
     "categoria": "Espíritu Santo",
-    "momento": ["Entrada", "Pentecostés"],
-    "tono": "D",
+    "momento": [
+      "Entrada",
+      "Pentecostés"
+    ],
+    "tono": "RE",
     "estrofas": [
       {
         "tipo": "coro",
-        "letra": "[G]Ven, Espíritu [D]Santo\n[G]Ven, Espíritu [D]Santo\n[G]Úngeme, [D]lléname\nY [G]enciende el fuego de [A]tu amor"
+        "letra": "[SOL]Ven, Espíritu [RE]Santo\n[SOL]Ven, Espíritu [RE]Santo\n[SOL]Úngeme, [RE]lléname\nY [SOL]enciende el fuego de [LA]tu amor"
       }
     ]
   },
@@ -222,7 +247,7 @@
     "autor": "Eugenio Jorge / T: Daniel Poli",
     "categoria": "Adoración",
     "momento": [],
-    "tono": "C",
+    "tono": "DO",
     "estrofas": [
       {
         "tipo": "estrofa",
@@ -252,7 +277,7 @@
     "autor": "Eduardo Meana",
     "categoria": "Adoración",
     "momento": [],
-    "tono": "G",
+    "tono": "SOL",
     "estrofas": [
       {
         "tipo": "estrofa",
