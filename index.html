@@ -813,6 +813,28 @@
   let filtroActivo = 'Todas';
   let cancionActual = null;
   let mostrandoTono = false;
+  let wakeLock = null;
+
+  // ─── Wake Lock (pantalla activa al leer una canción) ─────
+  async function solicitarWakeLock() {
+    if (!('wakeLock' in navigator)) return;
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+    } catch (e) { /* batería baja / denegado: ignorar */ }
+  }
+
+  async function liberarWakeLock() {
+    if (wakeLock) {
+      try { await wakeLock.release(); } catch (e) {}
+      wakeLock = null;
+    }
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && cancionActual && !wakeLock) {
+      solicitarWakeLock();
+    }
+  });
 
   function parseChordPro(linea) {
     const segmentos = [];
@@ -1027,6 +1049,7 @@ Letra:
 
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
+    solicitarWakeLock();
   }
 
   function escapeHtml(s) {
@@ -1088,6 +1111,7 @@ Letra:
     document.getElementById('detailOverlay').classList.remove('open');
     document.body.style.overflow = '';
     cancionActual = null;
+    liberarWakeLock();
   }
 
   function handleOverlayClick(e) {
