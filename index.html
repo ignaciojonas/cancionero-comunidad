@@ -3,42 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cancionero · Comunidad</title>
+  <title>Cancionero · Movimiento de la Palabra de Dios</title>
+  <link rel="icon" type="image/png" href="./assets/logo-mopal.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <style>
-    /* ─── Tokens ─────────────────────────────────────────── */
+    /* ─── Tokens (paleta real Movimiento de la Palabra) ──── */
     :root {
-      --bg:          #1A1714;
-      --bg-card:     #221E1A;
-      --bg-hover:    #2A2420;
-      --border:      #3A312A;
-      --border-soft: #2E2824;
-      --granate:     #8B1A2E;
-      --granate-lt:  #A8213A;
-      --granate-dim: rgba(139,26,46,0.15);
-      --cream:       #EDE5D4;
-      --cream-dim:   #A09080;
-      --cream-faint: #6B5E52;
-      --gold:        #C8A96A;
-      --gold-dim:    rgba(200,169,106,0.12);
+      --marron:      #211915;   /* texto / contornos logo */
+      --marron-mid:  #4A413B;
+      --marron-soft: #7A716A;
+      --oro:         #D88C00;   /* bloque del logo */
+      --oro-dim:     rgba(216,140,0,0.12);
+      --naranja:     #E8721C;   /* botón destacado mopal */
+      --naranja-dk:  #CC5F12;
+      --azul:        #2E7DC2;   /* títulos / citas mopal */
+      --azul-dk:     #1F5E96;
+      --azul-dim:    rgba(46,125,194,0.08);
+      --azul-hover:  rgba(46,125,194,0.14);
+      --blanco:      #FFFFFF;
+      --gris-bg:     #F4F4F2;
+      --gris-card:   #FFFFFF;
+      --topbar:      #43463E;   /* barra superior oliva mopal */
+      --borde:       #E2E0DC;
+      --borde-soft:  #EEEDEA;
+      --sombra:      rgba(33,25,21,0.07);
 
-      --font-serif: 'EB Garamond', Georgia, serif;
-      --font-sans:  'Inter', system-ui, sans-serif;
+      --font: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
     }
 
     /* ─── Reset / Base ───────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: var(--font-sans);
-      background: var(--bg);
-      color: var(--cream);
+      font-family: var(--font);
+      background: var(--gris-bg);
+      color: var(--marron);
       min-height: 100vh;
       line-height: 1.6;
+    }
+
+    /* ─── Top bar oliva ───────────────────────────────────── */
+    .topbar {
+      background: var(--topbar);
+      height: 6px;
     }
 
     /* ─── Header ─────────────────────────────────────────── */
@@ -46,118 +56,179 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      padding: 0 clamp(1rem, 5vw, 3rem);
+      background: var(--blanco);
+      box-shadow: 0 1px 0 var(--borde), 0 2px 14px var(--sombra);
     }
 
     .header-inner {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      height: 64px;
+      min-height: 84px;
+      padding: 0.75rem clamp(1rem, 5vw, 2.5rem);
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.85rem;
       flex-shrink: 0;
       text-decoration: none;
     }
 
-    .logo-cross {
-      width: 28px;
-      height: 28px;
-      color: var(--granate);
-      flex-shrink: 0;
+    .logo img {
+      height: 56px;
+      width: auto;
+      display: block;
     }
 
-    .logo-text {
-      font-family: var(--font-serif);
-      font-size: 1.2rem;
-      color: var(--cream);
-      letter-spacing: 0.01em;
+    .logo-texts {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
     }
 
-    .logo-text span {
-      color: var(--cream-dim);
-      font-style: italic;
-      font-size: 0.85em;
+    .logo-title {
+      font-family: var(--font);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--marron);
+      letter-spacing: 0.04em;
+    }
+
+    .logo-sub {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--oro);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 520px) {
+      .logo-texts { display: none; }
     }
 
     /* ─── Search ─────────────────────────────────────────── */
     .search-wrap {
       flex: 1;
       position: relative;
+      max-width: 440px;
+      margin-left: auto;
     }
 
     .search-wrap svg {
       position: absolute;
-      left: 0.875rem;
+      left: 0.9rem;
       top: 50%;
       transform: translateY(-50%);
-      color: var(--cream-faint);
+      color: var(--marron-soft);
       pointer-events: none;
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
     }
 
     #search {
       width: 100%;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.5rem 1rem 0.5rem 2.5rem;
-      color: var(--cream);
-      font-family: var(--font-sans);
+      background: var(--gris-bg);
+      border: 1.5px solid var(--borde);
+      border-radius: 6px;
+      padding: 0.6rem 1rem 0.6rem 2.4rem;
+      color: var(--marron);
+      font-family: var(--font);
       font-size: 0.875rem;
       outline: none;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
     }
 
-    #search::placeholder { color: var(--cream-faint); }
-    #search:focus { border-color: var(--granate); }
+    #search::placeholder { color: var(--marron-soft); }
+    #search:focus {
+      border-color: var(--azul);
+      box-shadow: 0 0 0 3px var(--azul-dim);
+      background: var(--blanco);
+    }
+
+    /* ─── Hero band ──────────────────────────────────────── */
+    .hero {
+      background: var(--blanco);
+      border-bottom: 1px solid var(--borde-soft);
+    }
+    .hero-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.25rem clamp(1rem, 5vw, 2.5rem) 2rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+      font-weight: 700;
+      color: var(--azul);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--azul);
+    }
+    .hero p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--marron-mid);
+      max-width: 60ch;
+    }
+    .hero .accent-rule {
+      width: 56px;
+      height: 4px;
+      background: var(--oro);
+      border-radius: 2px;
+      margin-top: 1rem;
+    }
 
     /* ─── Layout ─────────────────────────────────────────── */
     .shell {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 2rem clamp(1rem, 5vw, 3rem);
+      padding: 2rem clamp(1rem, 5vw, 2.5rem);
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 220px 1fr;
       gap: 2rem;
       align-items: start;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 720px) {
       .shell { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .mobile-filter-bar { display: flex; }
     }
 
-    /* ─── Sidebar / Filters ──────────────────────────────── */
-    .sidebar {
-      position: sticky;
-      top: 80px;
+    /* ─── Sidebar ────────────────────────────────────────── */
+    .sidebar { position: sticky; top: 100px; }
+
+    .sidebar-card {
+      background: var(--blanco);
+      border: 1px solid var(--borde-soft);
+      border-radius: 8px;
+      padding: 1.25rem 1rem;
+      box-shadow: 0 1px 5px var(--sombra);
     }
 
     .sidebar-label {
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 0.62rem;
+      font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--cream-faint);
-      margin-bottom: 0.75rem;
+      color: var(--marron-soft);
+      margin-bottom: 0.875rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--oro-dim);
     }
 
     .filter-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 1px;
     }
 
     .filter-btn {
@@ -167,21 +238,20 @@
       background: none;
       border: none;
       cursor: pointer;
-      padding: 0.45rem 0.75rem;
-      border-radius: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.825rem;
-      color: var(--cream-dim);
+      padding: 0.5rem 0.75rem;
+      border-radius: 5px;
+      font-family: var(--font);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--marron-mid);
       transition: background 0.15s, color 0.15s;
     }
 
-    .filter-btn:hover { background: var(--bg-hover); color: var(--cream); }
-    .filter-btn.active { background: var(--granate-dim); color: var(--cream); }
-    .filter-btn.active::before {
-      content: '·';
-      color: var(--granate);
-      margin-right: 0.4rem;
-      font-weight: 700;
+    .filter-btn:hover { background: var(--azul-dim); color: var(--azul-dk); }
+    .filter-btn.active {
+      background: var(--azul);
+      color: var(--blanco);
+      font-weight: 600;
     }
 
     /* Mobile filter bar */
@@ -189,137 +259,158 @@
       display: none;
       gap: 0.5rem;
       overflow-x: auto;
-      padding-bottom: 0.25rem;
-      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
       scrollbar-width: none;
     }
     .mobile-filter-bar::-webkit-scrollbar { display: none; }
     .mobile-filter-bar .filter-btn {
       white-space: nowrap;
-      border: 1px solid var(--border);
-      background: var(--bg-card);
+      border: 1.5px solid var(--borde);
+      background: var(--blanco);
       flex-shrink: 0;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      padding: 0.4rem 0.95rem;
     }
     .mobile-filter-bar .filter-btn.active {
-      border-color: var(--granate);
+      background: var(--azul);
+      border-color: var(--azul);
+      color: var(--blanco);
+    }
+
+    /* ─── Section header ─────────────────────────────────── */
+    .count {
+      font-size: 0.78rem;
+      color: var(--marron-soft);
+      margin-bottom: 1rem;
+      font-weight: 500;
     }
 
     /* ─── Song List ──────────────────────────────────────── */
     .song-list {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
     }
 
     .song-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      border-radius: 10px;
+      background: var(--gris-card);
+      border: 1px solid var(--borde-soft);
+      border-left: 3px solid transparent;
+      border-radius: 7px;
       padding: 1rem 1.25rem;
       cursor: pointer;
-      transition: border-color 0.15s, background 0.15s;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+      box-shadow: 0 1px 4px var(--sombra);
     }
 
     .song-card:hover {
-      border-color: var(--border);
-      background: var(--bg-hover);
+      border-left-color: var(--oro);
+      box-shadow: 0 4px 16px var(--sombra);
+      transform: translateY(-1px);
     }
 
-    .song-card-left {}
     .song-title {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
-      color: var(--cream);
-      margin-bottom: 0.2rem;
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--marron);
+      margin-bottom: 0.3rem;
     }
 
     .song-meta {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.4rem;
       flex-wrap: wrap;
     }
 
     .tag {
-      font-size: 0.7rem;
-      letter-spacing: 0.06em;
-      padding: 0.15rem 0.5rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.04em;
+      padding: 0.18rem 0.55rem;
       border-radius: 4px;
-      background: var(--gold-dim);
-      color: var(--gold);
-      font-weight: 500;
+      background: var(--azul-dim);
+      color: var(--azul-dk);
+      font-weight: 600;
     }
 
     .tag.momento {
-      background: var(--granate-dim);
-      color: var(--granate-lt);
+      background: var(--oro-dim);
+      color: var(--naranja-dk);
     }
 
     .song-autor {
-      font-size: 0.78rem;
-      color: var(--cream-faint);
+      font-size: 0.77rem;
+      color: var(--marron-soft);
+      font-style: italic;
     }
 
     .song-arrow {
-      color: var(--cream-faint);
+      color: var(--borde);
       flex-shrink: 0;
-      transition: transform 0.2s, color 0.2s;
+      transition: color 0.2s, transform 0.2s;
     }
 
     .song-card:hover .song-arrow {
-      color: var(--cream-dim);
+      color: var(--oro);
       transform: translateX(3px);
     }
 
     .empty-state {
       text-align: center;
       padding: 3rem 1rem;
-      color: var(--cream-faint);
-      font-family: var(--font-serif);
+      color: var(--marron-soft);
       font-style: italic;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
-    /* ─── Song Detail (overlay) ──────────────────────────── */
+    /* ─── Detail overlay ─────────────────────────────────── */
     .detail-overlay {
       position: fixed;
       inset: 0;
       z-index: 200;
       display: none;
-      background: rgba(10,8,7,0.7);
+      background: rgba(33,25,21,0.5);
       backdrop-filter: blur(4px);
       align-items: center;
       justify-content: center;
       padding: 1rem;
     }
-
     .detail-overlay.open { display: flex; }
 
     .detail-panel {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
+      background: var(--blanco);
+      border-radius: 12px;
       width: 100%;
-      max-width: 620px;
-      max-height: 90vh;
+      max-width: 640px;
+      max-height: 92vh;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       animation: slideUp 0.25s ease;
+      box-shadow: 0 20px 60px rgba(33,25,21,0.3);
     }
 
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(12px); }
+      from { opacity: 0; transform: translateY(16px); }
       to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Franja superior oro→naranja del panel */
+    .detail-stripe {
+      height: 5px;
+      background: linear-gradient(90deg, var(--oro) 0%, var(--naranja) 100%);
+      flex-shrink: 0;
     }
 
     .detail-header {
       padding: 1.5rem 1.75rem 1.25rem;
-      border-bottom: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--borde-soft);
       display: flex;
       align-items: flex-start;
       gap: 1rem;
@@ -328,11 +419,11 @@
     .detail-header-text { flex: 1; }
 
     .detail-titulo {
-      font-family: var(--font-serif);
       font-size: 1.6rem;
-      line-height: 1.25;
+      font-weight: 700;
+      line-height: 1.2;
       margin-bottom: 0.5rem;
-      color: var(--cream);
+      color: var(--azul);
     }
 
     .detail-meta {
@@ -341,10 +432,9 @@
       gap: 0.4rem;
       align-items: center;
       font-size: 0.78rem;
-      color: var(--cream-faint);
+      color: var(--marron-soft);
     }
-
-    .detail-meta .sep { color: var(--border); }
+    .detail-meta .sep { color: var(--borde); }
 
     .detail-actions {
       display: flex;
@@ -353,70 +443,70 @@
     }
 
     .btn-icon {
-      background: var(--bg-hover);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      background: var(--gris-bg);
+      border: 1.5px solid var(--borde);
+      border-radius: 6px;
       cursor: pointer;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--cream-dim);
-      transition: background 0.15s, color 0.15s;
+      color: var(--marron-mid);
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
 
-    .btn-icon:hover { background: var(--bg); color: var(--cream); }
-    .btn-icon.active { background: var(--granate-dim); color: var(--granate-lt); border-color: var(--granate); }
+    .btn-icon:hover { background: var(--azul-dim); color: var(--azul-dk); border-color: var(--azul); }
+    .btn-icon.active { background: var(--azul); color: var(--blanco); border-color: var(--azul); }
+    .btn-icon:disabled { opacity: 0.3; cursor: default; }
+    .btn-icon:disabled:hover { background: var(--gris-bg); color: var(--marron-mid); border-color: var(--borde); }
     .btn-icon svg { width: 16px; height: 16px; }
 
-    /* ─── Song Body ─ misal layout ──────────────────────── */
+    /* ─── Song Body ─────────────────────────────────────── */
     .detail-body {
       overflow-y: auto;
       padding: 1.75rem;
       scrollbar-width: thin;
-      scrollbar-color: var(--border) transparent;
+      scrollbar-color: var(--borde) transparent;
+      background: var(--blanco);
     }
 
     .estrofa {
-      margin-bottom: 2rem;
+      margin-bottom: 1.85rem;
       display: grid;
-      grid-template-columns: 28px 1fr;
+      grid-template-columns: 26px 1fr;
       gap: 0 1rem;
     }
 
     .estrofa-num {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--granate);
-      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--oro);
       letter-spacing: 0.04em;
-      padding-top: 0.15rem;
+      padding-top: 0.2rem;
       text-align: right;
     }
 
     .estrofa-letra {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.85;
-      color: var(--cream);
+      color: var(--marron);
       white-space: pre-line;
     }
 
     .coro-block {
-      margin-bottom: 2rem;
+      margin-bottom: 1.85rem;
       display: grid;
-      grid-template-columns: 28px 1fr;
+      grid-template-columns: 26px 1fr;
       gap: 0 1rem;
     }
 
     .coro-label {
-      font-size: 0.65rem;
-      font-weight: 600;
+      font-size: 0.58rem;
+      font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--gold);
-      font-family: var(--font-sans);
+      color: var(--azul);
       padding-top: 0.25rem;
       text-align: right;
       writing-mode: vertical-rl;
@@ -428,39 +518,36 @@
     }
 
     .coro-letra {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.85;
-      color: var(--cream);
+      color: var(--marron);
       white-space: pre-line;
-      border-left: 2px solid var(--gold-dim);
+      border-left: 3px solid var(--oro-dim);
       padding-left: 1rem;
       font-style: italic;
     }
 
-    /* ─── Secciones (intro, pre-coro, puente, final…) ────── */
-    .seccion-block { margin-bottom: 2rem; }
+    /* ─── Secciones ──────────────────────────────────────── */
+    .seccion-block { margin-bottom: 1.85rem; }
     .seccion-label {
       display: inline-block;
-      font-size: 0.62rem;
-      font-weight: 600;
+      font-size: 0.58rem;
+      font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--gold);
-      font-family: var(--font-sans);
+      color: var(--marron-soft);
       margin-bottom: 0.45rem;
     }
     .seccion-letra {
       display: block;
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.85;
-      color: var(--cream);
-      border-left: 2px solid var(--border-soft);
+      color: var(--marron);
+      border-left: 2px solid var(--borde);
       padding-left: 1rem;
     }
 
-    /* ─── Acordes (ChordPro) ─────────────────────────────── */
+    /* ─── Acordes ────────────────────────────────────────── */
     .linea { display: block; }
     .cseg {
       display: inline-flex;
@@ -469,29 +556,15 @@
       white-space: pre-wrap;
     }
     .cseg-chord {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 600;
+      font-size: 0.7rem;
+      font-weight: 700;
       line-height: 1.3;
-      color: var(--gold);
+      color: var(--azul);
       white-space: pre;
       min-height: 1.1em;
     }
     .cseg-text { white-space: pre-wrap; }
-
-    /* Modo "ocultar acordes": colapsa la fila del acorde */
     .detail-body.hide-chords .cseg-chord { display: none; }
-
-    /* Botón Tono desactivado (canción sin acordes) */
-    .btn-icon:disabled { opacity: 0.35; cursor: default; }
-    .btn-icon:disabled:hover { background: var(--bg-hover); color: var(--cream-dim); }
-
-    /* ─── Count ──────────────────────────────────────────── */
-    .count {
-      font-size: 0.78rem;
-      color: var(--cream-faint);
-      margin-bottom: 1rem;
-    }
 
     /* ─── Tono badge ─────────────────────────────────────── */
     .tono-badge {
@@ -499,28 +572,57 @@
       align-items: center;
       gap: 0.3rem;
       font-size: 0.75rem;
-      color: var(--cream-dim);
+      color: var(--marron-soft);
+    }
+    .tono-badge strong {
+      font-size: 0.9rem;
+      color: var(--azul);
+      font-weight: 700;
     }
 
-    .tono-badge strong {
-      font-family: var(--font-serif);
-      font-size: 0.95rem;
-      color: var(--gold);
+    /* ─── Footer ─────────────────────────────────────────── */
+    footer {
+      margin-top: 2rem;
+      background: var(--blanco);
+      border-top: 1px solid var(--borde-soft);
+      padding: 2rem clamp(1rem, 5vw, 2.5rem);
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-inner img { height: 44px; width: auto; }
+    .footer-text {
+      font-size: 0.78rem;
+      color: var(--marron-soft);
+    }
+    .footer-text strong {
+      display: block;
+      color: var(--marron);
+      font-weight: 700;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
 
+<div class="topbar"></div>
+
 <!-- ─── Header ─────────────────────────────────────────── -->
 <header>
   <div class="header-inner">
     <a href="#" class="logo" onclick="cerrarDetalle(); return false;">
-      <svg class="logo-cross" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-        <line x1="14" y1="3" x2="14" y2="25"/>
-        <line x1="5"  y1="10" x2="23" y2="10"/>
-      </svg>
-      <span class="logo-text">Cancionero <span>· comunidad</span></span>
+      <img src="./assets/logo-mopal.png" alt="Movimiento de la Palabra de Dios" />
+      <div class="logo-texts">
+        <span class="logo-title">Cancionero</span>
+        <span class="logo-sub">Movimiento de la Palabra de Dios</span>
+      </div>
     </a>
+
     <div class="search-wrap">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
         <circle cx="6.5" cy="6.5" r="5"/>
@@ -531,38 +633,57 @@
   </div>
 </header>
 
+<!-- ─── Hero ───────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Cancionero <em>comunitario</em></h1>
+    <p>Cantos para la liturgia y los encuentros de la comunidad. Buscá por título, autor, momento o por la letra de cada canto.</p>
+    <div class="accent-rule"></div>
+  </div>
+</section>
+
 <!-- ─── Main ───────────────────────────────────────────── -->
 <main>
   <div class="shell">
-    <!-- Sidebar filtros -->
     <aside class="sidebar">
-      <p class="sidebar-label">Categoría</p>
-      <ul class="filter-list" id="filterList"></ul>
+      <div class="sidebar-card">
+        <p class="sidebar-label">Categoría</p>
+        <ul class="filter-list" id="filterList"></ul>
+      </div>
     </aside>
 
-    <!-- Content -->
     <section>
-      <!-- Mobile filters -->
       <div class="mobile-filter-bar" id="mobileFilterBar"></div>
-
       <p class="count" id="count"></p>
       <div class="song-list" id="songList"></div>
     </section>
   </div>
 </main>
 
+<!-- ─── Footer ─────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <img src="./assets/logo-mopal.png" alt="" />
+    <div class="footer-text">
+      <strong>Movimiento de la Palabra de Dios</strong>
+      Cancionero litúrgico comunitario · “El Evangelio es el poder de Dios para la salvación de todos los que creen.” (Rm 1,16)
+    </div>
+  </div>
+</footer>
+
 <!-- ─── Detail overlay ────────────────────────────────── -->
 <div class="detail-overlay" id="detailOverlay" onclick="handleOverlayClick(event)">
   <div class="detail-panel" id="detailPanel">
+    <div class="detail-stripe"></div>
     <div class="detail-header">
       <div class="detail-header-text">
         <h2 class="detail-titulo" id="detailTitulo"></h2>
         <div class="detail-meta" id="detailMeta"></div>
       </div>
       <div class="detail-actions">
-        <button class="btn-icon" id="btnTono" title="Tono" onclick="toggleTono()">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
-            <text x="1" y="13" font-size="12" fill="currentColor" stroke="none" font-family="serif" font-style="italic">G</text>
+        <button class="btn-icon" id="btnTono" title="Mostrar / ocultar acordes" onclick="toggleTono()">
+          <svg viewBox="0 0 16 16" fill="none">
+            <text x="1" y="13" font-size="12" fill="currentColor" font-family="serif" font-style="italic">G</text>
           </svg>
         </button>
         <button class="btn-icon" title="Cerrar" onclick="cerrarDetalle()">
@@ -583,8 +704,6 @@
   let cancionActual = null;
   let mostrandoTono = false;
 
-  // ─── Parser ChordPro ─────────────────────────────────────
-  // "[G]Ven, Espíritu [D]Santo" -> [{chord:'G',text:'Ven, Espíritu '},{chord:'D',text:'Santo'}]
   function parseChordPro(linea) {
     const segmentos = [];
     const re = /\[([^\]]+)\]/g;
@@ -596,7 +715,6 @@
       if (texto.length > 0 || segmentos.length === 0) {
         segmentos.push({ chord: pendingChord, text: texto });
       } else if (pendingChord !== null) {
-        // acordes consecutivos sin texto entre medio
         segmentos.push({ chord: pendingChord, text: '' });
       }
       pendingChord = m[1];
@@ -606,23 +724,17 @@
     return segmentos;
   }
 
-  function lineaTieneAcordes(linea) {
-    return /\[[^\]]+\]/.test(linea);
-  }
+  function lineaTieneAcordes(linea) { return /\[[^\]]+\]/.test(linea); }
+  function cancionTieneAcordes(cancion) { return cancion.estrofas.some(e => lineaTieneAcordes(e.letra)); }
 
-  function cancionTieneAcordes(cancion) {
-    return cancion.estrofas.some(e => lineaTieneAcordes(e.letra));
-  }
-
-  // ─── Búsqueda (título, autor, momento, categoría y letra) ─
   function normalizar(s) {
-    return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
 
   function textoBuscable(c) {
     if (c._buscable) return c._buscable;
     const letras = (c.estrofas || [])
-      .map(e => e.letra.replace(/\[[^\]]*\]/g, ''))  // quitar acordes
+      .map(e => e.letra.replace(/\[[^\]]*\]/g, ''))
       .join(' ');
     c._buscable = normalizar(
       [c.titulo, c.autor, c.categoria, (c.momento || []).join(' '), letras].join(' ')
@@ -630,13 +742,11 @@
     return c._buscable;
   }
 
-  // Etiquetas de secciones (acordes)
   const SECTION_LABELS = {
     intro: 'Intro', precoro: 'Pre-coro', puente: 'Puente',
     final: 'Final', instrumental: 'Instrumental'
   };
 
-  // ─── Cargar datos ────────────────────────────────────────
   async function init() {
     const [base, athenas] = await Promise.all([
       fetch('./canciones.json').then(r => r.json()),
@@ -647,17 +757,15 @@
     renderLista();
   }
 
-  // ─── Filtros ─────────────────────────────────────────────
   function getCategorias() {
-    const cats = ['Todas', ...new Set(CANCIONES.map(c => c.categoria))];
-    return cats;
+    return ['Todas', ...new Set(CANCIONES.map(c => c.categoria))];
   }
 
   function renderFiltros() {
     const cats = getCategorias();
-    const makeBtn = (cat, isMobile = false) => {
+    const makeBtn = (cat) => {
       const btn = document.createElement('button');
-      btn.className = 'filter-btn' + (isMobile ? '' : '');
+      btn.className = 'filter-btn';
       btn.textContent = cat;
       if (cat === filtroActivo) btn.classList.add('active');
       btn.onclick = () => { filtroActivo = cat; renderFiltros(); renderLista(); };
@@ -674,10 +782,9 @@
 
     const mobileBar = document.getElementById('mobileFilterBar');
     mobileBar.innerHTML = '';
-    cats.forEach(c => mobileBar.appendChild(makeBtn(c, true)));
+    cats.forEach(c => mobileBar.appendChild(makeBtn(c)));
   }
 
-  // ─── Lista de canciones ──────────────────────────────────
   function renderLista() {
     const q = document.getElementById('search').value.trim().toLowerCase();
     const container = document.getElementById('songList');
@@ -690,10 +797,7 @@
       lista = lista.filter(c => textoBuscable(c).includes(qn));
     }
 
-    countEl.textContent = lista.length === 1
-      ? '1 canción'
-      : `${lista.length} canciones`;
-
+    countEl.textContent = lista.length === 1 ? '1 canción' : `${lista.length} canciones`;
     container.innerHTML = '';
 
     if (lista.length === 0) {
@@ -726,7 +830,6 @@
     });
   }
 
-  // ─── Detalle ─────────────────────────────────────────────
   function abrirDetalle(cancion) {
     cancionActual = cancion;
     mostrandoTono = false;
@@ -749,7 +852,7 @@
     const btnTono = document.getElementById('btnTono');
     const body = document.getElementById('detailBody');
     const tieneAcordes = cancionTieneAcordes(cancion);
-    mostrandoTono = tieneAcordes;            // visibles por defecto si los hay
+    mostrandoTono = tieneAcordes;
     btnTono.disabled = !tieneAcordes;
     btnTono.classList.toggle('active', tieneAcordes);
     body.classList.toggle('hide-chords', !tieneAcordes);
@@ -823,15 +926,12 @@
     if (e.target === document.getElementById('detailOverlay')) cerrarDetalle();
   }
 
-  // Esc para cerrar
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') cerrarDetalle();
   });
 
-  // Búsqueda en tiempo real
   document.getElementById('search').addEventListener('input', renderLista);
 
-  // ─── Arrancar ────────────────────────────────────────────
   init();
 </script>
 
