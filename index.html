@@ -150,6 +150,19 @@
       background: var(--blanco);
     }
 
+    .btn-azar {
+      flex-shrink: 0;
+      background: var(--gris-bg);
+      border: 1.5px solid var(--borde);
+      border-radius: 6px;
+      width: 42px; height: 42px;
+      cursor: pointer;
+      font-size: 1.15rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    }
+    .btn-azar:hover { background: var(--azul-dim); border-color: var(--azul); transform: translateY(-1px); }
+
     /* ─── Hero band ──────────────────────────────────────── */
     .hero {
       background: var(--blanco);
@@ -406,6 +419,18 @@
       font-style: italic;
       font-size: 1.05rem;
     }
+
+    /* ─── Favoritos ──────────────────────────────────────── */
+    .song-card-actions { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
+    .star-btn {
+      background: none; border: none; cursor: pointer;
+      font-size: 1.3rem; line-height: 1; color: var(--borde);
+      padding: 0.15rem; transition: color 0.15s, transform 0.1s;
+    }
+    .star-btn:hover { transform: scale(1.15); color: var(--oro); }
+    .star-btn.fav-activo { color: var(--oro); }
+    .btn-icon.fav-activo { color: var(--oro); border-color: var(--oro); background: var(--oro-dim); }
+    #btnFav { font-size: 1.15rem; }
 
     /* ─── Detail overlay ─────────────────────────────────── */
     .detail-overlay {
@@ -718,6 +743,7 @@
       </svg>
       <input type="search" id="search" placeholder="Buscar por título, autor o letra…" autocomplete="off" />
     </div>
+    <button class="btn-azar" title="Canción al azar (de tus favoritos)" onclick="cancionAlAzar()">🎲</button>
   </div>
 </header>
 
@@ -786,6 +812,8 @@
         <div class="detail-meta" id="detailMeta"></div>
       </div>
       <div class="detail-actions">
+        <button class="btn-icon" id="btnFav" title="Favorito" aria-pressed="false"
+                onclick="toggleFavoritoUI(cancionActual.id, this)">☆</button>
         <button class="btn-icon" id="btnTono" title="Mostrar / ocultar acordes" onclick="toggleTono()">
           <svg viewBox="0 0 16 16" fill="none">
             <text x="1" y="13" font-size="12" fill="currentColor" font-family="serif" font-style="italic">G</text>
@@ -811,6 +839,9 @@
 <script>
   let CANCIONES = [];
   let filtroActivo = 'Todas';
+  const FILTRO_FAVORITOS = '★ Favoritos';
+  const FAV_KEY = 'cancionero:favoritos';
+  let favoritos = new Set();
   let cancionActual = null;
   let mostrandoTono = false;
   let wakeLock = null;
@@ -872,6 +903,33 @@
       [c.titulo, c.autor, c.categoria, (c.momento || []).join(' '), letras].join(' ')
     );
     return c._buscable;
+  }
+
+  // ─── Favoritos (localStorage) ────────────────────────────
+  function cargarFavoritos() {
+    try {
+      const raw = localStorage.getItem(FAV_KEY);
+      if (raw) favoritos = new Set(JSON.parse(raw));
+    } catch (e) { /* sin localStorage: queda el Set vacío en memoria */ }
+  }
+  function guardarFavoritos() {
+    try { localStorage.setItem(FAV_KEY, JSON.stringify([...favoritos])); } catch (e) {}
+  }
+  function esFavorito(id) { return favoritos.has(id); }
+  function toggleFavorito(id) {
+    if (favoritos.has(id)) favoritos.delete(id); else favoritos.add(id);
+    guardarFavoritos();
+    return favoritos.has(id);
+  }
+  function pintarEstrella(el, fav) {
+    el.textContent = fav ? '★' : '☆';
+    el.classList.toggle('fav-activo', fav);
+    el.setAttribute('aria-pressed', fav ? 'true' : 'false');
+  }
+  function toggleFavoritoUI(id, el) {
+    const fav = toggleFavorito(id);
+    pintarEstrella(el, fav);
+    if (filtroActivo === FILTRO_FAVORITOS) renderLista();
   }
 
   const SECTION_LABELS = {
@@ -939,6 +997,7 @@ Letra:
       cargar('./canciones-recursoscatolicos.json')
     ]);
     CANCIONES = base.concat(athenas, recursos);
+    cargarFavoritos();
     renderFiltros();
     renderLista();
     document.querySelectorAll('#btnSugerirNuevaHero, #btnSugerirNuevaFooter')
@@ -950,7 +1009,7 @@ Letra:
   }
 
   function renderFiltros() {
-    const cats = getCategorias();
+    const cats = [FILTRO_FAVORITOS, ...getCategorias()];
     const makeBtn = (cat) => {
       const btn = document.createElement('button');
       btn.className = 'filter-btn';
@@ -979,7 +1038,8 @@ Letra:
     const countEl = document.getElementById('count');
 
     let lista = CANCIONES;
-    if (filtroActivo !== 'Todas') lista = lista.filter(c => c.categoria === filtroActivo);
+    if (filtroActivo === FILTRO_FAVORITOS) lista = lista.filter(c => esFavorito(c.id));
+    else if (filtroActivo !== 'Todas') lista = lista.filter(c => c.categoria === filtroActivo);
     if (q) {
       const qn = normalizar(q);
       lista = lista.filter(c => textoBuscable(c).includes(qn));
@@ -989,7 +1049,9 @@ Letra:
     container.innerHTML = '';
 
     if (lista.length === 0) {
-      container.innerHTML = '<p class="empty-state">No se encontraron canciones.</p>';
+      container.innerHTML = (filtroActivo === FILTRO_FAVORITOS && !q)
+        ? '<p class="empty-state">Todavía no marcaste favoritos. Tocá la ☆ en una canción.</p>'
+        : '<p class="empty-state">No se encontraron canciones.</p>';
       return;
     }
 
@@ -1001,6 +1063,7 @@ Letra:
       const momentoTags = (cancion.momento || [])
         .map(m => `<span class="tag momento">${m}</span>`).join('');
 
+      const fav = esFavorito(cancion.id);
       card.innerHTML = `
         <div class="song-card-left">
           <div class="song-title">${cancion.titulo}</div>
@@ -1010,9 +1073,14 @@ Letra:
             <span class="song-autor">${cancion.autor}</span>
           </div>
         </div>
-        <svg class="song-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-          <polyline points="7,4 13,9 7,14"/>
-        </svg>
+        <div class="song-card-actions">
+          <button class="star-btn ${fav ? 'fav-activo' : ''}" title="Favorito"
+                  aria-pressed="${fav ? 'true' : 'false'}"
+                  onclick="event.stopPropagation(); toggleFavoritoUI(${cancion.id}, this)">${fav ? '★' : '☆'}</button>
+          <svg class="song-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <polyline points="7,4 13,9 7,14"/>
+          </svg>
+        </div>
       `;
       container.appendChild(card);
     });
@@ -1023,6 +1091,7 @@ Letra:
     mostrandoTono = false;
 
     document.getElementById('detailTitulo').textContent = cancion.titulo;
+    pintarEstrella(document.getElementById('btnFav'), esFavorito(cancion.id));
 
     const momentoTags = (cancion.momento || [])
       .map(m => `<span class="tag momento">${m}</span>`).join('');
@@ -1112,6 +1181,13 @@ Letra:
     document.body.style.overflow = '';
     cancionActual = null;
     liberarWakeLock();
+  }
+
+  function cancionAlAzar() {
+    let pool = CANCIONES.filter(c => esFavorito(c.id));
+    if (pool.length === 0) pool = CANCIONES;
+    if (pool.length === 0) return;
+    abrirDetalle(pool[Math.floor(Math.random() * pool.length)]);
   }
 
   function handleOverlayClick(e) {
