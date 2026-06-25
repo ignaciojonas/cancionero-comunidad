@@ -146,7 +146,8 @@
         "numero": 2,
         "letra": "Luz beatísima, llena\nlo íntimo del corazón\nde tus fieles. Ven, padre de los pobres,\nven, dador de dones."
       }
-    ]
+    ],
+    "youtube": "https://www.youtube.com/watch?v=PoRDPuhcc3g"
   },
   {
     "id": 6,
@@ -239,7 +240,8 @@
         "tipo": "coro",
         "letra": "[SOL]Ven, Espíritu [RE]Santo\n[SOL]Ven, Espíritu [RE]Santo\n[SOL]Úngeme, [RE]lléname\nY [SOL]enciende el fuego de [LA]tu amor"
       }
-    ]
+    ],
+    "youtube": "https://www.youtube.com/watch?v=PoRDPuhcc3g"
   },
   {
     "id": 82,
@@ -291,6 +293,7 @@
         "tipo": "coro",
         "letra": "¿Por qué no vuelves, hijo mío..."
       }
-    ]
+    ],
+    "youtube": "https://www.youtube.com/watch?v=nEyCvxdiuLQ"
   }
 ]

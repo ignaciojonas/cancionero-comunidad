@@ -708,6 +708,19 @@
     }
     .btn-sugerir:hover { background: var(--azul-dim); border-color: var(--azul); }
 
+    .detail-media-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .btn-media {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      border-radius: 7px; padding: 0.45rem 0.9rem;
+      font-family: var(--font); font-size: 0.82rem; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    .btn-media:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-media-yt  { background: #ff0000; color: #fff; }
+    .btn-media-sp  { background: #1db954; color: #fff; }
+    .btn-media svg { width: 14px; height: 14px; fill: currentColor; }
+
     .btn-sugerir-nueva {
       display: inline-flex;
       align-items: center;
@@ -842,6 +855,7 @@
     </div>
     <div class="detail-body" id="detailBody"></div>
     <div class="detail-footer">
+      <div class="detail-media-links" id="detailMediaLinks"></div>
       <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">
         ✎ Sugerir un cambio
       </a>
@@ -1186,6 +1200,15 @@ Letra:
     actualizarControlTransporte();
 
     document.getElementById('btnSugerirCambio').href = hrefCambio(cancion);
+
+    const mediaLinks = document.getElementById('detailMediaLinks');
+    const ytIcon = `<svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>`;
+    const spIcon = `<svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-.99-.12-1.14-.6-.12-.48.12-.99.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.22 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/></svg>`;
+    let mediaHtml = '';
+    if (cancion.youtube) mediaHtml += `<a class="btn-media btn-media-yt" href="${cancion.youtube}" target="_blank" rel="noopener">${ytIcon} YouTube</a>`;
+    if (cancion.spotify) mediaHtml += `<a class="btn-media btn-media-sp" href="${cancion.spotify}" target="_blank" rel="noopener">${spIcon} Spotify</a>`;
+    mediaLinks.innerHTML = mediaHtml;
+    mediaLinks.style.display = mediaHtml ? 'flex' : 'none';
 
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
