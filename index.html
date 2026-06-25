@@ -36,7 +36,6 @@
     /* ─── Reset / Base ───────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    html, body { overflow-x: hidden; }
 
     body {
       font-family: var(--font);
@@ -243,7 +242,7 @@
       align-items: start;
     }
 
-    .shell > section { min-width: 0; }
+    .shell > section { min-width: 0; overflow-x: clip; }
 
     @media (max-width: 720px) {
       .shell { grid-template-columns: 1fr; }
@@ -303,12 +302,28 @@
     }
 
     /* Mobile filter bar */
-    .mobile-filter-bar {
+    .mobile-filter-bar-wrap {
       display: none;
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+    .mobile-filter-bar-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0.5rem;
+      width: 2.5rem;
+      background: linear-gradient(to right, transparent, var(--gris-bg));
+      pointer-events: none;
+    }
+    @media (max-width: 720px) {
+      .mobile-filter-bar-wrap { display: block; }
+    }
+    .mobile-filter-bar {
+      display: flex;
       gap: 0.5rem;
       overflow-x: auto;
       padding-bottom: 0.5rem;
-      margin-bottom: 1.25rem;
+      padding-right: 2rem;
       scrollbar-width: none;
     }
     .mobile-filter-bar::-webkit-scrollbar { display: none; }
@@ -326,11 +341,6 @@
       background: var(--azul);
       border-color: var(--azul);
       color: var(--blanco);
-    }
-    /* Mostrar la barra de filtros en mobile (debe ir DESPUÉS de la regla base
-       display:none para ganar el cascade con igual especificidad) */
-    @media (max-width: 720px) {
-      .mobile-filter-bar { display: flex; }
     }
 
     /* ─── Section header ─────────────────────────────────── */
@@ -816,7 +826,9 @@
     </aside>
 
     <section>
-      <div class="mobile-filter-bar" id="mobileFilterBar"></div>
+      <div class="mobile-filter-bar-wrap">
+        <div class="mobile-filter-bar" id="mobileFilterBar"></div>
+      </div>
       <p class="count" id="count"></p>
       <div class="song-list" id="songList"></div>
     </section>
