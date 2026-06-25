@@ -1848,8 +1848,10 @@ Letra:
   }
 
   function renderSetlistView(ids, nombre) {
+    document.querySelector('header').style.display = 'none';
     document.querySelector('.hero').style.display = 'none';
     document.querySelector('main').style.display = 'none';
+    document.querySelector('footer').style.display = 'none';
     const view = document.getElementById('setlistView');
     view.classList.add('active');
     const n = ids.length;
