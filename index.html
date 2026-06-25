@@ -1576,7 +1576,12 @@ Letra:
     mediaLinks.innerHTML = mediaHtml;
     mediaLinks.style.display = mediaHtml ? 'flex' : 'none';
 
-    actualizarBtnSetlistDetalle();
+    if (!modoSetlist) actualizarBtnSetlistDetalle();
+
+    document.getElementById('btnFav').style.display           = modoSetlist ? 'none' : '';
+    document.getElementById('btnAgregarSetlist').style.display = modoSetlist ? 'none' : '';
+    document.getElementById('btnSugerirCambio').style.display  = modoSetlist ? 'none' : '';
+    document.getElementById('btnSugerirLink').style.display    = modoSetlist ? 'none' : '';
 
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -1847,7 +1852,10 @@ Letra:
     return true;
   }
 
+  let modoSetlist = false;
+
   function renderSetlistView(ids, nombre) {
+    modoSetlist = true;
     document.querySelector('header').style.display = 'none';
     document.querySelector('.hero').style.display = 'none';
     document.querySelector('main').style.display = 'none';
