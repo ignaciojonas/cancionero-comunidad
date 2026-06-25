@@ -36,6 +36,7 @@
     /* ─── Reset / Base ───────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    html, body { overflow-x: hidden; }
 
     body {
       font-family: var(--font);
@@ -242,6 +243,8 @@
       align-items: start;
     }
 
+    .shell > section { min-width: 0; }
+
     @media (max-width: 720px) {
       .shell { grid-template-columns: 1fr; }
       .sidebar { display: none; }
@@ -421,6 +424,7 @@
     }
 
     /* ─── Favoritos ──────────────────────────────────────── */
+    .song-card-left { flex: 1; min-width: 0; }
     .song-card-actions { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
     .star-btn {
       background: none; border: none; cursor: pointer;
@@ -744,6 +748,17 @@
       flex-direction: column;
       align-items: flex-end;
       gap: 0.55rem;
+    }
+
+    /* ─── Mobile overrides (must be last to win cascade) ─── */
+    @media (max-width: 520px) {
+      .detail-panel { border-radius: 8px; max-height: 96vh; }
+      .detail-header { padding: 1rem 1.1rem 0.9rem; gap: 0.6rem; }
+      .detail-titulo { font-size: 1.25rem; }
+      .btn-icon { width: 34px; height: 34px; }
+      .detail-body { padding: 1.1rem 1.1rem 1rem; font-size: 0.92rem; }
+      .detail-footer { padding: 0.85rem 1.1rem 1rem; }
+      .estrofa { grid-template-columns: 20px 1fr; gap: 0 0.6rem; }
     }
 </style>
 </head>
