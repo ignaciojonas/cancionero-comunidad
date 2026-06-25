@@ -883,9 +883,10 @@
     <div class="detail-body" id="detailBody"></div>
     <div class="detail-footer">
       <div class="detail-media-links" id="detailMediaLinks"></div>
-      <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">
-        ✎ Sugerir un cambio
-      </a>
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+        <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">✎ Sugerir un cambio</a>
+        <a class="btn-sugerir" id="btnSugerirLink" href="#" target="_blank" rel="noopener" style="display:none">🔗 Sugerir link</a>
+      </div>
     </div>
   </div>
 </div>
@@ -1081,6 +1082,20 @@ ${cuerpoEstrofas(cancion)}`;
     return buildMailtoHref('[Cancionero] Cambio: ' + cancion.titulo, cuerpo);
   }
 
+  function hrefSugerirLink(cancion) {
+    const cuerpo =
+`¡Hola! Encontré el link de YouTube o Spotify para esta canción.
+
+ID: ${cancion.id}
+Título: ${cancion.titulo}
+
+YouTube: (pegá el link acá, ej. https://www.youtube.com/watch?v=...)
+Spotify: (pegá el link acá, ej. https://open.spotify.com/track/...)
+
+(podés dejar en blanco el que no tenés)`;
+    return buildMailtoHref('[Cancionero] Link para: ' + cancion.titulo, cuerpo);
+  }
+
   function hrefNueva() {
     const cuerpo =
 `¡Hola! Gracias por sumar un canto.
@@ -1227,6 +1242,11 @@ Letra:
     actualizarControlTransporte();
 
     document.getElementById('btnSugerirCambio').href = hrefCambio(cancion);
+
+    const btnLink = document.getElementById('btnSugerirLink');
+    const tieneLinks = !!(cancion.youtube || cancion.spotify);
+    btnLink.style.display = tieneLinks ? 'none' : 'inline-flex';
+    if (!tieneLinks) btnLink.href = hrefSugerirLink(cancion);
 
     const mediaLinks = document.getElementById('detailMediaLinks');
     const ytIcon = `<svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>`;
