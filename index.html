@@ -760,6 +760,160 @@
       gap: 0.55rem;
     }
 
+    /* ─── Setlist FAB ───────────────────────────────────── */
+    .setlist-fab {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 200;
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--naranja);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.65rem 1.1rem 0.65rem 0.85rem;
+      font-family: var(--font);
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .setlist-fab.visible { display: flex; }
+    .setlist-fab:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+    .setlist-fab-count {
+      background: #fff;
+      color: var(--naranja);
+      border-radius: 50%;
+      width: 22px; height: 22px;
+      font-size: 0.75rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ─── Setlist builder panel ──────────────────────────── */
+    .setlist-overlay {
+      position: fixed; inset: 0; z-index: 300;
+      background: rgba(33,25,21,0.5);
+      display: flex; align-items: flex-end; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .setlist-overlay.open { opacity: 1; pointer-events: all; }
+    .setlist-panel {
+      background: var(--blanco);
+      border-radius: 1rem 1rem 0 0;
+      width: 100%; max-width: 640px;
+      max-height: 82vh;
+      display: flex; flex-direction: column;
+      transform: translateY(100%);
+      transition: transform 0.25s ease;
+    }
+    .setlist-overlay.open .setlist-panel { transform: translateY(0); }
+    .setlist-panel-header {
+      padding: 1.25rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--borde-soft);
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .setlist-panel-header h3 { flex: 1; font-size: 1rem; font-weight: 700; }
+    .setlist-panel-body { flex: 1; overflow-y: auto; padding: 0.75rem 1.25rem; }
+    .setlist-nombre-input {
+      width: 100%;
+      border: 1.5px solid var(--borde); border-radius: 8px;
+      padding: 0.6rem 0.85rem;
+      font-family: var(--font); font-size: 0.95rem; color: var(--marron);
+      margin-bottom: 1rem; outline: none;
+    }
+    .setlist-nombre-input:focus { border-color: var(--azul); }
+    .setlist-item {
+      display: flex; align-items: center; gap: 0.5rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--borde-soft);
+    }
+    .setlist-item-num {
+      width: 20px; text-align: right;
+      font-size: 0.78rem; color: var(--marron-soft); flex-shrink: 0;
+    }
+    .setlist-item-info { flex: 1; min-width: 0; }
+    .setlist-item-titulo {
+      font-size: 0.9rem; font-weight: 600;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      display: block;
+    }
+    .setlist-item-autor { font-size: 0.75rem; color: var(--marron-soft); }
+    .setlist-order-btns { display: flex; flex-direction: column; gap: 2px; }
+    .setlist-order-btn {
+      background: none; border: 1px solid var(--borde);
+      border-radius: 4px; width: 24px; height: 19px;
+      cursor: pointer; color: var(--marron-mid);
+      font-size: 0.65rem; display: flex; align-items: center; justify-content: center; padding: 0;
+    }
+    .setlist-order-btn:hover { background: var(--gris-bg); }
+    .setlist-order-btn:disabled { opacity: 0.25; cursor: default; }
+    .setlist-remove-btn {
+      background: none; border: none; cursor: pointer;
+      color: var(--marron-soft); font-size: 0.95rem;
+      padding: 0.2rem 0.25rem; border-radius: 4px; line-height: 1;
+    }
+    .setlist-remove-btn:hover { color: #cc3333; background: #fff0f0; }
+    .setlist-panel-footer {
+      padding: 1rem 1.25rem; border-top: 1px solid var(--borde-soft);
+      display: flex; gap: 0.5rem;
+    }
+    .btn-compartir {
+      flex: 1; background: var(--naranja); color: #fff;
+      border: none; border-radius: 8px;
+      padding: 0.7rem 1rem;
+      font-family: var(--font); font-size: 0.9rem; font-weight: 700;
+      cursor: pointer; transition: background 0.15s;
+    }
+    .btn-compartir:hover { background: var(--naranja-dk); }
+    .btn-limpiar-setlist {
+      background: none; border: 1.5px solid var(--borde);
+      border-radius: 8px; padding: 0.7rem 0.85rem;
+      font-family: var(--font); font-size: 0.85rem; font-weight: 600;
+      color: var(--marron-soft); cursor: pointer; transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-limpiar-setlist:hover { border-color: #cc3333; color: #cc3333; }
+
+    /* ─── Botón agregar al setlist en detalle ────────────── */
+    .btn-agregar-setlist { font-family: var(--font); }
+    .btn-agregar-setlist.en-setlist { background: var(--azul-dim); border-color: var(--azul); color: var(--azul-dk); }
+
+    /* ─── Setlist view (página compartida) ──────────────── */
+    .setlist-view {
+      display: none;
+      max-width: 700px; margin: 0 auto;
+      padding: 2rem clamp(1rem, 5vw, 2rem) 4rem;
+    }
+    .setlist-view.active { display: block; }
+    .setlist-view-back {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      color: var(--azul); font-size: 0.85rem; font-weight: 600;
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font); margin-bottom: 1.5rem; padding: 0;
+      text-decoration: none;
+    }
+    .setlist-view-back:hover { text-decoration: underline; }
+    .setlist-view-nombre { font-size: 1.7rem; font-weight: 700; color: var(--marron); margin-bottom: 0.25rem; }
+    .setlist-view-count { font-size: 0.85rem; color: var(--marron-soft); margin-bottom: 1.5rem; }
+    .setlist-view-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .setlist-view-item {
+      background: var(--gris-card);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      display: flex; align-items: center; gap: 1rem;
+      cursor: pointer;
+      border: 1px solid var(--borde-soft);
+      transition: border-color 0.15s, box-shadow 0.1s;
+    }
+    .setlist-view-item:hover { border-color: var(--azul); box-shadow: 0 2px 8px var(--sombra); }
+    .setlist-view-num { font-size: 1.1rem; font-weight: 700; color: var(--naranja); width: 28px; flex-shrink: 0; }
+    .setlist-view-info { flex: 1; min-width: 0; }
+    .setlist-view-titulo { font-size: 1rem; font-weight: 700; color: var(--marron); }
+    .setlist-view-autor { font-size: 0.82rem; color: var(--marron-soft); margin-top: 0.1rem; }
+
     /* ─── Mobile overrides (must be last to win cascade) ─── */
     @media (max-width: 520px) {
       .detail-panel { border-radius: 8px; max-height: 96vh; }
@@ -855,6 +1009,36 @@
   </div>
 </footer>
 
+<!-- ─── Setlist view (modo página compartida) ─────────── -->
+<div id="setlistView" class="setlist-view"></div>
+
+<!-- ─── Setlist FAB ───────────────────────────────────── -->
+<button class="setlist-fab" id="setlistFab" onclick="abrirSetlistPanel()">
+  🎵 Setlist <span class="setlist-fab-count" id="setlistFabCount">0</span>
+</button>
+
+<!-- ─── Setlist builder panel ────────────────────────── -->
+<div class="setlist-overlay" id="setlistOverlay" onclick="handleSetlistOverlayClick(event)">
+  <div class="setlist-panel">
+    <div class="setlist-panel-header">
+      <h3>Setlist del evento</h3>
+      <button class="btn-icon" title="Cerrar" onclick="cerrarSetlistPanel()">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/>
+        </svg>
+      </button>
+    </div>
+    <div class="setlist-panel-body">
+      <input class="setlist-nombre-input" id="setlistNombre" type="text" placeholder="Nombre del evento (ej. Retiro Junio 2026)" maxlength="80" />
+      <div id="setlistPanelList"></div>
+    </div>
+    <div class="setlist-panel-footer">
+      <button class="btn-limpiar-setlist" onclick="limpiarSetlist()">Vaciar</button>
+      <button class="btn-compartir" id="btnCompartirSetlist" onclick="compartirSetlist()">🔗 Compartir setlist</button>
+    </div>
+  </div>
+</div>
+
 <!-- ─── Detail overlay ────────────────────────────────── -->
 <div class="detail-overlay" id="detailOverlay" onclick="handleOverlayClick(event)">
   <div class="detail-panel" id="detailPanel">
@@ -884,6 +1068,7 @@
     <div class="detail-footer">
       <div class="detail-media-links" id="detailMediaLinks"></div>
       <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
+        <button class="btn-sugerir btn-agregar-setlist" id="btnAgregarSetlist" onclick="toggleSetlistCancion(cancionActual.id)">＋ Agregar al setlist</button>
         <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">✎ Sugerir un cambio</a>
         <a class="btn-sugerir" id="btnSugerirLink" href="#" target="_blank" rel="noopener" style="display:none">🔗 Sugerir link</a>
       </div>
@@ -1123,8 +1308,10 @@ Letra:
     CANCIONES = base.concat(athenas, recursos);
     cargarFavoritos();
     cargarTransportes();
-    renderFiltros();
-    renderLista();
+    if (!checkSetlistMode()) {
+      renderFiltros();
+      renderLista();
+    }
     document.querySelectorAll('#btnSugerirNuevaHero, #btnSugerirNuevaFooter')
       .forEach(a => a.href = hrefNueva());
   }
@@ -1257,6 +1444,8 @@ Letra:
     mediaLinks.innerHTML = mediaHtml;
     mediaLinks.style.display = mediaHtml ? 'flex' : 'none';
 
+    actualizarBtnSetlistDetalle();
+
     document.getElementById('detailOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
     solicitarWakeLock();
@@ -1386,10 +1575,167 @@ Letra:
   }
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') cerrarDetalle();
+    if (e.key === 'Escape') {
+      if (document.getElementById('setlistOverlay').classList.contains('open')) cerrarSetlistPanel();
+      else cerrarDetalle();
+    }
   });
 
   document.getElementById('search').addEventListener('input', renderLista);
+
+  // ─── Setlist ────────────────────────────────────────────
+  let setlist = [];
+
+  function estaEnSetlist(id) { return setlist.includes(id); }
+
+  function toggleSetlistCancion(id) {
+    if (estaEnSetlist(id)) {
+      setlist = setlist.filter(x => x !== id);
+    } else {
+      setlist.push(id);
+    }
+    renderSetlistBadge();
+    actualizarBtnSetlistDetalle();
+  }
+
+  function renderSetlistBadge() {
+    const fab = document.getElementById('setlistFab');
+    fab.classList.toggle('visible', setlist.length > 0);
+    document.getElementById('setlistFabCount').textContent = setlist.length;
+  }
+
+  function actualizarBtnSetlistDetalle() {
+    if (!cancionActual) return;
+    const btn = document.getElementById('btnAgregarSetlist');
+    const en = estaEnSetlist(cancionActual.id);
+    btn.textContent = en ? '✓ En el setlist' : '＋ Agregar al setlist';
+    btn.classList.toggle('en-setlist', en);
+  }
+
+  function abrirSetlistPanel() {
+    renderSetlistPanel();
+    document.getElementById('setlistOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function cerrarSetlistPanel() {
+    document.getElementById('setlistOverlay').classList.remove('open');
+    if (!cancionActual) document.body.style.overflow = '';
+  }
+
+  function handleSetlistOverlayClick(e) {
+    if (e.target === document.getElementById('setlistOverlay')) cerrarSetlistPanel();
+  }
+
+  function renderSetlistPanel() {
+    const container = document.getElementById('setlistPanelList');
+    if (setlist.length === 0) {
+      container.innerHTML = '<p style="color:var(--marron-soft);font-size:0.88rem;padding:0.5rem 0">Todavía no agregaste canciones. Abrí una canción y tocá "＋ Agregar al setlist".</p>';
+      return;
+    }
+    container.innerHTML = '';
+    setlist.forEach((id, idx) => {
+      const c = CANCIONES.find(x => x.id === id);
+      if (!c) return;
+      const item = document.createElement('div');
+      item.className = 'setlist-item';
+      item.innerHTML = `
+        <span class="setlist-item-num">${idx + 1}.</span>
+        <span class="setlist-item-info">
+          <span class="setlist-item-titulo">${escapeHtml(c.titulo)}</span>
+          <span class="setlist-item-autor">${escapeHtml(c.autor)}</span>
+        </span>
+        <div class="setlist-order-btns">
+          <button class="setlist-order-btn" onclick="moverSetlist(${idx},-1)" ${idx === 0 ? 'disabled' : ''}>▲</button>
+          <button class="setlist-order-btn" onclick="moverSetlist(${idx},1)" ${idx === setlist.length - 1 ? 'disabled' : ''}>▼</button>
+        </div>
+        <button class="setlist-remove-btn" onclick="quitarDeSetlist(${id})" title="Quitar">✕</button>
+      `;
+      container.appendChild(item);
+    });
+  }
+
+  function moverSetlist(idx, dir) {
+    const newIdx = idx + dir;
+    if (newIdx < 0 || newIdx >= setlist.length) return;
+    [setlist[idx], setlist[newIdx]] = [setlist[newIdx], setlist[idx]];
+    renderSetlistPanel();
+  }
+
+  function quitarDeSetlist(id) {
+    setlist = setlist.filter(x => x !== id);
+    renderSetlistBadge();
+    renderSetlistPanel();
+    actualizarBtnSetlistDetalle();
+  }
+
+  function limpiarSetlist() {
+    setlist = [];
+    renderSetlistBadge();
+    renderSetlistPanel();
+    actualizarBtnSetlistDetalle();
+  }
+
+  function compartirSetlist() {
+    if (setlist.length === 0) return;
+    const nombre = document.getElementById('setlistNombre').value.trim() || 'Setlist';
+    const params = new URLSearchParams({ nombre, songs: setlist.join(',') });
+    const url = location.origin + location.pathname + '?' + params.toString();
+    const btn = document.getElementById('btnCompartirSetlist');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = '✓ Link copiado';
+        setTimeout(() => btn.textContent = orig, 2500);
+      });
+    } else {
+      prompt('Copiá este link:', url);
+    }
+  }
+
+  // ─── Setlist view mode (página compartida) ────────────────
+  function checkSetlistMode() {
+    const params = new URLSearchParams(location.search);
+    const songsParam = params.get('songs');
+    if (!songsParam) return false;
+    const ids = songsParam.split(',').map(Number).filter(Boolean);
+    const nombre = params.get('nombre') || 'Setlist';
+    renderSetlistView(ids, nombre);
+    return true;
+  }
+
+  function renderSetlistView(ids, nombre) {
+    document.querySelector('.hero').style.display = 'none';
+    document.querySelector('main').style.display = 'none';
+    const view = document.getElementById('setlistView');
+    view.classList.add('active');
+    const n = ids.length;
+    view.innerHTML = `
+      <a class="setlist-view-back" href="${location.origin + location.pathname}">← Cancionero</a>
+      <h2 class="setlist-view-nombre">${escapeHtml(nombre)}</h2>
+      <p class="setlist-view-count">${n === 1 ? '1 canción' : n + ' canciones'}</p>
+      <div class="setlist-view-list" id="setlistViewList"></div>
+    `;
+    const list = document.getElementById('setlistViewList');
+    ids.forEach((id, idx) => {
+      const c = CANCIONES.find(x => x.id === id);
+      if (!c) return;
+      const item = document.createElement('div');
+      item.className = 'setlist-view-item';
+      item.onclick = () => abrirDetalle(c);
+      item.innerHTML = `
+        <span class="setlist-view-num">${idx + 1}</span>
+        <div class="setlist-view-info">
+          <div class="setlist-view-titulo">${escapeHtml(c.titulo)}</div>
+          <div class="setlist-view-autor">${escapeHtml(c.autor)}</div>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <polyline points="7,4 13,9 7,14"/>
+        </svg>
+      `;
+      list.appendChild(item);
+    });
+  }
 
   init();
 </script>
