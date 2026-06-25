@@ -4,9 +4,15 @@
   ],
   "headers": [
     {
-      "source": "/canciones.json",
+      "source": "/index.html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/(canciones.*\\.json)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
       ]
     }
   ]
