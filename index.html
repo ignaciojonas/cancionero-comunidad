@@ -1164,6 +1164,10 @@
       <input class="setlist-nombre-input" id="setlistNombre" type="text" placeholder="Nombre del evento (ej. Retiro Junio 2026)" maxlength="80" />
       <div id="setlistPanelList"></div>
     </div>
+    <div style="padding:0.6rem 1.25rem 0;display:flex;align-items:center;gap:0.5rem;">
+      <input type="checkbox" id="setlistOcultarAcordes" style="width:16px;height:16px;cursor:pointer;accent-color:var(--azul)">
+      <label for="setlistOcultarAcordes" style="font-size:0.85rem;color:var(--marron-mid);cursor:pointer;user-select:none">Ocultar acordes por defecto</label>
+    </div>
     <div class="setlist-panel-footer">
       <button class="btn-limpiar-setlist" onclick="limpiarSetlist()">Vaciar</button>
       <button class="btn-compartir" id="btnCompartirSetlist" onclick="compartirSetlist()">🔗 Compartir setlist</button>
@@ -1554,10 +1558,10 @@ Letra:
     const btnTono = document.getElementById('btnTono');
     const body = document.getElementById('detailBody');
     const tieneAcordes = cancionTieneAcordes(cancion);
-    mostrandoTono = tieneAcordes;
+    mostrandoTono = tieneAcordes && !(modoSetlist && setlistSinAcordes);
     btnTono.disabled = !tieneAcordes;
-    btnTono.classList.toggle('active', tieneAcordes);
-    body.classList.toggle('hide-chords', !tieneAcordes);
+    btnTono.classList.toggle('active', mostrandoTono);
+    body.classList.toggle('hide-chords', !mostrandoTono);
     actualizarControlTransporte();
 
     document.getElementById('btnSugerirCambio').href = hrefCambio(cancion);
@@ -1828,6 +1832,7 @@ Letra:
     if (setlist.length === 0) return;
     const nombre = document.getElementById('setlistNombre').value.trim() || 'Setlist';
     const params = new URLSearchParams({ nombre, songs: setlist.join(',') });
+    if (document.getElementById('setlistOcultarAcordes').checked) params.set('sinAcordes', '1');
     const url = location.origin + location.pathname + '?' + params.toString();
     const btn = document.getElementById('btnCompartirSetlist');
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -1848,11 +1853,13 @@ Letra:
     if (!songsParam) return false;
     const ids = songsParam.split(',').map(Number).filter(Boolean);
     const nombre = params.get('nombre') || 'Setlist';
+    setlistSinAcordes = params.get('sinAcordes') === '1';
     renderSetlistView(ids, nombre);
     return true;
   }
 
   let modoSetlist = false;
+  let setlistSinAcordes = false;
 
   function renderSetlistView(ids, nombre) {
     modoSetlist = true;
