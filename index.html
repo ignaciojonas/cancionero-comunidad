@@ -1120,7 +1120,7 @@
       <details class="help-item">
         <summary><span class="help-icon">📋</span> Setlist de evento</summary>
         <div class="help-item-body">
-          <p>Abrí una canción y tocá <strong>＋ Agregar al setlist</strong>. Repetí con cada canción del evento.</p>
+          <p>Abrí una canción y tocá <strong>＋ Agregar al evento</strong>. Repetí con cada canción del evento.</p>
           <p>El botón naranja 🎵 que aparece abajo a la derecha muestra cuántas canciones tenés. Tocalo para reordenarlas con ▲▼, ponerle un nombre al evento y generar un link para compartir.</p>
           <p>Quien abre el link ve la lista numerada y puede tocar cada canción para ver la letra.</p>
         </div>
@@ -1151,14 +1151,14 @@
 
 <!-- ─── Setlist FAB ───────────────────────────────────── -->
 <button class="setlist-fab" id="setlistFab" onclick="abrirSetlistPanel()">
-  🎵 Setlist <span class="setlist-fab-count" id="setlistFabCount">0</span>
+  🎵 Evento <span class="setlist-fab-count" id="setlistFabCount">0</span>
 </button>
 
 <!-- ─── Setlist builder panel ────────────────────────── -->
 <div class="setlist-overlay" id="setlistOverlay" onclick="handleSetlistOverlayClick(event)">
   <div class="setlist-panel">
     <div class="setlist-panel-header">
-      <h3>Setlist del evento</h3>
+      <h3>Cancionero del evento</h3>
       <button class="btn-icon" title="Cerrar" onclick="cerrarSetlistPanel()">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/>
@@ -1175,7 +1175,7 @@
     </div>
     <div class="setlist-panel-footer">
       <button class="btn-limpiar-setlist" onclick="limpiarSetlist()">Vaciar</button>
-      <button class="btn-compartir" id="btnCompartirSetlist" onclick="compartirSetlist()">🔗 Compartir setlist</button>
+      <button class="btn-compartir" id="btnCompartirSetlist" onclick="compartirSetlist()">🔗 Compartir cancionero</button>
     </div>
   </div>
 </div>
@@ -1209,7 +1209,7 @@
     <div class="detail-footer">
       <div class="detail-media-links" id="detailMediaLinks"></div>
       <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;">
-        <button class="btn-sugerir btn-agregar-setlist" id="btnAgregarSetlist" onclick="toggleSetlistCancion(cancionActual.id)">＋ Agregar al setlist</button>
+        <button class="btn-sugerir btn-agregar-setlist" id="btnAgregarSetlist" onclick="toggleSetlistCancion(cancionActual.id)">＋ Agregar al evento</button>
         <a class="btn-sugerir" id="btnSugerirCambio" href="#" target="_blank" rel="noopener">✎ Sugerir un cambio</a>
         <a class="btn-sugerir" id="btnSugerirLink" href="#" target="_blank" rel="noopener" style="display:none">🔗 Sugerir link</a>
       </div>
@@ -1765,7 +1765,7 @@ Letra:
     if (!cancionActual) return;
     const btn = document.getElementById('btnAgregarSetlist');
     const en = estaEnSetlist(cancionActual.id);
-    btn.textContent = en ? '✓ En el setlist' : '＋ Agregar al setlist';
+    btn.textContent = en ? '✓ En el evento' : '＋ Agregar al evento';
     btn.classList.toggle('en-setlist', en);
   }
 
@@ -1787,7 +1787,7 @@ Letra:
   function renderSetlistPanel() {
     const container = document.getElementById('setlistPanelList');
     if (setlist.length === 0) {
-      container.innerHTML = '<p style="color:var(--marron-soft);font-size:0.88rem;padding:0.5rem 0">Todavía no agregaste canciones. Abrí una canción y tocá "＋ Agregar al setlist".</p>';
+      container.innerHTML = '<p style="color:var(--marron-soft);font-size:0.88rem;padding:0.5rem 0">Todavía no agregaste canciones. Abrí una canción y tocá "＋ Agregar al evento".</p>';
       return;
     }
     container.innerHTML = '';
@@ -1857,7 +1857,7 @@ Letra:
     const songsParam = params.get('songs');
     if (!songsParam) return false;
     const ids = songsParam.split(',').map(Number).filter(Boolean);
-    const nombre = params.get('nombre') || 'Setlist';
+    const nombre = params.get('nombre') || 'Cancionero del evento';
     setlistSinAcordes = params.get('sinAcordes') === '1';
     renderSetlistView(ids, nombre);
     return true;
